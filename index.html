@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPX Visuals</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 24px;
+    }
+    h1 {
+      margin-bottom: 24px;
+    }
+    section {
+      margin-bottom: 48px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 12px 0;
+      background: #111827;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 SPX Visuals</h1>
+  <div id="feed">Loading…</div>
+
+  <script>
+    fetch("metadata/posts_latest.json")
+      .then(r => r.json())
+      .then(posts => {
+        const feed = document.getElementById("feed");
+        feed.innerHTML = "";
+
+        posts.forEach(post => {
+          const section = document.createElement("section");
+
+          const h2 = document.createElement("h2");
+          h2.textContent = post.type.toUpperCase();
+          section.appendChild(h2);
+
+          post.images.forEach(src => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.loading = "lazy";
+            section.appendChild(img);
+          });
+
+          feed.appendChild(section);
+        });
+      })
+      .catch(() => {
+        document.getElementById("feed").textContent =
+          "Waiting for first data push…";
+      });
+  </script>
+</body>
+</html>
