@@ -2,320 +2,339 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SPXVisuals</title>
   <style>
-    /* General Styles */
+    /* ---------------- Base Styles ---------------- */
     body {
       font-family: system-ui, sans-serif;
       background: #0f172a;
       color: #e5e7eb;
       margin: 0;
-      padding: 0;
+      padding: 24px;
     }
 
     a {
-      color: #3b82f6;
+      color: #3b82f6; /* blue for clickable hashtags and links */
       text-decoration: none;
-      cursor: pointer;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     h1 {
       margin: 0;
-      padding: 16px 24px;
-      font-size: 2rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      background: #3b82f6; /* sticky blue header */
-      position: sticky;
-      top: 0;
-      z-index: 999;
+      font-size: 2rem;
+      gap: 12px;
     }
 
-    header .icon {
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #3b82f6; /* blue sticky bar */
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-icons {
       font-size: 1.5rem;
     }
 
-    /* Search bar */
-    .search-bar {
+    .controls {
       display: flex;
-      justify-content: center;
-      margin: 16px;
       gap: 8px;
-    }
-
-    .search-bar input {
-      padding: 8px;
-      border-radius: 4px;
-      border: none;
-      width: 200px;
-    }
-
-    .toggle-buttons {
-      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
-      margin-bottom: 16px;
     }
 
-    .toggle-buttons button {
+    button {
       background: #1e293b;
       color: #e5e7eb;
       border: none;
+      border-radius: 6px;
       padding: 6px 12px;
-      border-radius: 4px;
       cursor: pointer;
     }
 
-    .toggle-buttons button.active {
+    button.active {
       background: #3b82f6;
     }
 
-    /* Grid layout */
-    .posts-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 16px;
-      padding: 16px 24px;
+    button:hover {
+      background: #475569;
+    }
+
+    input[type="text"] {
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid #475569;
+      background: #1e293b;
+      color: #e5e7eb;
+      width: 200px;
+      text-align: center;
+    }
+
+    /* ---------------- Posts Layout ---------------- */
+    main {
+      column-count: 2;
+      column-gap: 24px;
+      margin-top: 24px;
     }
 
     .post {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 24px;
+      break-inside: avoid;
       background: #111827;
-      border-radius: 8px;
       padding: 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      border-radius: 8px;
     }
 
     .post img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 6px;
       background: #111827;
+      margin: 12px 0;
     }
 
     .hashtags {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 4px;
+      margin-bottom: 6px;
     }
 
     .hashtags a {
       font-size: 0.85rem;
-      background: #1e293b;
-      padding: 2px 6px;
-      border-radius: 4px;
+      color: #3b82f6;
     }
 
-    .post-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.85rem;
+    .post-date {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-bottom: 6px;
     }
 
-    /* Light/Dark mode */
-    body.light {
-      background: #f9fafb;
-      color: #1f2937;
+    .tweet-link {
+      float: right;
+      font-size: 1.2rem;
     }
 
-    body.light .post {
-      background: #ffffff;
+    /* ---------------- Dark/Light Mode ---------------- */
+    body.light-mode {
+      background: #f8fafc;
+      color: #1e293b;
     }
 
-    body.light .search-bar input {
-      background: #f3f4f6;
-      color: #1f2937;
+    body.light-mode header {
+      background: #3b82f6;
+      color: #fff;
     }
 
-    body.light a {
-      color: #2563eb;
+    body.light-mode .post {
+      background: #e2e8f0;
+      color: #1e293b;
     }
 
+    body.light-mode input[type="text"] {
+      background: #f1f5f9;
+      color: #1e293b;
+      border: 1px solid #cbd5e1;
+    }
+
+    /* ---------------- Footer ---------------- */
     footer {
       text-align: center;
-      padding: 16px;
-      font-size: 0.85rem;
-      color: #9ca3af;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 48px;
     }
   </style>
 </head>
 <body>
-  <h1>
-    <span class="icon">📊</span>
-    SPXVisuals
-    <span class="icon">📈</span>
-  </h1>
+  <header>
+    <h1>
+      <span class="header-icons">📊</span>
+      SPXVisuals
+      <span class="header-icons">📈</span>
+    </h1>
 
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search hashtags or date MM/DD/YYYY">
-    <button onclick="clearSearch()">Clear</button>
-  </div>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
 
-  <div class="toggle-buttons">
-    <button id="weeklyBtn" class="active" onclick="toggleWeekMonth('week')">This Week</button>
-    <button id="monthlyBtn" onclick="toggleWeekMonth('month')">This Month</button>
-  </div>
+      <button data-filter="today">Today's Charts</button>
+      <button data-filter="week">This Week</button>
+      <button data-filter="month">This Month</button>
+      <button id="latestOnly">Latest Only</button>
+      <button id="lightModeToggle">Light Mode</button>
+      <button id="darkModeToggle">Dark Mode</button>
+    </div>
+  </header>
 
-  <section>
-    <h2>Today's Charts</h2>
-    <div id="todaysCharts" class="posts-grid"></div>
-  </section>
+  <main id="posts">
+    <!-- Posts are dynamically generated here from JSON -->
+  </main>
 
-  <section>
-    <h2>All Charts</h2>
-    <div id="allCharts" class="posts-grid"></div>
-  </section>
-
-  <footer>© 2026 SPXVisuals</footer>
+  <footer>
+    © 2026 SPXVisuals
+  </footer>
 
   <script>
-    let postsData = [];
-    let filteredData = [];
-    let currentToggle = 'week';
-
-    // Load JSON posts dynamically
+    // ---------------- Load JSON posts ----------------
     async function loadPosts() {
-      try {
-        const response = await fetch('output/metadata/posts.json');
-        const data = await response.json();
-        postsData = data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-        filteredData = [...postsData];
-        renderPosts();
-        renderTodaysCharts();
-      } catch (err) {
-        console.error("Error loading posts JSON:", err);
-      }
+      const res = await fetch('output/metadata/posts.json');
+      const posts = await res.json();
+      return posts;
     }
 
-    function renderPosts() {
-      const container = document.getElementById('allCharts');
+    // ---------------- Render Posts ----------------
+    function renderPosts(posts) {
+      const container = document.getElementById('posts');
       container.innerHTML = '';
-
-      filteredData.forEach(post => {
+      posts.forEach(post => {
         const postDiv = document.createElement('div');
         postDiv.className = 'post';
-        postDiv.dataset.hashtags = post.hashtags?.join(' ') || '';
-        postDiv.dataset.date = new Date(post.created_at).toLocaleDateString();
+        postDiv.dataset.date = post.date;
+        postDiv.dataset.hashtags = post.hashtags.join(' ');
 
-        const imgEl = document.createElement('img');
-        imgEl.src = post.images[0];
-        imgEl.loading = 'lazy';
-        imgEl.alt = post.tweet_text || 'Chart image';
-        imgEl.onclick = () => {
-          trackClick(post);
-          window.open(post.url, '_blank');
-        };
+        // Post date
+        const dateDiv = document.createElement('div');
+        dateDiv.className = 'post-date';
+        dateDiv.textContent = post.date;
+        postDiv.appendChild(dateDiv);
 
-        const textDiv = document.createElement('div');
-        textDiv.textContent = post.tweet_text || '';
-
+        // Hashtags
         const hashtagsDiv = document.createElement('div');
         hashtagsDiv.className = 'hashtags';
-        (post.hashtags || []).forEach(tag => {
-          const tagLink = document.createElement('a');
-          tagLink.textContent = tag;
-          tagLink.onclick = () => filterByHashtag(tag);
-          hashtagsDiv.appendChild(tagLink);
+        post.hashtags.forEach(tag => {
+          const a = document.createElement('a');
+          a.href = "#";
+          a.textContent = tag;
+          a.addEventListener('click', e => {
+            e.preventDefault();
+            filterByHashtag(tag);
+          });
+          hashtagsDiv.appendChild(a);
+        });
+        postDiv.appendChild(hashtagsDiv);
+
+        // Auto-caption
+        const caption = document.createElement('div');
+        caption.textContent = post.text;
+        postDiv.appendChild(caption);
+
+        // Images
+        post.images.forEach(imgSrc => {
+          const img = document.createElement('img');
+          img.src = imgSrc;
+          img.loading = 'lazy';
+          postDiv.appendChild(img);
         });
 
-        const footerDiv = document.createElement('div');
-        footerDiv.className = 'post-footer';
-        const xLink = document.createElement('a');
-        xLink.href = post.url;
-        xLink.target = "_blank";
-        xLink.textContent = "X";
-        footerDiv.appendChild(xLink);
-        footerDiv.appendChild(document.createTextNode(postDiv.dataset.date));
-
-        postDiv.appendChild(imgEl);
-        postDiv.appendChild(textDiv);
-        postDiv.appendChild(hashtagsDiv);
-        postDiv.appendChild(footerDiv);
+        // Twitter/X link
+        if (post.url) {
+          const link = document.createElement('a');
+          link.href = post.url;
+          link.target = "_blank";
+          link.className = 'tweet-link';
+          link.textContent = 'X';
+          postDiv.appendChild(link);
+        }
 
         container.appendChild(postDiv);
       });
     }
 
-    function renderTodaysCharts() {
-      const container = document.getElementById('todaysCharts');
-      container.innerHTML = '';
+    // ---------------- Filtering ----------------
+    let allPosts = [];
+    function applyFilters() {
+      const searchInput = document.getElementById('search').value.toLowerCase();
+      let filtered = allPosts;
 
-      const today = new Date().toLocaleDateString();
-      const todaysPosts = postsData.filter(p => new Date(p.created_at).toLocaleDateString() === today);
+      if (searchInput) {
+        filtered = filtered.filter(post =>
+          post.hashtags.some(tag => tag.toLowerCase().includes(searchInput)) ||
+          post.date.includes(searchInput)
+        );
+      }
 
-      todaysPosts.forEach(post => {
-        const postDiv = document.createElement('div');
-        postDiv.className = 'post';
-        const imgEl = document.createElement('img');
-        imgEl.src = post.images[0];
-        imgEl.loading = 'lazy';
-        imgEl.alt = post.tweet_text || 'Chart image';
-        imgEl.onclick = () => {
-          trackClick(post);
-          window.open(post.url, '_blank');
-        };
-        postDiv.appendChild(imgEl);
-        container.appendChild(postDiv);
-      });
+      const latestOnly = document.getElementById('latestOnly').classList.contains('active');
+      if (latestOnly && filtered.length) {
+        filtered = [filtered[filtered.length - 1]];
+      }
+
+      const timeFilter = document.querySelector('button[data-filter].active');
+      if (timeFilter) {
+        const now = new Date();
+        filtered = filtered.filter(post => {
+          const postDate = new Date(post.date);
+          if (timeFilter.dataset.filter === 'week') {
+            const weekAgo = new Date(now);
+            weekAgo.setDate(now.getDate() - 7);
+            return postDate >= weekAgo;
+          } else if (timeFilter.dataset.filter === 'month') {
+            const monthAgo = new Date(now);
+            monthAgo.setMonth(now.getMonth() - 1);
+            return postDate >= monthAgo;
+          } else if (timeFilter.dataset.filter === 'today') {
+            return post.date === now.toISOString().split('T')[0];
+          }
+          return true;
+        });
+      }
+
+      renderPosts(filtered);
     }
 
     function filterByHashtag(tag) {
-      filteredData = postsData.filter(p => p.hashtags?.includes(tag));
-      renderPosts();
+      document.getElementById('search').value = tag;
+      applyFilters();
     }
 
-    function searchPosts() {
-      const query = document.getElementById('searchInput').value.toLowerCase();
-      filteredData = postsData.filter(p => {
-        const hashtags = (p.hashtags || []).join(' ').toLowerCase();
-        const date = new Date(p.created_at).toLocaleDateString();
-        return hashtags.includes(query) || date.includes(query);
+    // ---------------- Event Listeners ----------------
+    document.getElementById('search').addEventListener('input', applyFilters);
+
+    document.querySelectorAll('button[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('button[data-filter]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        if (btn.dataset.filter === 'week') btn.textContent = 'All Weeks';
+        if (btn.dataset.filter === 'month') btn.textContent = 'All Months';
+        if (btn.dataset.filter === 'today') btn.textContent = "Today's Charts";
+
+        applyFilters();
       });
-      renderPosts();
-    }
-
-    function clearSearch() {
-      document.getElementById('searchInput').value = '';
-      filteredData = [...postsData];
-      renderPosts();
-    }
-
-    function toggleWeekMonth(type) {
-      currentToggle = type;
-      const weeklyBtn = document.getElementById('weeklyBtn');
-      const monthlyBtn = document.getElementById('monthlyBtn');
-
-      if (type === 'week') {
-        weeklyBtn.classList.add('active');
-        monthlyBtn.classList.remove('active');
-        weeklyBtn.textContent = weeklyBtn.textContent === 'This Week' ? 'All Weeks' : 'This Week';
-      } else {
-        monthlyBtn.classList.add('active');
-        weeklyBtn.classList.remove('active');
-        monthlyBtn.textContent = monthlyBtn.textContent === 'This Month' ? 'All Months' : 'This Month';
-      }
-
-      // filter posts by week/month if needed
-      // (optional: implement real filtering by week/month)
-    }
-
-    function trackClick(post) {
-      console.log("Chart clicked:", post.url);
-      // Placeholder for analytics tracking (Plausible / GA)
-    }
-
-    // Light/Dark mode toggle (example)
-    document.addEventListener('keydown', e => {
-      if (e.key === 'd') document.body.classList.toggle('light');
     });
 
-    document.getElementById('searchInput').addEventListener('input', searchPosts);
+    document.getElementById('latestOnly').addEventListener('click', () => {
+      document.getElementById('latestOnly').classList.toggle('active');
+      applyFilters();
+    });
 
-    // Load posts automatically
-    loadPosts();
+    document.getElementById('lightModeToggle').addEventListener('click', () => {
+      document.body.classList.add('light-mode');
+    });
+
+    document.getElementById('darkModeToggle').addEventListener('click', () => {
+      document.body.classList.remove('light-mode');
+    });
+
+    // ---------------- Initialize ----------------
+    loadPosts().then(posts => {
+      allPosts = posts;
+      renderPosts(allPosts);
+    });
   </script>
 </body>
 </html>
