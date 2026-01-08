@@ -4,176 +4,357 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SPXVisuals</title>
+<!-- SPXVisuals color scheme -->
 <style>
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #222;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
   }
-  a { text-decoration: none; color: inherit; }
 
-  /* Header */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+
   header {
     position: sticky;
     top: 0;
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-    z-index: 100;
+    background: #004080;
+    color: white;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
   }
-  #searchBar {
+
+  header h1 {
+    margin: 0;
+  }
+
+  .controls {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .controls button {
+    cursor: pointer;
+    background: #f5f5f5;
+    color: #004080;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  #search-bar {
+    margin: 1rem;
+    width: calc(100% - 2rem);
     padding: 0.5rem;
     font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
   }
 
-  /* Masonry Layout */
-  main {
+  .posts {
     column-count: 2;
     column-gap: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem;
   }
+
   .post {
-    background-color: #fff;
+    background: white;
+    margin-bottom: 1rem;
     display: inline-block;
     width: 100%;
-    margin: 0 0 1rem;
-    padding: 0.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    break-inside: avoid;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
     position: relative;
   }
-  .post img { width: 100%; border-radius: 5px; margin-bottom: 0.5rem; }
-  .hashtags { color: #555; font-size: 0.9rem; margin-bottom: 0.5rem; }
-  .date { font-size: 0.8rem; color: #999; margin-bottom: 0.3rem; }
-  .tweet-link { position: absolute; top: 0.5rem; right: 0.5rem; width: 24px; height: 24px; }
 
-  /* Pinned */
-  .pinned { border: 2px solid #ff9900; }
-
-  /* Dark Mode */
-  body.dark-mode {
-    background-color: #121212;
-    color: #eee;
+  body.dark-mode .post {
+    background: #1e1e1e;
+    box-shadow: 0 2px 6px rgba(255,255,255,0.05);
   }
-  body.dark-mode .post { background-color: #1e1e1e; box-shadow: 0 2px 5px rgba(0,0,0,0.5); }
-  body.dark-mode .hashtags { color: #bbb; }
-  body.dark-mode .date { color: #999; }
-  body.dark-mode header { background-color: #000; }
 
-  @media (max-width: 900px) { main { column-count: 1; } }
+  .post:hover {
+    transform: scale(1.01);
+  }
+
+  .post img {
+    width: 100%;
+    display: block;
+  }
+
+  .caption {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .hashtags {
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+  body.dark-mode .hashtags {
+    color: #aaa;
+  }
+
+  .post a.x-link {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1DA1F2;
+    font-size: 1.2rem;
+  }
+
+  /* Today’s Chart badge */
+  .today-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #FF5733;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+  }
 
   footer {
     text-align: center;
+    padding: 1rem;
     font-size: 0.8rem;
-    color: #888;
-    padding: 1rem 0;
+    color: #555;
+  }
+
+  @media (max-width: 800px) {
+    .posts {
+      column-count: 1;
+    }
   }
 </style>
+
+<!-- Plausible Analytics -->
+<script async defer data-domain="yourusername.github.io" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
-
 <header>
-  SPXVisuals
-  <input type="text" id="searchBar" placeholder="Search by keyword or date">
+  <h1>SPXVisuals</h1>
+  <div class="controls">
+    <button class="dark-toggle">🌙 Dark Mode</button>
+    <button class="latest-toggle">Latest Only</button>
+    <button class="filter-week">This Week</button>
+    <button class="filter-month">This Month</button>
+  </div>
 </header>
 
-<main id="postsContainer">
-  <!-- Posts will be injected here -->
-</main>
+<input type="text" id="search-bar" placeholder="Search by keyword or date (MM/DD/YYYY)">
+
+<div class="posts" id="posts-container">
+  <!-- Posts will be dynamically inserted here -->
+</div>
 
 <footer>
   &copy; 2026 SPXVisuals
 </footer>
 
 <script>
-  async function loadPosts() {
-    try {
-      // Fetch your posts JSON (replace path as needed)
-      const response = await fetch("output/metadata/posts.json");
-      const posts = await response.json();
+// -------------------- Dark mode toggle --------------------
+document.querySelector('.dark-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  document.querySelector('.dark-toggle').textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+});
 
-      // Sort posts by date descending
-      posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+// -------------------- Posts JSON --------------------
+const posts = [
+  // { id, text, images: [], hashtags: [], url, date (YYYY-MM-DD) }
+];
 
-      renderPosts(posts);
-    } catch (err) {
-      console.error("Failed to load posts JSON:", err);
+// -------------------- Utility: filter by date --------------------
+function filterByDateRange(range) {
+  const now = new Date();
+  return posts.filter(post => {
+    const postDate = new Date(post.date);
+    if(range === 'week'){
+      const weekAgo = new Date();
+      weekAgo.setDate(now.getDate() - 7);
+      return postDate >= weekAgo && postDate <= now;
+    } else if(range === 'month'){
+      const monthAgo = new Date();
+      monthAgo.setMonth(now.getMonth() - 1);
+      return postDate >= monthAgo && postDate <= now;
     }
-  }
+    return true;
+  });
+}
 
-  const container = document.getElementById("postsContainer");
+// -------------------- Render posts --------------------
+let latestOnly = false;
 
-  function renderPosts(posts) {
-    container.innerHTML = "";
+function renderPosts(filterKeyword = '') {
+  const container = document.getElementById('posts-container');
+  container.innerHTML = '';
+  const todayStr = new Date().toISOString().split('T')[0];
 
-    // Move pinned posts to the top
-    const pinned = posts.filter(p => p.pinned);
-    const regular = posts.filter(p => !p.pinned);
-
-    [...pinned, ...regular].forEach(post => {
-      const div = document.createElement("div");
-      div.className = "post" + (post.pinned ? " pinned" : "");
-
-      const dateEl = document.createElement("div");
-      dateEl.className = "date";
-      dateEl.textContent = new Date(post.date).toLocaleDateString();
-      div.appendChild(dateEl);
-
-      const textEl = document.createElement("div");
-      textEl.className = "hashtags";
-      textEl.textContent = post.text;
-      div.appendChild(textEl);
-
-      if (post.images) {
-        post.images.forEach(imgSrc => {
-          const img = document.createElement("img");
-          img.src = imgSrc;
-          div.appendChild(img);
-        });
-      }
-
-      if (post.x_link) {
-        const a = document.createElement("a");
-        a.href = post.x_link;
-        a.target = "_blank";
-        a.innerHTML = '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" class="tweet-link" alt="Twitter">';
-        div.appendChild(a);
-      }
-
-      container.appendChild(div);
-    });
-  }
-
-  // Search functionality
-  const searchBar = document.getElementById("searchBar");
-  searchBar.addEventListener("input", () => {
-    const query = searchBar.value.toLowerCase().trim();
-
-    fetch("output/metadata/posts.json")
-      .then(res => res.json())
-      .then(posts => {
-        const filtered = posts.filter(p => {
-          const dateStr = new Date(p.date).toLocaleDateString();
-          return p.text.toLowerCase().includes(query) || dateStr.includes(query);
-        });
-        renderPosts(filtered);
-      });
+  // Filter based on search
+  let filtered = posts.filter(post => {
+    if(!filterKeyword) return true;
+    const keyword = filterKeyword.toLowerCase();
+    const inHashtags = post.hashtags.some(tag => tag.toLowerCase().includes(keyword));
+    const inDate = post.date.includes(keyword);
+    return inHashtags || inDate;
   });
 
-  // Load posts on page load
-  loadPosts();
-</script>
+  // Filter for latest only if enabled
+  if(latestOnly){
+    const latestDate = filtered.reduce((max, p) => p.date > max ? p.date : max, '0000-00-00');
+    filtered = filtered.filter(p => p.date === latestDate);
+  }
 
+  // Separate Today’s Charts
+  const todayPosts = filtered.filter(p => p.date === todayStr);
+  const otherPosts = filtered.filter(p => p.date !== todayStr);
+
+  // Sort descending by date
+  todayPosts.sort((a,b) => new Date(b.date) - new Date(a.date));
+  otherPosts.sort((a,b) => new Date(b.date) - new Date(a.date));
+
+  const allPosts = [...todayPosts, ...otherPosts];
+
+  allPosts.forEach(post => {
+    const postDiv = document.createElement('div');
+    postDiv.className = 'post';
+    postDiv.dataset.id = post.id;
+
+    // Click tracking via Plausible
+    postDiv.addEventListener('click', () => {
+      plausible('ChartClick', { props: { postId: post.id } });
+    });
+
+    // Image with lazy loading
+    if(post.images.length > 0){
+      const img = document.createElement('img');
+      img.src = post.images[0];
+      img.loading = 'lazy';
+      postDiv.appendChild(img);
+    }
+
+    // Today’s badge
+    if(post.date === todayStr){
+      const badge = document.createElement('div');
+      badge.className = 'today-badge';
+      badge.textContent = "Today's Charts";
+      postDiv.appendChild(badge);
+    }
+
+    // Caption
+    const caption = document.createElement('div');
+    caption.className = 'caption';
+    caption.textContent = post.text;
+    postDiv.appendChild(caption);
+
+    // Hashtags
+    const hashtags = document.createElement('div');
+    hashtags.className = 'hashtags';
+    hashtags.textContent = post.hashtags.join(' ');
+    postDiv.appendChild(hashtags);
+
+    // X link
+    const xLink = document.createElement('a');
+    xLink.href = post.url;
+    xLink.target = '_blank';
+    xLink.className = 'x-link';
+    xLink.textContent = 'X';
+    postDiv.appendChild(xLink);
+
+    container.appendChild(postDiv);
+  });
+}
+
+// -------------------- Search --------------------
+document.getElementById('search-bar').addEventListener('input', e => {
+  renderPosts(e.target.value);
+});
+
+// -------------------- Latest Only toggle --------------------
+document.querySelector('.latest-toggle').addEventListener('click', () => {
+  latestOnly = !latestOnly;
+  document.querySelector('.latest-toggle').textContent = latestOnly ? 'All Dates' : 'Latest Only';
+  renderPosts(document.getElementById('search-bar').value);
+});
+
+// -------------------- Week/Month filters --------------------
+document.querySelector('.filter-week').addEventListener('click', () => {
+  const weekPosts = filterByDateRange('week');
+  renderPostsFiltered(weekPosts);
+});
+document.querySelector('.filter-month').addEventListener('click', () => {
+  const monthPosts = filterByDateRange('month');
+  renderPostsFiltered(monthPosts);
+});
+
+function renderPostsFiltered(filteredPosts){
+  const container = document.getElementById('posts-container');
+  container.innerHTML = '';
+
+  filteredPosts.sort((a,b) => new Date(b.date) - new Date(a.date));
+
+  filteredPosts.forEach(post => {
+    const postDiv = document.createElement('div');
+    postDiv.className = 'post';
+    postDiv.dataset.id = post.id;
+
+    postDiv.addEventListener('click', () => {
+      plausible('ChartClick', { props: { postId: post.id } });
+    });
+
+    if(post.images.length > 0){
+      const img = document.createElement('img');
+      img.src = post.images[0];
+      img.loading = 'lazy';
+      postDiv.appendChild(img);
+    }
+
+    if(post.date === new Date().toISOString().split('T')[0]){
+      const badge = document.createElement('div');
+      badge.className = 'today-badge';
+      badge.textContent = "Today's Charts";
+      postDiv.appendChild(badge);
+    }
+
+    const caption = document.createElement('div');
+    caption.className = 'caption';
+    caption.textContent = post.text;
+    postDiv.appendChild(caption);
+
+    const hashtags = document.createElement('div');
+    hashtags.className = 'hashtags';
+    hashtags.textContent = post.hashtags.join(' ');
+    postDiv.appendChild(hashtags);
+
+    const xLink = document.createElement('a');
+    xLink.href = post.url;
+    xLink.target = '_blank';
+    xLink.className = 'x-link';
+    xLink.textContent = 'X';
+    postDiv.appendChild(xLink);
+
+    container.appendChild(postDiv);
+  });
+}
+
+// -------------------- Initial render --------------------
+renderPosts();
+plausible('pageview');
+</script>
 </body>
 </html>
