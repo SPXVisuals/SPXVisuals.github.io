@@ -15,7 +15,7 @@
     }
 
     a {
-      color: #3b82f6; /* blue for clickable hashtags and links */
+      color: #3b82f6;
       text-decoration: none;
     }
 
@@ -36,7 +36,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: #3b82f6; /* blue sticky bar */
+      background: #3b82f6;
       color: #fff;
       padding: 12px 24px;
       display: flex;
@@ -159,6 +159,14 @@
       color: #94a3b8;
       margin-top: 48px;
     }
+
+    /* ---------------- Responsive Layout ---------------- */
+    @media (max-width: 768px) {
+      main {
+        column-count: 1;
+        column-gap: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -172,12 +180,10 @@
     <div class="controls">
       <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
 
-      <button data-filter="today">Today's Charts</button>
-      <button data-filter="week">This Week</button>
-      <button data-filter="month">This Month</button>
-      <button id="latestOnly">Latest Only</button>
-      <button id="lightModeToggle">Light Mode</button>
-      <button id="darkModeToggle">Dark Mode</button>
+      <button id="todayFilter" data-filter="today">Today's Charts</button>
+      <button id="weekFilter" data-filter="week">This Week</button>
+      <button id="monthFilter" data-filter="month">This Month</button>
+      <button id="modeToggle">Light Mode</button>
     </div>
   </header>
 
@@ -207,13 +213,11 @@
         postDiv.dataset.date = post.date;
         postDiv.dataset.hashtags = post.hashtags.join(' ');
 
-        // Post date
         const dateDiv = document.createElement('div');
         dateDiv.className = 'post-date';
         dateDiv.textContent = post.date;
         postDiv.appendChild(dateDiv);
 
-        // Hashtags
         const hashtagsDiv = document.createElement('div');
         hashtagsDiv.className = 'hashtags';
         post.hashtags.forEach(tag => {
@@ -228,12 +232,10 @@
         });
         postDiv.appendChild(hashtagsDiv);
 
-        // Auto-caption
         const caption = document.createElement('div');
         caption.textContent = post.text;
         postDiv.appendChild(caption);
 
-        // Images
         post.images.forEach(imgSrc => {
           const img = document.createElement('img');
           img.src = imgSrc;
@@ -241,7 +243,6 @@
           postDiv.appendChild(img);
         });
 
-        // Twitter/X link
         if (post.url) {
           const link = document.createElement('a');
           link.href = post.url;
@@ -257,6 +258,12 @@
 
     // ---------------- Filtering ----------------
     let allPosts = [];
+    const filters = {
+      today: false,
+      week: false,
+      month: false
+    };
+
     function applyFilters() {
       const searchInput = document.getElementById('search').value.toLowerCase();
       let filtered = allPosts;
@@ -268,29 +275,18 @@
         );
       }
 
-      const latestOnly = document.getElementById('latestOnly').classList.contains('active');
-      if (latestOnly && filtered.length) {
-        filtered = [filtered[filtered.length - 1]];
-      }
+      const now = new Date();
 
-      const timeFilter = document.querySelector('button[data-filter].active');
-      if (timeFilter) {
-        const now = new Date();
-        filtered = filtered.filter(post => {
-          const postDate = new Date(post.date);
-          if (timeFilter.dataset.filter === 'week') {
-            const weekAgo = new Date(now);
-            weekAgo.setDate(now.getDate() - 7);
-            return postDate >= weekAgo;
-          } else if (timeFilter.dataset.filter === 'month') {
-            const monthAgo = new Date(now);
-            monthAgo.setMonth(now.getMonth() - 1);
-            return postDate >= monthAgo;
-          } else if (timeFilter.dataset.filter === 'today') {
-            return post.date === now.toISOString().split('T')[0];
-          }
-          return true;
-        });
+      if (filters.today) {
+        filtered = filtered.filter(post => post.date === now.toISOString().split('T')[0]);
+      } else if (filters.week) {
+        const weekAgo = new Date(now);
+        weekAgo.setDate(now.getDate() - 7);
+        filtered = filtered.filter(post => new Date(post.date) >= weekAgo);
+      } else if (filters.month) {
+        const monthAgo = new Date(now);
+        monthAgo.setMonth(now.getMonth() - 1);
+        filtered = filtered.filter(post => new Date(post.date) >= monthAgo);
       }
 
       renderPosts(filtered);
@@ -304,30 +300,56 @@
     // ---------------- Event Listeners ----------------
     document.getElementById('search').addEventListener('input', applyFilters);
 
-    document.querySelectorAll('button[data-filter]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('button[data-filter]').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+    const todayBtn = document.getElementById('todayFilter');
+    const weekBtn = document.getElementById('weekFilter');
+    const monthBtn = document.getElementById('monthFilter');
 
-        if (btn.dataset.filter === 'week') btn.textContent = 'All Weeks';
-        if (btn.dataset.filter === 'month') btn.textContent = 'All Months';
-        if (btn.dataset.filter === 'today') btn.textContent = "Today's Charts";
+    todayBtn.addEventListener('click', () => {
+      filters.today = !filters.today;
+      todayBtn.textContent = filters.today ? "All Charts" : "Today's Charts";
 
-        applyFilters();
-      });
-    });
+      if (filters.today) {
+        filters.week = false;
+        filters.month = false;
+        weekBtn.textContent = "This Week";
+        monthBtn.textContent = "This Month";
+      }
 
-    document.getElementById('latestOnly').addEventListener('click', () => {
-      document.getElementById('latestOnly').classList.toggle('active');
       applyFilters();
     });
 
-    document.getElementById('lightModeToggle').addEventListener('click', () => {
-      document.body.classList.add('light-mode');
+    weekBtn.addEventListener('click', () => {
+      filters.week = !filters.week;
+      weekBtn.textContent = filters.week ? "All Weeks" : "This Week";
+
+      if (filters.week) {
+        filters.today = false;
+        filters.month = false;
+        todayBtn.textContent = "Today's Charts";
+        monthBtn.textContent = "This Month";
+      }
+
+      applyFilters();
     });
 
-    document.getElementById('darkModeToggle').addEventListener('click', () => {
-      document.body.classList.remove('light-mode');
+    monthBtn.addEventListener('click', () => {
+      filters.month = !filters.month;
+      monthBtn.textContent = filters.month ? "All Months" : "This Month";
+
+      if (filters.month) {
+        filters.today = false;
+        filters.week = false;
+        todayBtn.textContent = "Today's Charts";
+        weekBtn.textContent = "This Week";
+      }
+
+      applyFilters();
+    });
+
+    const modeBtn = document.getElementById('modeToggle');
+    modeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      modeBtn.textContent = document.body.classList.contains('light-mode') ? "Dark Mode" : "Light Mode";
     });
 
     // ---------------- Initialize ----------------
