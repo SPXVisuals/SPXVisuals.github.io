@@ -1,0 +1,1040 @@
+[2026-01-08 20:10:54] Starting run_today() for Thursday
+[2026-01-08 20:10:54] Loading holdings from sandpcomponents.csv
+[2026-01-08 20:10:54] Loaded 501 tickers
+[2026-01-08 20:10:54] Fetching data for MMM
+[2026-01-08 20:10:55] Successfully fetched data for MMM
+[2026-01-08 20:10:55] Fetching data for AOS
+[2026-01-08 20:10:56] Successfully fetched data for AOS
+[2026-01-08 20:10:56] Fetching data for ABT
+[2026-01-08 20:10:56] Successfully fetched data for ABT
+[2026-01-08 20:10:56] Fetching data for ABBV
+[2026-01-08 20:10:56] Successfully fetched data for ABBV
+[2026-01-08 20:10:56] Fetching data for ACN
+[2026-01-08 20:10:57] Successfully fetched data for ACN
+[2026-01-08 20:10:57] Fetching data for ADBE
+[2026-01-08 20:10:57] Successfully fetched data for ADBE
+[2026-01-08 20:10:57] Fetching data for AMD
+[2026-01-08 20:10:57] Successfully fetched data for AMD
+[2026-01-08 20:10:57] Fetching data for AES
+[2026-01-08 20:10:58] Successfully fetched data for AES
+[2026-01-08 20:10:58] Fetching data for AFL
+[2026-01-08 20:10:58] Successfully fetched data for AFL
+[2026-01-08 20:10:58] Fetching data for A
+[2026-01-08 20:10:59] Successfully fetched data for A
+[2026-01-08 20:10:59] Fetching data for APD
+[2026-01-08 20:10:59] Successfully fetched data for APD
+[2026-01-08 20:10:59] Fetching data for ABNB
+[2026-01-08 20:11:00] Successfully fetched data for ABNB
+[2026-01-08 20:11:00] Fetching data for AKAM
+[2026-01-08 20:11:00] Successfully fetched data for AKAM
+[2026-01-08 20:11:00] Fetching data for ALB
+[2026-01-08 20:11:01] Successfully fetched data for ALB
+[2026-01-08 20:11:01] Fetching data for ARE
+[2026-01-08 20:11:01] Successfully fetched data for ARE
+[2026-01-08 20:11:01] Fetching data for ALGN
+[2026-01-08 20:11:01] Successfully fetched data for ALGN
+[2026-01-08 20:11:01] Fetching data for ALLE
+[2026-01-08 20:11:02] Successfully fetched data for ALLE
+[2026-01-08 20:11:02] Fetching data for LNT
+[2026-01-08 20:11:02] Successfully fetched data for LNT
+[2026-01-08 20:11:02] Fetching data for ALL
+[2026-01-08 20:11:03] Successfully fetched data for ALL
+[2026-01-08 20:11:03] Fetching data for GOOGL
+[2026-01-08 20:11:03] Successfully fetched data for GOOGL
+[2026-01-08 20:11:03] Fetching data for GOOG
+[2026-01-08 20:11:03] Successfully fetched data for GOOG
+[2026-01-08 20:11:03] Fetching data for MO
+[2026-01-08 20:11:04] Successfully fetched data for MO
+[2026-01-08 20:11:04] Fetching data for AMZN
+[2026-01-08 20:11:04] Successfully fetched data for AMZN
+[2026-01-08 20:11:04] Fetching data for AMCR
+[2026-01-08 20:11:05] Successfully fetched data for AMCR
+[2026-01-08 20:11:05] Fetching data for AEE
+[2026-01-08 20:11:05] Successfully fetched data for AEE
+[2026-01-08 20:11:05] Fetching data for AEP
+[2026-01-08 20:11:06] Successfully fetched data for AEP
+[2026-01-08 20:11:06] Fetching data for AXP
+[2026-01-08 20:11:06] Successfully fetched data for AXP
+[2026-01-08 20:11:06] Fetching data for AIG
+[2026-01-08 20:11:07] Successfully fetched data for AIG
+[2026-01-08 20:11:07] Fetching data for AMT
+[2026-01-08 20:11:07] Successfully fetched data for AMT
+[2026-01-08 20:11:07] Fetching data for AWK
+[2026-01-08 20:11:08] Successfully fetched data for AWK
+[2026-01-08 20:11:08] Fetching data for AMP
+[2026-01-08 20:11:08] Successfully fetched data for AMP
+[2026-01-08 20:11:08] Fetching data for AME
+[2026-01-08 20:11:09] Successfully fetched data for AME
+[2026-01-08 20:11:09] Fetching data for AMGN
+[2026-01-08 20:11:09] Successfully fetched data for AMGN
+[2026-01-08 20:11:09] Fetching data for APH
+[2026-01-08 20:11:09] Successfully fetched data for APH
+[2026-01-08 20:11:09] Fetching data for ADI
+[2026-01-08 20:11:10] Successfully fetched data for ADI
+[2026-01-08 20:11:10] Fetching data for AON
+[2026-01-08 20:11:10] Successfully fetched data for AON
+[2026-01-08 20:11:10] Fetching data for APA
+[2026-01-08 20:11:11] Successfully fetched data for APA
+[2026-01-08 20:11:11] Fetching data for APO
+[2026-01-08 20:11:11] Successfully fetched data for APO
+[2026-01-08 20:11:11] Fetching data for AAPL
+[2026-01-08 20:11:12] Successfully fetched data for AAPL
+[2026-01-08 20:11:12] Fetching data for AMAT
+[2026-01-08 20:11:12] Successfully fetched data for AMAT
+[2026-01-08 20:11:12] Fetching data for APP
+[2026-01-08 20:11:12] Successfully fetched data for APP
+[2026-01-08 20:11:12] Fetching data for APTV
+[2026-01-08 20:11:13] Successfully fetched data for APTV
+[2026-01-08 20:11:13] Fetching data for ACGL
+[2026-01-08 20:11:13] Successfully fetched data for ACGL
+[2026-01-08 20:11:13] Fetching data for ADM
+[2026-01-08 20:11:14] Successfully fetched data for ADM
+[2026-01-08 20:11:14] Fetching data for ARES
+[2026-01-08 20:11:14] Successfully fetched data for ARES
+[2026-01-08 20:11:14] Fetching data for ANET
+[2026-01-08 20:11:14] Successfully fetched data for ANET
+[2026-01-08 20:11:14] Fetching data for AJG
+[2026-01-08 20:11:15] Successfully fetched data for AJG
+[2026-01-08 20:11:15] Fetching data for AIZ
+[2026-01-08 20:11:15] Successfully fetched data for AIZ
+[2026-01-08 20:11:15] Fetching data for T
+[2026-01-08 20:11:16] Successfully fetched data for T
+[2026-01-08 20:11:16] Fetching data for ATO
+[2026-01-08 20:11:16] Successfully fetched data for ATO
+[2026-01-08 20:11:16] Fetching data for ADSK
+[2026-01-08 20:11:16] Successfully fetched data for ADSK
+[2026-01-08 20:11:16] Fetching data for ADP
+[2026-01-08 20:11:17] Successfully fetched data for ADP
+[2026-01-08 20:11:17] Fetching data for AZO
+[2026-01-08 20:11:17] Successfully fetched data for AZO
+[2026-01-08 20:11:17] Fetching data for AVB
+[2026-01-08 20:11:18] Successfully fetched data for AVB
+[2026-01-08 20:11:18] Fetching data for AVY
+[2026-01-08 20:11:18] Successfully fetched data for AVY
+[2026-01-08 20:11:18] Fetching data for AXON
+[2026-01-08 20:11:18] Successfully fetched data for AXON
+[2026-01-08 20:11:18] Fetching data for BKR
+[2026-01-08 20:11:19] Successfully fetched data for BKR
+[2026-01-08 20:11:19] Fetching data for BALL
+[2026-01-08 20:11:19] Successfully fetched data for BALL
+[2026-01-08 20:11:19] Fetching data for BAC
+[2026-01-08 20:11:20] Successfully fetched data for BAC
+[2026-01-08 20:11:20] Fetching data for BAX
+[2026-01-08 20:11:20] Successfully fetched data for BAX
+[2026-01-08 20:11:20] Fetching data for BDX
+[2026-01-08 20:11:21] Successfully fetched data for BDX
+[2026-01-08 20:11:21] Fetching data for BRK-B
+[2026-01-08 20:11:21] Successfully fetched data for BRK-B
+[2026-01-08 20:11:21] Fetching data for BBY
+[2026-01-08 20:11:22] Successfully fetched data for BBY
+[2026-01-08 20:11:22] Fetching data for TECH
+[2026-01-08 20:11:22] Successfully fetched data for TECH
+[2026-01-08 20:11:22] Fetching data for BIIB
+[2026-01-08 20:11:22] Successfully fetched data for BIIB
+[2026-01-08 20:11:22] Fetching data for BLK
+[2026-01-08 20:11:23] Successfully fetched data for BLK
+[2026-01-08 20:11:23] Fetching data for BX
+[2026-01-08 20:11:23] Successfully fetched data for BX
+[2026-01-08 20:11:23] Fetching data for XYZ
+[2026-01-08 20:11:24] Successfully fetched data for XYZ
+[2026-01-08 20:11:24] Fetching data for BK
+[2026-01-08 20:11:24] Successfully fetched data for BK
+[2026-01-08 20:11:24] Fetching data for BA
+[2026-01-08 20:11:24] Successfully fetched data for BA
+[2026-01-08 20:11:24] Fetching data for BKNG
+[2026-01-08 20:11:25] Successfully fetched data for BKNG
+[2026-01-08 20:11:25] Fetching data for BSX
+[2026-01-08 20:11:25] Successfully fetched data for BSX
+[2026-01-08 20:11:25] Fetching data for BMY
+[2026-01-08 20:11:26] Successfully fetched data for BMY
+[2026-01-08 20:11:26] Fetching data for AVGO
+[2026-01-08 20:11:26] Successfully fetched data for AVGO
+[2026-01-08 20:11:26] Fetching data for BR
+[2026-01-08 20:11:26] Successfully fetched data for BR
+[2026-01-08 20:11:26] Fetching data for BRO
+[2026-01-08 20:11:27] Successfully fetched data for BRO
+[2026-01-08 20:11:27] Fetching data for BF-B
+[2026-01-08 20:11:27] Successfully fetched data for BF-B
+[2026-01-08 20:11:27] Fetching data for BLDR
+[2026-01-08 20:11:28] Successfully fetched data for BLDR
+[2026-01-08 20:11:28] Fetching data for BG
+[2026-01-08 20:11:28] Successfully fetched data for BG
+[2026-01-08 20:11:28] Fetching data for BXP
+[2026-01-08 20:11:29] Successfully fetched data for BXP
+[2026-01-08 20:11:29] Fetching data for CHRW
+[2026-01-08 20:11:29] Successfully fetched data for CHRW
+[2026-01-08 20:11:29] Fetching data for CDNS
+[2026-01-08 20:11:29] Successfully fetched data for CDNS
+[2026-01-08 20:11:29] Fetching data for CPT
+[2026-01-08 20:11:30] Successfully fetched data for CPT
+[2026-01-08 20:11:30] Fetching data for CPB
+[2026-01-08 20:11:30] Successfully fetched data for CPB
+[2026-01-08 20:11:30] Fetching data for COF
+[2026-01-08 20:11:31] Successfully fetched data for COF
+[2026-01-08 20:11:31] Fetching data for CAH
+[2026-01-08 20:11:31] Successfully fetched data for CAH
+[2026-01-08 20:11:31] Fetching data for CCL
+[2026-01-08 20:11:31] Successfully fetched data for CCL
+[2026-01-08 20:11:31] Fetching data for CARR
+[2026-01-08 20:11:32] Successfully fetched data for CARR
+[2026-01-08 20:11:32] Fetching data for CAT
+[2026-01-08 20:11:32] Successfully fetched data for CAT
+[2026-01-08 20:11:32] Fetching data for CBOE
+[2026-01-08 20:11:32] Successfully fetched data for CBOE
+[2026-01-08 20:11:32] Fetching data for CBRE
+[2026-01-08 20:11:33] Successfully fetched data for CBRE
+[2026-01-08 20:11:33] Fetching data for CDW
+[2026-01-08 20:11:33] Successfully fetched data for CDW
+[2026-01-08 20:11:33] Fetching data for COR
+[2026-01-08 20:11:34] Successfully fetched data for COR
+[2026-01-08 20:11:34] Fetching data for CNC
+[2026-01-08 20:11:34] Successfully fetched data for CNC
+[2026-01-08 20:11:34] Fetching data for CNP
+[2026-01-08 20:11:34] Successfully fetched data for CNP
+[2026-01-08 20:11:34] Fetching data for CF
+[2026-01-08 20:11:35] Successfully fetched data for CF
+[2026-01-08 20:11:35] Fetching data for CRL
+[2026-01-08 20:11:35] Successfully fetched data for CRL
+[2026-01-08 20:11:35] Fetching data for SCHW
+[2026-01-08 20:11:36] Successfully fetched data for SCHW
+[2026-01-08 20:11:36] Fetching data for CHTR
+[2026-01-08 20:11:36] Successfully fetched data for CHTR
+[2026-01-08 20:11:36] Fetching data for CVX
+[2026-01-08 20:11:37] Successfully fetched data for CVX
+[2026-01-08 20:11:37] Fetching data for CMG
+[2026-01-08 20:11:37] Successfully fetched data for CMG
+[2026-01-08 20:11:37] Fetching data for CB
+[2026-01-08 20:11:38] Successfully fetched data for CB
+[2026-01-08 20:11:38] Fetching data for CHD
+[2026-01-08 20:11:38] Successfully fetched data for CHD
+[2026-01-08 20:11:38] Fetching data for CI
+[2026-01-08 20:11:38] Successfully fetched data for CI
+[2026-01-08 20:11:38] Fetching data for CINF
+[2026-01-08 20:11:39] Successfully fetched data for CINF
+[2026-01-08 20:11:39] Fetching data for CTAS
+[2026-01-08 20:11:39] Successfully fetched data for CTAS
+[2026-01-08 20:11:39] Fetching data for CSCO
+[2026-01-08 20:11:40] Successfully fetched data for CSCO
+[2026-01-08 20:11:40] Fetching data for C
+[2026-01-08 20:11:40] Successfully fetched data for C
+[2026-01-08 20:11:40] Fetching data for CFG
+[2026-01-08 20:11:41] Successfully fetched data for CFG
+[2026-01-08 20:11:41] Fetching data for CLX
+[2026-01-08 20:11:41] Successfully fetched data for CLX
+[2026-01-08 20:11:41] Fetching data for CME
+[2026-01-08 20:11:41] Successfully fetched data for CME
+[2026-01-08 20:11:41] Fetching data for CMS
+[2026-01-08 20:11:42] Successfully fetched data for CMS
+[2026-01-08 20:11:42] Fetching data for KO
+[2026-01-08 20:11:42] Successfully fetched data for KO
+[2026-01-08 20:11:42] Fetching data for CTSH
+[2026-01-08 20:11:43] Successfully fetched data for CTSH
+[2026-01-08 20:11:43] Fetching data for COIN
+[2026-01-08 20:11:43] Successfully fetched data for COIN
+[2026-01-08 20:11:43] Fetching data for CL
+[2026-01-08 20:11:44] Successfully fetched data for CL
+[2026-01-08 20:11:44] Fetching data for CMCSA
+[2026-01-08 20:11:44] Successfully fetched data for CMCSA
+[2026-01-08 20:11:44] Fetching data for CAG
+[2026-01-08 20:11:45] Successfully fetched data for CAG
+[2026-01-08 20:11:45] Fetching data for COP
+[2026-01-08 20:11:45] Successfully fetched data for COP
+[2026-01-08 20:11:45] Fetching data for ED
+[2026-01-08 20:11:46] Successfully fetched data for ED
+[2026-01-08 20:11:46] Fetching data for STZ
+[2026-01-08 20:11:46] Successfully fetched data for STZ
+[2026-01-08 20:11:46] Fetching data for CEG
+[2026-01-08 20:11:47] Successfully fetched data for CEG
+[2026-01-08 20:11:47] Fetching data for COO
+[2026-01-08 20:11:47] Successfully fetched data for COO
+[2026-01-08 20:11:47] Fetching data for CPRT
+[2026-01-08 20:11:47] Successfully fetched data for CPRT
+[2026-01-08 20:11:47] Fetching data for GLW
+[2026-01-08 20:11:48] Successfully fetched data for GLW
+[2026-01-08 20:11:48] Fetching data for CPAY
+[2026-01-08 20:11:48] Successfully fetched data for CPAY
+[2026-01-08 20:11:48] Fetching data for CTVA
+[2026-01-08 20:11:48] Successfully fetched data for CTVA
+[2026-01-08 20:11:48] Fetching data for CSGP
+[2026-01-08 20:11:49] Successfully fetched data for CSGP
+[2026-01-08 20:11:49] Fetching data for COST
+[2026-01-08 20:11:49] Successfully fetched data for COST
+[2026-01-08 20:11:49] Fetching data for CTRA
+[2026-01-08 20:11:50] Successfully fetched data for CTRA
+[2026-01-08 20:11:50] Fetching data for CRWD
+[2026-01-08 20:11:50] Successfully fetched data for CRWD
+[2026-01-08 20:11:50] Fetching data for CCI
+[2026-01-08 20:11:50] Successfully fetched data for CCI
+[2026-01-08 20:11:50] Fetching data for CSX
+[2026-01-08 20:11:51] Successfully fetched data for CSX
+[2026-01-08 20:11:51] Fetching data for CMI
+[2026-01-08 20:11:52] Successfully fetched data for CMI
+[2026-01-08 20:11:52] Fetching data for CVS
+[2026-01-08 20:11:53] Successfully fetched data for CVS
+[2026-01-08 20:11:53] Fetching data for DHR
+[2026-01-08 20:11:53] Successfully fetched data for DHR
+[2026-01-08 20:11:53] Fetching data for DRI
+[2026-01-08 20:11:54] Successfully fetched data for DRI
+[2026-01-08 20:11:54] Fetching data for DDOG
+[2026-01-08 20:11:54] Successfully fetched data for DDOG
+[2026-01-08 20:11:54] Fetching data for DVA
+[2026-01-08 20:11:54] Successfully fetched data for DVA
+[2026-01-08 20:11:54] Fetching data for DAY
+[2026-01-08 20:11:55] Successfully fetched data for DAY
+[2026-01-08 20:11:55] Fetching data for DECK
+[2026-01-08 20:11:55] Successfully fetched data for DECK
+[2026-01-08 20:11:55] Fetching data for DE
+[2026-01-08 20:11:56] Successfully fetched data for DE
+[2026-01-08 20:11:56] Fetching data for DELL
+[2026-01-08 20:11:56] Successfully fetched data for DELL
+[2026-01-08 20:11:56] Fetching data for DAL
+[2026-01-08 20:11:57] Successfully fetched data for DAL
+[2026-01-08 20:11:57] Fetching data for DVN
+[2026-01-08 20:11:57] Successfully fetched data for DVN
+[2026-01-08 20:11:57] Fetching data for DXCM
+[2026-01-08 20:11:57] Successfully fetched data for DXCM
+[2026-01-08 20:11:57] Fetching data for FANG
+[2026-01-08 20:11:58] Successfully fetched data for FANG
+[2026-01-08 20:11:58] Fetching data for DLR
+[2026-01-08 20:11:58] Successfully fetched data for DLR
+[2026-01-08 20:11:58] Fetching data for DG
+[2026-01-08 20:11:58] Successfully fetched data for DG
+[2026-01-08 20:11:58] Fetching data for DLTR
+[2026-01-08 20:11:59] Successfully fetched data for DLTR
+[2026-01-08 20:11:59] Fetching data for D
+[2026-01-08 20:11:59] Successfully fetched data for D
+[2026-01-08 20:11:59] Fetching data for DPZ
+[2026-01-08 20:12:00] Successfully fetched data for DPZ
+[2026-01-08 20:12:00] Fetching data for DASH
+[2026-01-08 20:12:00] Successfully fetched data for DASH
+[2026-01-08 20:12:00] Fetching data for DOV
+[2026-01-08 20:12:00] Successfully fetched data for DOV
+[2026-01-08 20:12:00] Fetching data for DOW
+[2026-01-08 20:12:01] Successfully fetched data for DOW
+[2026-01-08 20:12:01] Fetching data for DHI
+[2026-01-08 20:12:01] Successfully fetched data for DHI
+[2026-01-08 20:12:01] Fetching data for DTE
+[2026-01-08 20:12:02] Successfully fetched data for DTE
+[2026-01-08 20:12:02] Fetching data for DUK
+[2026-01-08 20:12:02] Successfully fetched data for DUK
+[2026-01-08 20:12:02] Fetching data for DD
+[2026-01-08 20:12:03] Successfully fetched data for DD
+[2026-01-08 20:12:03] Fetching data for ETN
+[2026-01-08 20:12:03] Successfully fetched data for ETN
+[2026-01-08 20:12:03] Fetching data for EBAY
+[2026-01-08 20:12:04] Successfully fetched data for EBAY
+[2026-01-08 20:12:04] Fetching data for ECL
+[2026-01-08 20:12:04] Successfully fetched data for ECL
+[2026-01-08 20:12:04] Fetching data for EIX
+[2026-01-08 20:12:05] Successfully fetched data for EIX
+[2026-01-08 20:12:05] Fetching data for EW
+[2026-01-08 20:12:05] Successfully fetched data for EW
+[2026-01-08 20:12:05] Fetching data for EA
+[2026-01-08 20:12:05] Successfully fetched data for EA
+[2026-01-08 20:12:05] Fetching data for ELV
+[2026-01-08 20:12:06] Successfully fetched data for ELV
+[2026-01-08 20:12:06] Fetching data for EME
+[2026-01-08 20:12:06] Successfully fetched data for EME
+[2026-01-08 20:12:06] Fetching data for EMR
+[2026-01-08 20:12:07] Successfully fetched data for EMR
+[2026-01-08 20:12:07] Fetching data for ETR
+[2026-01-08 20:12:07] Successfully fetched data for ETR
+[2026-01-08 20:12:07] Fetching data for EOG
+[2026-01-08 20:12:08] Successfully fetched data for EOG
+[2026-01-08 20:12:08] Fetching data for EPAM
+[2026-01-08 20:12:08] Successfully fetched data for EPAM
+[2026-01-08 20:12:08] Fetching data for EQT
+[2026-01-08 20:12:09] Successfully fetched data for EQT
+[2026-01-08 20:12:09] Fetching data for EFX
+[2026-01-08 20:12:09] Successfully fetched data for EFX
+[2026-01-08 20:12:09] Fetching data for EQIX
+[2026-01-08 20:12:10] Successfully fetched data for EQIX
+[2026-01-08 20:12:10] Fetching data for EQR
+[2026-01-08 20:12:10] Successfully fetched data for EQR
+[2026-01-08 20:12:10] Fetching data for ERIE
+[2026-01-08 20:12:11] Successfully fetched data for ERIE
+[2026-01-08 20:12:11] Fetching data for ESS
+[2026-01-08 20:12:11] Successfully fetched data for ESS
+[2026-01-08 20:12:11] Fetching data for EL
+[2026-01-08 20:12:12] Successfully fetched data for EL
+[2026-01-08 20:12:12] Fetching data for EG
+[2026-01-08 20:12:12] Successfully fetched data for EG
+[2026-01-08 20:12:12] Fetching data for EVRG
+[2026-01-08 20:12:12] Successfully fetched data for EVRG
+[2026-01-08 20:12:12] Fetching data for ES
+[2026-01-08 20:12:13] Successfully fetched data for ES
+[2026-01-08 20:12:13] Fetching data for EXC
+[2026-01-08 20:12:14] Successfully fetched data for EXC
+[2026-01-08 20:12:14] Fetching data for EXE
+[2026-01-08 20:12:14] Successfully fetched data for EXE
+[2026-01-08 20:12:14] Fetching data for EXPE
+[2026-01-08 20:12:14] Successfully fetched data for EXPE
+[2026-01-08 20:12:14] Fetching data for EXPD
+[2026-01-08 20:12:15] Successfully fetched data for EXPD
+[2026-01-08 20:12:15] Fetching data for EXR
+[2026-01-08 20:12:15] Successfully fetched data for EXR
+[2026-01-08 20:12:15] Fetching data for XOM
+[2026-01-08 20:12:15] Successfully fetched data for XOM
+[2026-01-08 20:12:15] Fetching data for FFIV
+[2026-01-08 20:12:16] Successfully fetched data for FFIV
+[2026-01-08 20:12:16] Fetching data for FDS
+[2026-01-08 20:12:16] Successfully fetched data for FDS
+[2026-01-08 20:12:16] Fetching data for FICO
+[2026-01-08 20:12:16] Successfully fetched data for FICO
+[2026-01-08 20:12:16] Fetching data for FAST
+[2026-01-08 20:12:17] Successfully fetched data for FAST
+[2026-01-08 20:12:17] Fetching data for FRT
+[2026-01-08 20:12:18] Successfully fetched data for FRT
+[2026-01-08 20:12:18] Fetching data for FDX
+[2026-01-08 20:12:18] Successfully fetched data for FDX
+[2026-01-08 20:12:18] Fetching data for FIS
+[2026-01-08 20:12:19] Successfully fetched data for FIS
+[2026-01-08 20:12:19] Fetching data for FITB
+[2026-01-08 20:12:19] Successfully fetched data for FITB
+[2026-01-08 20:12:19] Fetching data for FSLR
+[2026-01-08 20:12:19] Successfully fetched data for FSLR
+[2026-01-08 20:12:19] Fetching data for FE
+[2026-01-08 20:12:20] Successfully fetched data for FE
+[2026-01-08 20:12:20] Fetching data for FISV
+[2026-01-08 20:12:20] Successfully fetched data for FISV
+[2026-01-08 20:12:20] Fetching data for F
+[2026-01-08 20:12:21] Successfully fetched data for F
+[2026-01-08 20:12:21] Fetching data for FTNT
+[2026-01-08 20:12:21] Successfully fetched data for FTNT
+[2026-01-08 20:12:21] Fetching data for FTV
+[2026-01-08 20:12:22] Successfully fetched data for FTV
+[2026-01-08 20:12:22] Fetching data for FOXA
+[2026-01-08 20:12:22] Successfully fetched data for FOXA
+[2026-01-08 20:12:22] Fetching data for FOX
+[2026-01-08 20:12:22] Successfully fetched data for FOX
+[2026-01-08 20:12:22] Fetching data for BEN
+[2026-01-08 20:12:23] Successfully fetched data for BEN
+[2026-01-08 20:12:23] Fetching data for FCX
+[2026-01-08 20:12:23] Successfully fetched data for FCX
+[2026-01-08 20:12:23] Fetching data for GRMN
+[2026-01-08 20:12:24] Successfully fetched data for GRMN
+[2026-01-08 20:12:24] Fetching data for IT
+[2026-01-08 20:12:24] Successfully fetched data for IT
+[2026-01-08 20:12:24] Fetching data for GE
+[2026-01-08 20:12:25] Successfully fetched data for GE
+[2026-01-08 20:12:25] Fetching data for GEHC
+[2026-01-08 20:12:25] Successfully fetched data for GEHC
+[2026-01-08 20:12:25] Fetching data for GEV
+[2026-01-08 20:12:25] Successfully fetched data for GEV
+[2026-01-08 20:12:25] Fetching data for GEN
+[2026-01-08 20:12:26] Successfully fetched data for GEN
+[2026-01-08 20:12:26] Fetching data for GNRC
+[2026-01-08 20:12:26] Successfully fetched data for GNRC
+[2026-01-08 20:12:26] Fetching data for GD
+[2026-01-08 20:12:27] Successfully fetched data for GD
+[2026-01-08 20:12:27] Fetching data for GIS
+[2026-01-08 20:12:27] Successfully fetched data for GIS
+[2026-01-08 20:12:27] Fetching data for GM
+[2026-01-08 20:12:27] Successfully fetched data for GM
+[2026-01-08 20:12:27] Fetching data for GPC
+[2026-01-08 20:12:28] Successfully fetched data for GPC
+[2026-01-08 20:12:28] Fetching data for GILD
+[2026-01-08 20:12:28] Successfully fetched data for GILD
+[2026-01-08 20:12:28] Fetching data for GPN
+[2026-01-08 20:12:29] Successfully fetched data for GPN
+[2026-01-08 20:12:29] Fetching data for GL
+[2026-01-08 20:12:29] Successfully fetched data for GL
+[2026-01-08 20:12:29] Fetching data for GDDY
+[2026-01-08 20:12:29] Successfully fetched data for GDDY
+[2026-01-08 20:12:29] Fetching data for GS
+[2026-01-08 20:12:30] Successfully fetched data for GS
+[2026-01-08 20:12:30] Fetching data for HAL
+[2026-01-08 20:12:30] Successfully fetched data for HAL
+[2026-01-08 20:12:30] Fetching data for HIG
+[2026-01-08 20:12:31] Successfully fetched data for HIG
+[2026-01-08 20:12:31] Fetching data for HAS
+[2026-01-08 20:12:31] Successfully fetched data for HAS
+[2026-01-08 20:12:31] Fetching data for HCA
+[2026-01-08 20:12:32] Successfully fetched data for HCA
+[2026-01-08 20:12:32] Fetching data for DOC
+[2026-01-08 20:12:32] Successfully fetched data for DOC
+[2026-01-08 20:12:32] Fetching data for HSIC
+[2026-01-08 20:12:32] Successfully fetched data for HSIC
+[2026-01-08 20:12:32] Fetching data for HSY
+[2026-01-08 20:12:33] Successfully fetched data for HSY
+[2026-01-08 20:12:33] Fetching data for HPE
+[2026-01-08 20:12:33] Successfully fetched data for HPE
+[2026-01-08 20:12:33] Fetching data for HLT
+[2026-01-08 20:12:34] Successfully fetched data for HLT
+[2026-01-08 20:12:34] Fetching data for HOLX
+[2026-01-08 20:12:34] Successfully fetched data for HOLX
+[2026-01-08 20:12:34] Fetching data for HD
+[2026-01-08 20:12:35] Successfully fetched data for HD
+[2026-01-08 20:12:35] Fetching data for HON
+[2026-01-08 20:12:35] Successfully fetched data for HON
+[2026-01-08 20:12:35] Fetching data for HRL
+[2026-01-08 20:12:36] Successfully fetched data for HRL
+[2026-01-08 20:12:36] Fetching data for HST
+[2026-01-08 20:12:36] Successfully fetched data for HST
+[2026-01-08 20:12:36] Fetching data for HWM
+[2026-01-08 20:12:36] Successfully fetched data for HWM
+[2026-01-08 20:12:36] Fetching data for HPQ
+[2026-01-08 20:12:37] Successfully fetched data for HPQ
+[2026-01-08 20:12:37] Fetching data for HUBB
+[2026-01-08 20:12:37] Successfully fetched data for HUBB
+[2026-01-08 20:12:37] Fetching data for HUM
+[2026-01-08 20:12:38] Successfully fetched data for HUM
+[2026-01-08 20:12:38] Fetching data for HBAN
+[2026-01-08 20:12:38] Successfully fetched data for HBAN
+[2026-01-08 20:12:38] Fetching data for HII
+[2026-01-08 20:12:39] Successfully fetched data for HII
+[2026-01-08 20:12:39] Fetching data for IBM
+[2026-01-08 20:12:39] Successfully fetched data for IBM
+[2026-01-08 20:12:39] Fetching data for IEX
+[2026-01-08 20:12:40] Successfully fetched data for IEX
+[2026-01-08 20:12:40] Fetching data for IDXX
+[2026-01-08 20:12:40] Successfully fetched data for IDXX
+[2026-01-08 20:12:40] Fetching data for ITW
+[2026-01-08 20:12:40] Successfully fetched data for ITW
+[2026-01-08 20:12:40] Fetching data for INCY
+[2026-01-08 20:12:41] Successfully fetched data for INCY
+[2026-01-08 20:12:41] Fetching data for IR
+[2026-01-08 20:12:41] Successfully fetched data for IR
+[2026-01-08 20:12:41] Fetching data for PODD
+[2026-01-08 20:12:41] Successfully fetched data for PODD
+[2026-01-08 20:12:41] Fetching data for INTC
+[2026-01-08 20:12:42] Successfully fetched data for INTC
+[2026-01-08 20:12:42] Fetching data for IBKR
+[2026-01-08 20:12:42] Successfully fetched data for IBKR
+[2026-01-08 20:12:42] Fetching data for ICE
+[2026-01-08 20:12:43] Successfully fetched data for ICE
+[2026-01-08 20:12:43] Fetching data for IFF
+[2026-01-08 20:12:43] Successfully fetched data for IFF
+[2026-01-08 20:12:43] Fetching data for IP
+[2026-01-08 20:12:44] Successfully fetched data for IP
+[2026-01-08 20:12:44] Fetching data for INTU
+[2026-01-08 20:12:44] Successfully fetched data for INTU
+[2026-01-08 20:12:44] Fetching data for ISRG
+[2026-01-08 20:12:45] Successfully fetched data for ISRG
+[2026-01-08 20:12:45] Fetching data for IVZ
+[2026-01-08 20:12:45] Successfully fetched data for IVZ
+[2026-01-08 20:12:45] Fetching data for INVH
+[2026-01-08 20:12:45] Successfully fetched data for INVH
+[2026-01-08 20:12:45] Fetching data for IQV
+[2026-01-08 20:12:46] Successfully fetched data for IQV
+[2026-01-08 20:12:46] Fetching data for IRM
+[2026-01-08 20:12:46] Successfully fetched data for IRM
+[2026-01-08 20:12:46] Fetching data for JBHT
+[2026-01-08 20:12:46] Successfully fetched data for JBHT
+[2026-01-08 20:12:46] Fetching data for JBL
+[2026-01-08 20:12:47] Successfully fetched data for JBL
+[2026-01-08 20:12:47] Fetching data for JKHY
+[2026-01-08 20:12:47] Successfully fetched data for JKHY
+[2026-01-08 20:12:47] Fetching data for J
+[2026-01-08 20:12:47] Successfully fetched data for J
+[2026-01-08 20:12:47] Fetching data for JNJ
+[2026-01-08 20:12:48] Successfully fetched data for JNJ
+[2026-01-08 20:12:48] Fetching data for JCI
+[2026-01-08 20:12:48] Successfully fetched data for JCI
+[2026-01-08 20:12:48] Fetching data for JPM
+[2026-01-08 20:12:49] Successfully fetched data for JPM
+[2026-01-08 20:12:49] Fetching data for KVUE
+[2026-01-08 20:12:49] Successfully fetched data for KVUE
+[2026-01-08 20:12:49] Fetching data for KDP
+[2026-01-08 20:12:50] Successfully fetched data for KDP
+[2026-01-08 20:12:50] Fetching data for KEY
+[2026-01-08 20:12:50] Successfully fetched data for KEY
+[2026-01-08 20:12:50] Fetching data for KEYS
+[2026-01-08 20:12:50] Successfully fetched data for KEYS
+[2026-01-08 20:12:50] Fetching data for KMB
+[2026-01-08 20:12:51] Successfully fetched data for KMB
+[2026-01-08 20:12:51] Fetching data for KIM
+[2026-01-08 20:12:51] Successfully fetched data for KIM
+[2026-01-08 20:12:51] Fetching data for KMI
+[2026-01-08 20:12:52] Successfully fetched data for KMI
+[2026-01-08 20:12:52] Fetching data for KKR
+[2026-01-08 20:12:52] Successfully fetched data for KKR
+[2026-01-08 20:12:52] Fetching data for KLAC
+[2026-01-08 20:12:52] Successfully fetched data for KLAC
+[2026-01-08 20:12:52] Fetching data for KHC
+[2026-01-08 20:12:53] Successfully fetched data for KHC
+[2026-01-08 20:12:53] Fetching data for KR
+[2026-01-08 20:12:53] Successfully fetched data for KR
+[2026-01-08 20:12:53] Fetching data for LHX
+[2026-01-08 20:12:54] Successfully fetched data for LHX
+[2026-01-08 20:12:54] Fetching data for LH
+[2026-01-08 20:12:54] Successfully fetched data for LH
+[2026-01-08 20:12:54] Fetching data for LRCX
+[2026-01-08 20:12:54] Successfully fetched data for LRCX
+[2026-01-08 20:12:54] Fetching data for LW
+[2026-01-08 20:12:55] Successfully fetched data for LW
+[2026-01-08 20:12:55] Fetching data for LVS
+[2026-01-08 20:12:55] Successfully fetched data for LVS
+[2026-01-08 20:12:55] Fetching data for LDOS
+[2026-01-08 20:12:56] Successfully fetched data for LDOS
+[2026-01-08 20:12:56] Fetching data for LEN
+[2026-01-08 20:12:56] Successfully fetched data for LEN
+[2026-01-08 20:12:56] Fetching data for LII
+[2026-01-08 20:12:57] Successfully fetched data for LII
+[2026-01-08 20:12:57] Fetching data for LLY
+[2026-01-08 20:12:57] Successfully fetched data for LLY
+[2026-01-08 20:12:57] Fetching data for LIN
+[2026-01-08 20:12:57] Successfully fetched data for LIN
+[2026-01-08 20:12:57] Fetching data for LYV
+[2026-01-08 20:12:58] Successfully fetched data for LYV
+[2026-01-08 20:12:58] Fetching data for LMT
+[2026-01-08 20:12:58] Successfully fetched data for LMT
+[2026-01-08 20:12:58] Fetching data for L
+[2026-01-08 20:12:59] Successfully fetched data for L
+[2026-01-08 20:12:59] Fetching data for LOW
+[2026-01-08 20:12:59] Successfully fetched data for LOW
+[2026-01-08 20:12:59] Fetching data for LULU
+[2026-01-08 20:12:59] Successfully fetched data for LULU
+[2026-01-08 20:12:59] Fetching data for LYB
+[2026-01-08 20:13:00] Successfully fetched data for LYB
+[2026-01-08 20:13:00] Fetching data for MTB
+[2026-01-08 20:13:00] Successfully fetched data for MTB
+[2026-01-08 20:13:00] Fetching data for MPC
+[2026-01-08 20:13:01] Successfully fetched data for MPC
+[2026-01-08 20:13:01] Fetching data for MAR
+[2026-01-08 20:13:01] Successfully fetched data for MAR
+[2026-01-08 20:13:01] Fetching data for MMC
+[2026-01-08 20:13:02] Successfully fetched data for MMC
+[2026-01-08 20:13:02] Fetching data for MLM
+[2026-01-08 20:13:02] Successfully fetched data for MLM
+[2026-01-08 20:13:02] Fetching data for MAS
+[2026-01-08 20:13:03] Successfully fetched data for MAS
+[2026-01-08 20:13:03] Fetching data for MA
+[2026-01-08 20:13:03] Successfully fetched data for MA
+[2026-01-08 20:13:03] Fetching data for MTCH
+[2026-01-08 20:13:03] Successfully fetched data for MTCH
+[2026-01-08 20:13:03] Fetching data for MKC
+[2026-01-08 20:13:04] Successfully fetched data for MKC
+[2026-01-08 20:13:04] Fetching data for MCD
+[2026-01-08 20:13:04] Successfully fetched data for MCD
+[2026-01-08 20:13:04] Fetching data for MCK
+[2026-01-08 20:13:05] Successfully fetched data for MCK
+[2026-01-08 20:13:05] Fetching data for MDT
+[2026-01-08 20:13:05] Successfully fetched data for MDT
+[2026-01-08 20:13:05] Fetching data for MRK
+[2026-01-08 20:13:06] Successfully fetched data for MRK
+[2026-01-08 20:13:06] Fetching data for META
+[2026-01-08 20:13:06] Successfully fetched data for META
+[2026-01-08 20:13:06] Fetching data for MET
+[2026-01-08 20:13:07] Successfully fetched data for MET
+[2026-01-08 20:13:07] Fetching data for MTD
+[2026-01-08 20:13:07] Successfully fetched data for MTD
+[2026-01-08 20:13:07] Fetching data for MGM
+[2026-01-08 20:13:07] Successfully fetched data for MGM
+[2026-01-08 20:13:07] Fetching data for MCHP
+[2026-01-08 20:13:08] Successfully fetched data for MCHP
+[2026-01-08 20:13:08] Fetching data for MU
+[2026-01-08 20:13:08] Successfully fetched data for MU
+[2026-01-08 20:13:08] Fetching data for MSFT
+[2026-01-08 20:13:08] Successfully fetched data for MSFT
+[2026-01-08 20:13:08] Fetching data for MAA
+[2026-01-08 20:13:09] Successfully fetched data for MAA
+[2026-01-08 20:13:09] Fetching data for MRNA
+[2026-01-08 20:13:09] Successfully fetched data for MRNA
+[2026-01-08 20:13:09] Fetching data for MOH
+[2026-01-08 20:13:09] Successfully fetched data for MOH
+[2026-01-08 20:13:09] Fetching data for TAP
+[2026-01-08 20:13:10] Successfully fetched data for TAP
+[2026-01-08 20:13:10] Fetching data for MDLZ
+[2026-01-08 20:13:10] Successfully fetched data for MDLZ
+[2026-01-08 20:13:10] Fetching data for MPWR
+[2026-01-08 20:13:11] Successfully fetched data for MPWR
+[2026-01-08 20:13:11] Fetching data for MNST
+[2026-01-08 20:13:11] Successfully fetched data for MNST
+[2026-01-08 20:13:11] Fetching data for MCO
+[2026-01-08 20:13:12] Successfully fetched data for MCO
+[2026-01-08 20:13:12] Fetching data for MS
+[2026-01-08 20:13:12] Successfully fetched data for MS
+[2026-01-08 20:13:12] Fetching data for MOS
+[2026-01-08 20:13:12] Successfully fetched data for MOS
+[2026-01-08 20:13:12] Fetching data for MSI
+[2026-01-08 20:13:13] Successfully fetched data for MSI
+[2026-01-08 20:13:13] Fetching data for MSCI
+[2026-01-08 20:13:13] Successfully fetched data for MSCI
+[2026-01-08 20:13:13] Fetching data for NDAQ
+[2026-01-08 20:13:14] Successfully fetched data for NDAQ
+[2026-01-08 20:13:14] Fetching data for NTAP
+[2026-01-08 20:13:14] Successfully fetched data for NTAP
+[2026-01-08 20:13:14] Fetching data for NFLX
+[2026-01-08 20:13:14] Successfully fetched data for NFLX
+[2026-01-08 20:13:14] Fetching data for NEM
+[2026-01-08 20:13:15] Successfully fetched data for NEM
+[2026-01-08 20:13:15] Fetching data for NWSA
+[2026-01-08 20:13:15] Successfully fetched data for NWSA
+[2026-01-08 20:13:15] Fetching data for NWS
+[2026-01-08 20:13:15] Successfully fetched data for NWS
+[2026-01-08 20:13:15] Fetching data for NEE
+[2026-01-08 20:13:16] Successfully fetched data for NEE
+[2026-01-08 20:13:16] Fetching data for NKE
+[2026-01-08 20:13:16] Successfully fetched data for NKE
+[2026-01-08 20:13:16] Fetching data for NI
+[2026-01-08 20:13:17] Successfully fetched data for NI
+[2026-01-08 20:13:17] Fetching data for NDSN
+[2026-01-08 20:13:17] Successfully fetched data for NDSN
+[2026-01-08 20:13:17] Fetching data for NSC
+[2026-01-08 20:13:18] Successfully fetched data for NSC
+[2026-01-08 20:13:18] Fetching data for NTRS
+[2026-01-08 20:13:18] Successfully fetched data for NTRS
+[2026-01-08 20:13:18] Fetching data for NOC
+[2026-01-08 20:13:19] Successfully fetched data for NOC
+[2026-01-08 20:13:19] Fetching data for NCLH
+[2026-01-08 20:13:19] Successfully fetched data for NCLH
+[2026-01-08 20:13:19] Fetching data for NRG
+[2026-01-08 20:13:19] Successfully fetched data for NRG
+[2026-01-08 20:13:19] Fetching data for NUE
+[2026-01-08 20:13:20] Successfully fetched data for NUE
+[2026-01-08 20:13:20] Fetching data for NVDA
+[2026-01-08 20:13:20] Successfully fetched data for NVDA
+[2026-01-08 20:13:20] Fetching data for NVR
+[2026-01-08 20:13:21] Successfully fetched data for NVR
+[2026-01-08 20:13:21] Fetching data for NXPI
+[2026-01-08 20:13:21] Successfully fetched data for NXPI
+[2026-01-08 20:13:21] Fetching data for ORLY
+[2026-01-08 20:13:21] Successfully fetched data for ORLY
+[2026-01-08 20:13:21] Fetching data for OXY
+[2026-01-08 20:13:22] Successfully fetched data for OXY
+[2026-01-08 20:13:22] Fetching data for ODFL
+[2026-01-08 20:13:22] Successfully fetched data for ODFL
+[2026-01-08 20:13:22] Fetching data for OMC
+[2026-01-08 20:13:23] Successfully fetched data for OMC
+[2026-01-08 20:13:23] Fetching data for ON
+[2026-01-08 20:13:23] Successfully fetched data for ON
+[2026-01-08 20:13:23] Fetching data for OKE
+[2026-01-08 20:13:23] Successfully fetched data for OKE
+[2026-01-08 20:13:23] Fetching data for ORCL
+[2026-01-08 20:13:24] Successfully fetched data for ORCL
+[2026-01-08 20:13:24] Fetching data for OTIS
+[2026-01-08 20:13:24] Successfully fetched data for OTIS
+[2026-01-08 20:13:24] Fetching data for PCAR
+[2026-01-08 20:13:24] Successfully fetched data for PCAR
+[2026-01-08 20:13:24] Fetching data for PKG
+[2026-01-08 20:13:25] Successfully fetched data for PKG
+[2026-01-08 20:13:25] Fetching data for PLTR
+[2026-01-08 20:13:25] Successfully fetched data for PLTR
+[2026-01-08 20:13:25] Fetching data for PANW
+[2026-01-08 20:13:25] Successfully fetched data for PANW
+[2026-01-08 20:13:25] Fetching data for PSKY
+[2026-01-08 20:13:26] Successfully fetched data for PSKY
+[2026-01-08 20:13:26] Fetching data for PH
+[2026-01-08 20:13:26] Successfully fetched data for PH
+[2026-01-08 20:13:26] Fetching data for PAYX
+[2026-01-08 20:13:27] Successfully fetched data for PAYX
+[2026-01-08 20:13:27] Fetching data for PAYC
+[2026-01-08 20:13:27] Successfully fetched data for PAYC
+[2026-01-08 20:13:27] Fetching data for PYPL
+[2026-01-08 20:13:27] Successfully fetched data for PYPL
+[2026-01-08 20:13:27] Fetching data for PNR
+[2026-01-08 20:13:28] Successfully fetched data for PNR
+[2026-01-08 20:13:28] Fetching data for PEP
+[2026-01-08 20:13:28] Successfully fetched data for PEP
+[2026-01-08 20:13:28] Fetching data for PFE
+[2026-01-08 20:13:29] Successfully fetched data for PFE
+[2026-01-08 20:13:29] Fetching data for PCG
+[2026-01-08 20:13:29] Successfully fetched data for PCG
+[2026-01-08 20:13:29] Fetching data for PM
+[2026-01-08 20:13:30] Successfully fetched data for PM
+[2026-01-08 20:13:30] Fetching data for PSX
+[2026-01-08 20:13:30] Successfully fetched data for PSX
+[2026-01-08 20:13:30] Fetching data for PNW
+[2026-01-08 20:13:30] Successfully fetched data for PNW
+[2026-01-08 20:13:30] Fetching data for PNC
+[2026-01-08 20:13:31] Successfully fetched data for PNC
+[2026-01-08 20:13:31] Fetching data for POOL
+[2026-01-08 20:13:31] Successfully fetched data for POOL
+[2026-01-08 20:13:31] Fetching data for PPG
+[2026-01-08 20:13:32] Successfully fetched data for PPG
+[2026-01-08 20:13:32] Fetching data for PPL
+[2026-01-08 20:13:32] Successfully fetched data for PPL
+[2026-01-08 20:13:32] Fetching data for PFG
+[2026-01-08 20:13:32] Successfully fetched data for PFG
+[2026-01-08 20:13:32] Fetching data for PG
+[2026-01-08 20:13:33] Successfully fetched data for PG
+[2026-01-08 20:13:33] Fetching data for PGR
+[2026-01-08 20:13:33] Successfully fetched data for PGR
+[2026-01-08 20:13:33] Fetching data for PLD
+[2026-01-08 20:13:34] Successfully fetched data for PLD
+[2026-01-08 20:13:34] Fetching data for PRU
+[2026-01-08 20:13:34] Successfully fetched data for PRU
+[2026-01-08 20:13:34] Fetching data for PEG
+[2026-01-08 20:13:35] Successfully fetched data for PEG
+[2026-01-08 20:13:35] Fetching data for PTC
+[2026-01-08 20:13:35] Successfully fetched data for PTC
+[2026-01-08 20:13:35] Fetching data for PSA
+[2026-01-08 20:13:35] Successfully fetched data for PSA
+[2026-01-08 20:13:35] Fetching data for PHM
+[2026-01-08 20:13:36] Successfully fetched data for PHM
+[2026-01-08 20:13:36] Fetching data for PWR
+[2026-01-08 20:13:36] Successfully fetched data for PWR
+[2026-01-08 20:13:36] Fetching data for QCOM
+[2026-01-08 20:13:37] Successfully fetched data for QCOM
+[2026-01-08 20:13:37] Fetching data for DGX
+[2026-01-08 20:13:37] Successfully fetched data for DGX
+[2026-01-08 20:13:37] Fetching data for Q
+[2026-01-08 20:13:37] Successfully fetched data for Q
+[2026-01-08 20:13:37] Fetching data for RL
+[2026-01-08 20:13:38] Successfully fetched data for RL
+[2026-01-08 20:13:38] Fetching data for RJF
+[2026-01-08 20:13:38] Successfully fetched data for RJF
+[2026-01-08 20:13:38] Fetching data for RTX
+[2026-01-08 20:13:39] Successfully fetched data for RTX
+[2026-01-08 20:13:39] Fetching data for O
+[2026-01-08 20:13:39] Successfully fetched data for O
+[2026-01-08 20:13:39] Fetching data for REG
+[2026-01-08 20:13:39] Successfully fetched data for REG
+[2026-01-08 20:13:39] Fetching data for REGN
+[2026-01-08 20:13:40] Successfully fetched data for REGN
+[2026-01-08 20:13:40] Fetching data for RF
+[2026-01-08 20:13:40] Successfully fetched data for RF
+[2026-01-08 20:13:40] Fetching data for RSG
+[2026-01-08 20:13:40] Successfully fetched data for RSG
+[2026-01-08 20:13:40] Fetching data for RMD
+[2026-01-08 20:13:41] Successfully fetched data for RMD
+[2026-01-08 20:13:41] Fetching data for RVTY
+[2026-01-08 20:13:41] Successfully fetched data for RVTY
+[2026-01-08 20:13:41] Fetching data for HOOD
+[2026-01-08 20:13:42] Successfully fetched data for HOOD
+[2026-01-08 20:13:42] Fetching data for ROK
+[2026-01-08 20:13:42] Successfully fetched data for ROK
+[2026-01-08 20:13:42] Fetching data for ROL
+[2026-01-08 20:13:42] Successfully fetched data for ROL
+[2026-01-08 20:13:42] Fetching data for ROP
+[2026-01-08 20:13:43] Successfully fetched data for ROP
+[2026-01-08 20:13:43] Fetching data for ROST
+[2026-01-08 20:13:43] Successfully fetched data for ROST
+[2026-01-08 20:13:43] Fetching data for RCL
+[2026-01-08 20:13:44] Successfully fetched data for RCL
+[2026-01-08 20:13:44] Fetching data for SPGI
+[2026-01-08 20:13:44] Successfully fetched data for SPGI
+[2026-01-08 20:13:44] Fetching data for CRM
+[2026-01-08 20:13:45] Successfully fetched data for CRM
+[2026-01-08 20:13:45] Fetching data for SNDK
+[2026-01-08 20:13:45] Successfully fetched data for SNDK
+[2026-01-08 20:13:45] Fetching data for SBAC
+[2026-01-08 20:13:45] Successfully fetched data for SBAC
+[2026-01-08 20:13:45] Fetching data for SLB
+[2026-01-08 20:13:46] Successfully fetched data for SLB
+[2026-01-08 20:13:46] Fetching data for STX
+[2026-01-08 20:13:46] Successfully fetched data for STX
+[2026-01-08 20:13:46] Fetching data for SRE
+[2026-01-08 20:13:47] Successfully fetched data for SRE
+[2026-01-08 20:13:47] Fetching data for NOW
+[2026-01-08 20:13:47] Successfully fetched data for NOW
+[2026-01-08 20:13:47] Fetching data for SHW
+[2026-01-08 20:13:47] Successfully fetched data for SHW
+[2026-01-08 20:13:47] Fetching data for SPG
+[2026-01-08 20:13:48] Successfully fetched data for SPG
+[2026-01-08 20:13:48] Fetching data for SWKS
+[2026-01-08 20:13:48] Successfully fetched data for SWKS
+[2026-01-08 20:13:48] Fetching data for SJM
+[2026-01-08 20:13:49] Successfully fetched data for SJM
+[2026-01-08 20:13:49] Fetching data for SW
+[2026-01-08 20:13:49] Successfully fetched data for SW
+[2026-01-08 20:13:49] Fetching data for SNA
+[2026-01-08 20:13:49] Successfully fetched data for SNA
+[2026-01-08 20:13:49] Fetching data for SOLS
+[2026-01-08 20:13:50] Successfully fetched data for SOLS
+[2026-01-08 20:13:50] Fetching data for SOLV
+[2026-01-08 20:13:50] Successfully fetched data for SOLV
+[2026-01-08 20:13:50] Fetching data for SO
+[2026-01-08 20:13:50] Successfully fetched data for SO
+[2026-01-08 20:13:50] Fetching data for LUV
+[2026-01-08 20:13:51] Successfully fetched data for LUV
+[2026-01-08 20:13:51] Fetching data for SWK
+[2026-01-08 20:13:51] Successfully fetched data for SWK
+[2026-01-08 20:13:51] Fetching data for SBUX
+[2026-01-08 20:13:52] Successfully fetched data for SBUX
+[2026-01-08 20:13:52] Fetching data for STT
+[2026-01-08 20:13:52] Successfully fetched data for STT
+[2026-01-08 20:13:52] Fetching data for STLD
+[2026-01-08 20:13:53] Successfully fetched data for STLD
+[2026-01-08 20:13:53] Fetching data for STE
+[2026-01-08 20:13:53] Successfully fetched data for STE
+[2026-01-08 20:13:53] Fetching data for SYK
+[2026-01-08 20:13:53] Successfully fetched data for SYK
+[2026-01-08 20:13:53] Fetching data for SMCI
+[2026-01-08 20:13:54] Successfully fetched data for SMCI
+[2026-01-08 20:13:54] Fetching data for SYF
+[2026-01-08 20:13:54] Successfully fetched data for SYF
+[2026-01-08 20:13:54] Fetching data for SNPS
+[2026-01-08 20:13:55] Successfully fetched data for SNPS
+[2026-01-08 20:13:55] Fetching data for SYY
+[2026-01-08 20:13:55] Successfully fetched data for SYY
+[2026-01-08 20:13:55] Fetching data for TMUS
+[2026-01-08 20:13:55] Successfully fetched data for TMUS
+[2026-01-08 20:13:55] Fetching data for TROW
+[2026-01-08 20:13:56] Successfully fetched data for TROW
+[2026-01-08 20:13:56] Fetching data for TTWO
+[2026-01-08 20:13:56] Successfully fetched data for TTWO
+[2026-01-08 20:13:56] Fetching data for TPR
+[2026-01-08 20:13:57] Successfully fetched data for TPR
+[2026-01-08 20:13:57] Fetching data for TRGP
+[2026-01-08 20:13:57] Successfully fetched data for TRGP
+[2026-01-08 20:13:57] Fetching data for TGT
+[2026-01-08 20:13:57] Successfully fetched data for TGT
+[2026-01-08 20:13:57] Fetching data for TEL
+[2026-01-08 20:13:58] Successfully fetched data for TEL
+[2026-01-08 20:13:58] Fetching data for TDY
+[2026-01-08 20:13:58] Successfully fetched data for TDY
+[2026-01-08 20:13:58] Fetching data for TER
+[2026-01-08 20:13:58] Successfully fetched data for TER
+[2026-01-08 20:13:58] Fetching data for TSLA
+[2026-01-08 20:13:59] Successfully fetched data for TSLA
+[2026-01-08 20:13:59] Fetching data for TXN
+[2026-01-08 20:13:59] Successfully fetched data for TXN
+[2026-01-08 20:13:59] Fetching data for TPL
+[2026-01-08 20:14:00] Successfully fetched data for TPL
+[2026-01-08 20:14:00] Fetching data for TXT
+[2026-01-08 20:14:00] Successfully fetched data for TXT
+[2026-01-08 20:14:00] Fetching data for TMO
+[2026-01-08 20:14:01] Successfully fetched data for TMO
+[2026-01-08 20:14:01] Fetching data for TJX
+[2026-01-08 20:14:01] Successfully fetched data for TJX
+[2026-01-08 20:14:01] Fetching data for TKO
+[2026-01-08 20:14:02] Successfully fetched data for TKO
+[2026-01-08 20:14:02] Fetching data for TTD
+[2026-01-08 20:14:02] Successfully fetched data for TTD
+[2026-01-08 20:14:02] Fetching data for TSCO
+[2026-01-08 20:14:02] Successfully fetched data for TSCO
+[2026-01-08 20:14:02] Fetching data for TT
+[2026-01-08 20:14:03] Successfully fetched data for TT
+[2026-01-08 20:14:03] Fetching data for TDG
+[2026-01-08 20:14:03] Successfully fetched data for TDG
+[2026-01-08 20:14:03] Fetching data for TRV
+[2026-01-08 20:14:04] Successfully fetched data for TRV
+[2026-01-08 20:14:04] Fetching data for TRMB
+[2026-01-08 20:14:04] Successfully fetched data for TRMB
+[2026-01-08 20:14:04] Fetching data for TFC
+[2026-01-08 20:14:05] Successfully fetched data for TFC
+[2026-01-08 20:14:05] Fetching data for TYL
+[2026-01-08 20:14:05] Successfully fetched data for TYL
+[2026-01-08 20:14:05] Fetching data for TSN
+[2026-01-08 20:14:05] Successfully fetched data for TSN
+[2026-01-08 20:14:05] Fetching data for USB
+[2026-01-08 20:14:06] Successfully fetched data for USB
+[2026-01-08 20:14:06] Fetching data for UBER
+[2026-01-08 20:14:06] Successfully fetched data for UBER
+[2026-01-08 20:14:06] Fetching data for UDR
+[2026-01-08 20:14:07] Successfully fetched data for UDR
+[2026-01-08 20:14:07] Fetching data for ULTA
+[2026-01-08 20:14:07] Successfully fetched data for ULTA
+[2026-01-08 20:14:07] Fetching data for UNP
+[2026-01-08 20:14:07] Successfully fetched data for UNP
+[2026-01-08 20:14:07] Fetching data for UAL
+[2026-01-08 20:14:08] Successfully fetched data for UAL
+[2026-01-08 20:14:08] Fetching data for UPS
+[2026-01-08 20:14:08] Successfully fetched data for UPS
+[2026-01-08 20:14:08] Fetching data for URI
+[2026-01-08 20:14:08] Successfully fetched data for URI
+[2026-01-08 20:14:08] Fetching data for UNH
+[2026-01-08 20:14:09] Successfully fetched data for UNH
+[2026-01-08 20:14:09] Fetching data for UHS
+[2026-01-08 20:14:09] Successfully fetched data for UHS
+[2026-01-08 20:14:09] Fetching data for VLO
+[2026-01-08 20:14:10] Successfully fetched data for VLO
+[2026-01-08 20:14:10] Fetching data for VTR
+[2026-01-08 20:14:10] Successfully fetched data for VTR
+[2026-01-08 20:14:10] Fetching data for VLTO
+[2026-01-08 20:14:10] Successfully fetched data for VLTO
+[2026-01-08 20:14:10] Fetching data for VRSN
+[2026-01-08 20:14:11] Successfully fetched data for VRSN
+[2026-01-08 20:14:11] Fetching data for VRSK
+[2026-01-08 20:14:11] Successfully fetched data for VRSK
+[2026-01-08 20:14:11] Fetching data for VZ
+[2026-01-08 20:14:11] Successfully fetched data for VZ
+[2026-01-08 20:14:11] Fetching data for VRTX
+[2026-01-08 20:14:12] Successfully fetched data for VRTX
+[2026-01-08 20:14:12] Fetching data for VTRS
+[2026-01-08 20:14:12] Successfully fetched data for VTRS
+[2026-01-08 20:14:12] Fetching data for VICI
+[2026-01-08 20:14:13] Successfully fetched data for VICI
+[2026-01-08 20:14:13] Fetching data for V
+[2026-01-08 20:14:13] Successfully fetched data for V
+[2026-01-08 20:14:13] Fetching data for VST
+[2026-01-08 20:14:14] Successfully fetched data for VST
+[2026-01-08 20:14:14] Fetching data for VMC
+[2026-01-08 20:14:14] Successfully fetched data for VMC
+[2026-01-08 20:14:14] Fetching data for WRB
+[2026-01-08 20:14:15] Successfully fetched data for WRB
+[2026-01-08 20:14:15] Fetching data for GWW
+[2026-01-08 20:14:15] Successfully fetched data for GWW
+[2026-01-08 20:14:15] Fetching data for WAB
+[2026-01-08 20:14:16] Successfully fetched data for WAB
+[2026-01-08 20:14:16] Fetching data for WMT
+[2026-01-08 20:14:16] Successfully fetched data for WMT
+[2026-01-08 20:14:16] Fetching data for DIS
+[2026-01-08 20:14:17] Successfully fetched data for DIS
+[2026-01-08 20:14:17] Fetching data for WBD
+[2026-01-08 20:14:17] Successfully fetched data for WBD
+[2026-01-08 20:14:17] Fetching data for WM
+[2026-01-08 20:14:17] Successfully fetched data for WM
+[2026-01-08 20:14:17] Fetching data for WAT
+[2026-01-08 20:14:18] Successfully fetched data for WAT
+[2026-01-08 20:14:18] Fetching data for WEC
+[2026-01-08 20:14:18] Successfully fetched data for WEC
+[2026-01-08 20:14:18] Fetching data for WFC
+[2026-01-08 20:14:19] Successfully fetched data for WFC
+[2026-01-08 20:14:19] Fetching data for WELL
+[2026-01-08 20:14:19] Successfully fetched data for WELL
+[2026-01-08 20:14:19] Fetching data for WST
+[2026-01-08 20:14:20] Successfully fetched data for WST
+[2026-01-08 20:14:20] Fetching data for WDC
+[2026-01-08 20:14:20] Successfully fetched data for WDC
+[2026-01-08 20:14:20] Fetching data for WY
+[2026-01-08 20:14:20] Successfully fetched data for WY
+[2026-01-08 20:14:20] Fetching data for WSM
+[2026-01-08 20:14:21] Successfully fetched data for WSM
+[2026-01-08 20:14:21] Fetching data for WMB
+[2026-01-08 20:14:21] Successfully fetched data for WMB
+[2026-01-08 20:14:21] Fetching data for WTW
+[2026-01-08 20:14:22] Successfully fetched data for WTW
+[2026-01-08 20:14:22] Fetching data for WDAY
+[2026-01-08 20:14:22] Successfully fetched data for WDAY
+[2026-01-08 20:14:22] Fetching data for WYNN
+[2026-01-08 20:14:22] Successfully fetched data for WYNN
+[2026-01-08 20:14:22] Fetching data for XEL
+[2026-01-08 20:14:23] Successfully fetched data for XEL
+[2026-01-08 20:14:23] Fetching data for XYL
+[2026-01-08 20:14:23] Successfully fetched data for XYL
+[2026-01-08 20:14:23] Fetching data for YUM
+[2026-01-08 20:14:23] Successfully fetched data for YUM
+[2026-01-08 20:14:23] Fetching data for ZBRA
+[2026-01-08 20:14:24] Successfully fetched data for ZBRA
+[2026-01-08 20:14:24] Fetching data for ZBH
+[2026-01-08 20:14:24] Successfully fetched data for ZBH
+[2026-01-08 20:14:24] Fetching data for ZTS
+[2026-01-08 20:14:24] Successfully fetched data for ZTS
+[2026-01-08 20:14:26] Created gainers/losers chart: output/leaders_laggards/2026-01-08_gainers_losers_1mo.png
+[2026-01-08 20:14:28] Created SMA & EMA charts for BRO
+[2026-01-08 20:14:28] Created SMA & EMA charts for BRO
+[2026-01-08 20:14:29] Created SMA & EMA charts for SOLV
+[2026-01-08 20:14:29] Created SMA & EMA charts for SOLV
+[2026-01-08 20:14:29] Created SMA & EMA charts for APTV
+[2026-01-08 20:14:30] Created SMA & EMA charts for APTV
+[2026-01-08 20:14:30] Saved metadata JSON: output/metadata/posts_2026-01-08.json
+[2026-01-08 20:14:30] run_today() completed
+[2026-01-08 20:27:46] Uploaded image: output/leaders_laggards/2026-01-08_gainers_losers_1mo.png
+[2026-01-08 20:27:46] Tweet posted successfully: 2009361408925028512
+[2026-01-08 20:27:46] Metadata updated with tweet ID 2009361408925028512
+[2026-01-08 20:56:01] No HTTP response available in exception, cannot show headers or rate-limit info.
+[2026-01-08 20:56:02] Uploaded image: output/normalized/2026-01-08_1mo_0.png
+[2026-01-08 20:56:02] Uploaded image: output/normalized/2026-01-08_1mo_1.png
+[2026-01-08 20:56:03] Uploaded image: output/normalized/2026-01-08_1mo_2.png
+[2026-01-08 20:56:04] Uploaded image: output/normalized/2026-01-08_1mo_3.png
+[2026-01-08 20:56:04] Tweet posted successfully: 2009368529087426681
+[2026-01-08 20:56:04] Metadata updated with tweet ID 2009368529087426681
+[2026-01-08 21:22:56] No HTTP response available in exception, cannot show headers or rate-limit info.
+[2026-01-08 21:22:57] Uploaded image: output/ma/2026-01-08_BRO_SMA_1y.png
+[2026-01-08 21:22:57] Uploaded image: output/ma/2026-01-08_BRO_EMA_1y.png
+[2026-01-08 21:22:57] Tweet posted successfully: 2009375295971971307
+[2026-01-08 21:22:57] Metadata updated with tweet ID 2009375295971971307
+[2026-01-08 21:52:31] No HTTP response available in exception, cannot show headers or rate-limit info.
+[2026-01-08 21:52:32] Uploaded image: output/ma/2026-01-08_SOLV_SMA_1y.png
+[2026-01-08 21:52:33] Uploaded image: output/ma/2026-01-08_SOLV_EMA_1y.png
+[2026-01-08 21:52:33] Tweet posted successfully: 2009382743164248474
+[2026-01-08 21:52:33] Metadata updated with tweet ID 2009382743164248474
+[2026-01-08 22:31:41] No HTTP response available in exception, cannot show headers or rate-limit info.
+[2026-01-08 22:31:42] Uploaded image: output/ma/2026-01-08_APTV_SMA_1y.png
+[2026-01-08 22:31:42] Uploaded image: output/ma/2026-01-08_APTV_EMA_1y.png
+[2026-01-08 22:31:43] Tweet posted successfully: 2009392598297788687
+[2026-01-08 22:31:43] Metadata updated with tweet ID 2009392598297788687
+[2026-01-08 23:07:44] No HTTP response available in exception, cannot show headers or rate-limit info.
