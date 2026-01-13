@@ -271,8 +271,34 @@
 
   <script>
     async function loadPosts() {
-      const res = await fetch('output/metadata/index.json');
-      return res.json();
+      const indexRes = await fetch('output/metadata/index.json');
+      const files = await indexRes.json();
+      const all = [];
+
+      for (const file of files) {
+        const res = await fetch(`output/metadata/${file}`);
+        const daily = await res.json();
+
+        const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
+        const date = dateMatch ? dateMatch[0] : '';
+
+        daily.forEach(p => {
+          all.push({
+            date,
+            text: p.tweet_text,
+            images: p.images,
+            url: p.tweet_url,
+            hashtags: extractHashtags(p.tweet_text),
+            type: p.type
+          });
+        });
+      }
+
+      return all.sort((a, b) => b.date.localeCompare(a.date));
+    }
+
+    function extractHashtags(text) {
+      return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
     }
 
     function todayLocalISO() {
