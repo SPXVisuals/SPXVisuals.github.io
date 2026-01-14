@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-14_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2011488403947143646",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011488403947143646"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-14_3mo_0.png",
+      "output/normalized/2026-01-14_3mo_1.png",
+      "output/normalized/2026-01-14_3mo_2.png",
+      "output/normalized/2026-01-14_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2011497651166913001",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011497651166913001"
+  },
+  {
+    "type": "ma",
+    "ticker": "CPB",
+    "images": [
+      "output/ma/2026-01-14_CPB_SMA_1y.png",
+      "output/ma/2026-01-14_CPB_EMA_1y.png"
+    ],
+    "tweet_id": "2011507710303301646",
+    "tweet_text": "1y - CPB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #CPB #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011507710303301646"
+  },
+  {
+    "type": "ma",
+    "ticker": "FCX",
+    "images": [
+      "output/ma/2026-01-14_FCX_SMA_1y.png",
+      "output/ma/2026-01-14_FCX_EMA_1y.png"
+    ],
+    "tweet_id": "2011518247535784203",
+    "tweet_text": "1y - FCX SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FCX #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011518247535784203"
+  },
+  {
+    "type": "ma",
+    "ticker": "BLDR",
+    "images": [
+      "output/ma/2026-01-14_BLDR_SMA_1y.png",
+      "output/ma/2026-01-14_BLDR_EMA_1y.png"
+    ],
+    "tweet_id": "2011528998526783868",
+    "tweet_text": "1y - BLDR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #BLDR #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011528998526783868"
+  }
+]
