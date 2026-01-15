@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-15_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2011863940448358438",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011863940448358438"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-15_1mo_0.png",
+      "output/normalized/2026-01-15_1mo_1.png",
+      "output/normalized/2026-01-15_1mo_2.png",
+      "output/normalized/2026-01-15_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2011870611891486763",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011870611891486763"
+  },
+  {
+    "type": "ma",
+    "ticker": "DVA",
+    "images": [
+      "output/ma/2026-01-15_DVA_SMA_1y.png",
+      "output/ma/2026-01-15_DVA_EMA_1y.png"
+    ],
+    "tweet_id": "2011879902924984334",
+    "tweet_text": "1y - DVA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #DVA #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011879902924984334"
+  },
+  {
+    "type": "ma",
+    "ticker": "CTRA",
+    "images": [
+      "output/ma/2026-01-15_CTRA_SMA_1y.png",
+      "output/ma/2026-01-15_CTRA_EMA_1y.png"
+    ],
+    "tweet_id": "2011889888455495770",
+    "tweet_text": "1y - CTRA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #CTRA #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011889888455495770"
+  },
+  {
+    "type": "ma",
+    "ticker": "FISV",
+    "images": [
+      "output/ma/2026-01-15_FISV_SMA_1y.png",
+      "output/ma/2026-01-15_FISV_EMA_1y.png"
+    ],
+    "tweet_id": "2011900497641271332",
+    "tweet_text": "1y - FISV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FISV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011900497641271332"
+  }
+]
