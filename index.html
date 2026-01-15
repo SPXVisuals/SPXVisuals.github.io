@@ -114,6 +114,17 @@
       background: #3b82f6;
     }
 
+    #clearSearch {
+      background: #111827;
+      color: #94a3b8;
+      display: none; /* initially hidden */
+    }
+
+    #clearSearch:hover {
+      background: #1f2937;
+      color: #e5e7eb;
+    }
+
     /* ---------------- Posts Layout ---------------- */
     main {
       column-count: 2;
@@ -271,6 +282,7 @@
       <button id="todayFilter">Today's Charts</button>
       <button id="weekFilter">This Week</button>
       <button id="monthFilter">This Month</button>
+      <button id="clearSearch">Clear</button>
     </div>
   </div>
 </header>
@@ -369,6 +381,9 @@ function updateButtons() {
   todayBtn.classList.toggle('active', filters.today);
   weekBtn.classList.toggle('active', filters.week);
   monthBtn.classList.toggle('active', filters.month);
+  // show clear button if any filter/search active
+  const searchValue = document.getElementById('search').value;
+  clearBtn.style.display = (filters.today || filters.week || filters.month || searchValue) ? 'inline-block' : 'none';
 }
 
 function applyFilters() {
@@ -404,6 +419,7 @@ document.getElementById('search').addEventListener('input', applyFilters);
 const todayBtn = document.getElementById('todayFilter');
 const weekBtn = document.getElementById('weekFilter');
 const monthBtn = document.getElementById('monthFilter');
+const clearBtn = document.getElementById('clearSearch');
 
 todayBtn.onclick = () => {
   filters.today = !filters.today;
@@ -421,6 +437,13 @@ monthBtn.onclick = () => {
   filters.month = !filters.month;
   filters.today = filters.week = false;
   applyFilters();
+};
+
+clearBtn.onclick = () => {
+  document.getElementById('search').value = '';
+  filters.today = filters.week = filters.month = false;
+  renderPosts(allPosts);
+  updateButtons();
 };
 
 loadPosts().then(posts => {
