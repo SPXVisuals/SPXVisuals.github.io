@@ -20,9 +20,7 @@
       transition: color 0.2s, text-shadow 0.3s;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
+    a:hover { text-decoration: underline; }
 
     /* ---------------- Header ---------------- */
     header {
@@ -44,9 +42,8 @@
       margin: 0;
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 2rem;
       gap: 12px;
+      font-size: 2rem;
       color: #ffffff;
     }
 
@@ -145,16 +142,30 @@
 
     .hashtags a {
       font-size: 0.85rem;
+      cursor: pointer;
       color: #22d3ee;
       animation: glowPulse 2.5s ease-in-out infinite alternate;
+    }
+
+    .hashtags a:hover {
+      color: #06b6d4;
+      text-shadow: 0 0 6px #06b6d4, 0 0 12px #3b82f6;
     }
 
     .post-date {
       font-size: 0.8rem;
       color: #94a3b8;
+      margin-bottom: 6px;
     }
 
-    /* ---------------- X Link ---------------- */
+    .empty-state {
+      text-align: center;
+      font-size: 1rem;
+      color: #94a3b8;
+      margin-top: 48px;
+    }
+
+    /* ---------------- X Button ---------------- */
     .tweet-link-container {
       text-align: center;
       margin-bottom: 8px;
@@ -221,14 +232,14 @@
 <body>
 <header>
   <h1><span class="header-icons">📊</span>SPXVisuals<span class="header-icons">📈</span></h1>
-  <a href="https://x.com/SPXVisuals" class="x-link" target="_blank">𝕏</a>
+  <a href="https://x.com/SPXVisuals" target="_blank" class="x-link">𝕏</a>
+
   <div class="controls">
     <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
     <div class="filter-buttons">
       <button id="todayFilter">Today's Charts</button>
       <button id="weekFilter">This Week</button>
       <button id="monthFilter">This Month</button>
-      <button id="modeToggle">Light Mode</button>
     </div>
   </div>
 </header>
@@ -237,7 +248,8 @@
 <footer>© 2026 SPXVisuals</footer>
 
 <script>
-/* ---------- ORIGINAL SCRIPT UNCHANGED ---------- */
+/* ---------------- ORIGINAL FUNCTIONALITY RESTORED ---------------- */
+
 async function loadPosts() {
   const indexRes = await fetch('output/metadata/index.json');
   const files = await indexRes.json();
@@ -255,12 +267,17 @@ async function loadPosts() {
         text: p.tweet_text,
         images: p.images,
         url: p.tweet_url,
-        hashtags: [...p.tweet_text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]),
+        hashtags: extractHashtags(p.tweet_text),
         type: p.type
       });
     });
   }
+
   return all.sort((a, b) => b.date.localeCompare(a.date));
+}
+
+function extractHashtags(text) {
+  return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
 }
 
 function todayLocalISO() {
@@ -280,33 +297,118 @@ function renderPosts(posts) {
   const container = document.getElementById('posts');
   container.innerHTML = '';
 
+  if (!posts.length) {
+    const empty = document.createElement('div');
+    empty.className = 'empty-state';
+    empty.textContent = 'No charts match your filters 📉';
+    container.appendChild(empty);
+    return;
+  }
+
   posts.forEach(post => {
     const div = document.createElement('div');
     div.className = 'post';
+
     div.innerHTML = `
       ${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
       <div class="post-date">${post.date}</div>
-      <div class="hashtags">${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}</div>
+      <div class="hashtags">
+        ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
+      </div>
       <div>${post.text}</div>
       ${post.images.map(i => `<img src="${i}" loading="lazy">`).join('')}
     `;
+
+    div.querySelectorAll('.hashtags a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById('search').value = a.textContent;
+        applyFilters();
+      });
+    });
+
     container.appendChild(div);
   });
 }
 
 let allPosts = [];
-loadPosts().then(p => { allPosts = p; renderPosts(allPosts); });
+const filters = { today: false, week: false, month: false };
+
+function updateButtons() {
+  todayBtn.classList.toggle('active', filters.today);
+  weekBtn.classList.toggle('active', filters.week);
+  monthBtn.classList.toggle('active', filters.month);
+}
+
+function applyFilters() {
+  let input = normalizeDateInput(
+    document.getElementById('search').value.toLowerCase()
+  );
+
+  let filtered = allPosts.filter(post =>
+    post.hashtags.some(t => t.toLowerCase().includes(input)) ||
+    post.date.includes(input)
+  );
+
+  const now = new Date(todayLocalISO());
+
+  if (filters.today) {
+    filtered = filtered.filter(p => p.date === todayLocalISO());
+  } else if (filters.week) {
+    const d = new Date(now);
+    d.setDate(now.getDate() - 7);
+    filtered = filtered.filter(p => new Date(p.date) >= d);
+  } else if (filters.month) {
+    const d = new Date(now);
+    d.setMonth(now.getMonth() - 1);
+    filtered = filtered.filter(p => new Date(p.date) >= d);
+  }
+
+  renderPosts(filtered);
+  updateButtons();
+}
+
+document.getElementById('search').addEventListener('input', applyFilters);
+
+const todayBtn = document.getElementById('todayFilter');
+const weekBtn = document.getElementById('weekFilter');
+const monthBtn = document.getElementById('monthFilter');
+
+todayBtn.onclick = () => {
+  filters.today = !filters.today;
+  filters.week = filters.month = false;
+  applyFilters();
+};
+
+weekBtn.onclick = () => {
+  filters.week = !filters.week;
+  filters.today = filters.month = false;
+  applyFilters();
+};
+
+monthBtn.onclick = () => {
+  filters.month = !filters.month;
+  filters.today = filters.week = false;
+  applyFilters();
+};
+
+loadPosts().then(posts => {
+  allPosts = posts;
+  renderPosts(allPosts);
+});
 </script>
 
 <script>
-/* ---------- IMAGE EXPAND ---------- */
+/* ---------------- IMAGE EXPAND ---------------- */
 document.addEventListener('click', e => {
   if (e.target.tagName === 'IMG' && e.target.closest('.post')) {
     const modal = document.createElement('div');
     modal.className = 'image-modal';
     modal.innerHTML = `<img src="${e.target.src}">`;
     modal.onclick = () => modal.remove();
-    document.addEventListener('keydown', ev => ev.key === 'Escape' && modal.remove(), { once:true });
+    document.addEventListener('keydown', ev => {
+      if (ev.key === 'Escape') modal.remove();
+    }, { once:true });
     document.body.appendChild(modal);
   }
 });
