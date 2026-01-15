@@ -97,22 +97,26 @@
       justify-content: center;
     }
 
+    /* ---------------- Button Styles ---------------- */
     button {
-      background: #020617;
+      --bg-color: #020617; /* default background color */
+      background: var(--bg-color);
       color: #e5e7eb;
       border: none;
       border-radius: 6px;
       padding: 6px 12px;
       cursor: pointer;
+      transition: background 0.3s, color 0.3s;
     }
 
     button:hover {
       background: #1e293b;
     }
 
+    /* Active button: white background, text = original color */
     button.active {
-      background: #FFFFFF;
-      color: #020617;
+      background: #ffffff;
+      color: var(--bg-color);
     }
 
     #clearSearch {
@@ -280,9 +284,9 @@
   <div class="controls">
     <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
     <div class="filter-buttons">
-      <button id="todayFilter">Today's Charts</button>
-      <button id="weekFilter">This Week</button>
-      <button id="monthFilter">This Month</button>
+      <button id="todayFilter" style="--bg-color: #3b82f6;">Today's Charts</button>
+      <button id="weekFilter" style="--bg-color: #06b6d4;">This Week</button>
+      <button id="monthFilter" style="--bg-color: #3b82f6;">This Month</button>
       <button id="clearSearch">Clear Search</button>
     </div>
   </div>
@@ -382,15 +386,13 @@ function updateButtons() {
   todayBtn.classList.toggle('active', filters.today);
   weekBtn.classList.toggle('active', filters.week);
   monthBtn.classList.toggle('active', filters.month);
-  // show clear button if any filter/search active
+
   const searchValue = document.getElementById('search').value;
   clearBtn.style.display = (filters.today || filters.week || filters.month || searchValue) ? 'inline-block' : 'none';
 }
 
 function applyFilters() {
-  let input = normalizeDateInput(
-    document.getElementById('search').value.toLowerCase()
-  );
+  let input = normalizeDateInput(document.getElementById('search').value.toLowerCase());
 
   let filtered = allPosts.filter(post =>
     post.hashtags.some(t => t.toLowerCase().includes(input)) ||
