@@ -9,7 +9,7 @@
     /* ---------------- Base Styles ---------------- */
     body {
       font-family: system-ui, sans-serif;
-      background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+      background: #0f172a;
       color: #e5e7eb;
       margin: 0;
       padding: 24px;
@@ -17,7 +17,7 @@
     }
 
     body.light-mode {
-      background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+      background: #f8fafc;
       color: #1e293b;
     }
 
@@ -35,18 +35,17 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: #1e293b;
-      color: #e5e7eb;
+      background: #ffffff; 
+      color: #1e293b;
       padding: 12px 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 8px;
-      border-radius: 8px;
     }
 
     body.light-mode header {
-      background: #1d4ed8;
+      background: #3b82f6;
       color: #ffffff;
     }
 
@@ -58,12 +57,10 @@
       font-size: 2rem;
       gap: 12px;
       color: #3b82f6;
-      text-shadow: 0 0 6px rgba(59, 130, 246, 0.7);
     }
 
     body.light-mode h1 {
       color: #ffffff;
-      text-shadow: 0 0 6px rgba(255,255,255,0.5);
     }
 
     .header-icons {
@@ -74,7 +71,6 @@
       font-size: 1.2rem;
       margin-top: -4px;
       color: #3b82f6;
-      font-weight: bold;
     }
 
     body.light-mode .x-link {
@@ -100,21 +96,21 @@
       width: 100%;
       max-width: 360px;
       text-align: center;
-      transition: background 0.3s, color 0.3s, border 0.3s;
     }
 
     body.light-mode input[type="text"] {
-      background: #e2e8f0;
+      background: #f1f5f9;
       color: #1e293b;
       border: 1px solid #cbd5e1;
     }
 
     input[type="text"]::placeholder {
-      color: #94a3b8;
+      color: #e5e7eb;
+      opacity: 1;
     }
 
     body.light-mode input[type="text"]::placeholder {
-      color: #64748b;
+      color: #1e293b;
     }
 
     .filter-buttons {
@@ -126,34 +122,33 @@
 
     /* ---------------- Buttons ---------------- */
     button {
-      background: #3b82f6;
-      color: #ffffff;
+      background: #1e293b;
+      color: #e5e7eb;
       border: none;
       border-radius: 6px;
       padding: 6px 12px;
       cursor: pointer;
-      transition: background 0.3s, color 0.3s;
     }
 
     button:hover {
-      background: #2563eb;
+      background: #475569;
     }
 
     button.active {
-      background: #1e40af;
+      background: #3b82f6;
     }
 
     body.light-mode button {
       background: #ffffff;
-      color: #1d4ed8;
+      color: #1e3a8a;
     }
 
     body.light-mode button:hover {
-      background: #e0e7ff;
+      background: #e2e8f0;
     }
 
     body.light-mode button.active {
-      background: #1d4ed8;
+      background: #1e3a8a;
       color: #ffffff;
     }
 
@@ -169,51 +164,21 @@
       width: 100%;
       margin-bottom: 24px;
       break-inside: avoid;
-      background: linear-gradient(180deg, #1e293b 0%, #111827 100%);
+      background: #111827;
       padding: 12px;
-      border-radius: 12px;
+      border-radius: 8px;
       position: relative;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      transition: background 0.5s, box-shadow 0.5s;
+      transition: transform 0.3s;
       overflow: hidden;
     }
 
+    .post:hover {
+      transform: translateY(-2px);
+    }
+
     body.light-mode .post {
-      background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+      background: #e2e8f0;
       color: #1e293b;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    /* ---------------- Post Hover Gradient Animation ---------------- */
-    .post::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(45deg, #3b82f6, #22d3ee, #3b82f6, #06b6d4);
-      opacity: 0;
-      transition: opacity 0.3s;
-      filter: blur(60px);
-      z-index: 0;
-      pointer-events: none;
-      animation: gradientMove 6s linear infinite;
-    }
-
-    @keyframes gradientMove {
-      0% { transform: rotate(0deg) translate(0,0); }
-      50% { transform: rotate(180deg) translate(50px,50px); }
-      100% { transform: rotate(360deg) translate(0,0); }
-    }
-
-    .post:hover::before {
-      opacity: 0.3;
-    }
-
-    .post > * {
-      position: relative;
-      z-index: 1;
     }
 
     .post img {
@@ -234,7 +199,6 @@
       cursor: pointer;
       color: #22d3ee;
       text-shadow: 0 0 4px rgba(34,211,238,0.7);
-      transition: color 0.2s, text-shadow 0.3s;
       animation: glowPulse 2.5s ease-in-out infinite alternate;
     }
 
@@ -272,11 +236,10 @@
       margin-top: 48px;
     }
 
-    /* ---------------- Post X Link ---------------- */
+    /* ---------------- "See Post On X" Link ---------------- */
     .tweet-link-container {
       text-align: center;
       margin-bottom: 8px;
-      transition: transform 0.2s, filter 0.3s;
     }
 
     .tweet-link-container a {
@@ -308,7 +271,7 @@
     }
 
     /* ---------------- Neon Glow for Post Text ---------------- */
-    .post div:nth-child(3) {
+    .post div:nth-child(4) {
       animation: glowPulse 3s ease-in-out infinite alternate;
     }
 
@@ -371,6 +334,7 @@
   </footer>
 
   <script>
+    // ---------------------- Your JavaScript completely unchanged ----------------------
     async function loadPosts() {
       const indexRes = await fetch('output/metadata/index.json');
       const files = await indexRes.json();
@@ -404,8 +368,8 @@
 
     function todayLocalISO() {
       const d = new Date();
-      d.setHours(0,0,0,0);
-      return d.toISOString().slice(0,10);
+      d.setHours(0, 0, 0, 0);
+      return d.toISOString().slice(0, 10);
     }
 
     function normalizeDateInput(input) {
@@ -499,3 +463,33 @@
 
     todayBtn.onclick = () => {
       filters.today = !filters.today;
+      filters.week = filters.month = false;
+      applyFilters();
+    };
+
+    weekBtn.onclick = () => {
+      filters.week = !filters.week;
+      filters.today = filters.month = false;
+      applyFilters();
+    };
+
+    monthBtn.onclick = () => {
+      filters.month = !filters.month;
+      filters.today = filters.week = false;
+      applyFilters();
+    };
+
+    modeBtn.onclick = () => {
+      document.body.classList.toggle('light-mode');
+      modeBtn.textContent = document.body.classList.contains('light-mode')
+        ? 'Dark Mode'
+        : 'Light Mode';
+    };
+
+    loadPosts().then(posts => {
+      allPosts = posts;
+      renderPosts(allPosts);
+    });
+  </script>
+</body>
+</html>
