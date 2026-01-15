@@ -17,10 +17,8 @@
 
     a {
       text-decoration: none;
-      transition: color 0.2s, text-shadow 0.3s;
+      color: inherit;
     }
-
-    a:hover { text-decoration: underline; }
 
     /* ---------------- Header ---------------- */
     header {
@@ -40,19 +38,31 @@
 
     h1 {
       margin: 0;
+      font-size: 2rem;
       display: flex;
       align-items: center;
       gap: 12px;
-      font-size: 2rem;
-      color: #ffffff;
     }
 
-    .header-icons { font-size: 1.5rem; }
+    .title-link,
+    .x-link {
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .title-link:hover,
+    .x-link:hover {
+      text-decoration: underline;
+    }
+
+    .header-icons {
+      font-size: 1.5rem;
+    }
 
     .x-link {
       font-size: 1.2rem;
       margin-top: -4px;
-      color: #ffffff;
     }
 
     /* ---------------- Controls ---------------- */
@@ -76,7 +86,9 @@
       text-align: center;
     }
 
-    input::placeholder { color: #94a3b8; }
+    input::placeholder {
+      color: #94a3b8;
+    }
 
     .filter-buttons {
       display: flex;
@@ -94,9 +106,13 @@
       cursor: pointer;
     }
 
-    button:hover { background: #1e293b; }
+    button:hover {
+      background: #1e293b;
+    }
 
-    button.active { background: #3b82f6; }
+    button.active {
+      background: #3b82f6;
+    }
 
     /* ---------------- Posts Layout ---------------- */
     main {
@@ -165,7 +181,7 @@
       margin-top: 48px;
     }
 
-    /* ---------------- X Button ---------------- */
+    /* ---------------- "See Post On X" ---------------- */
     .tweet-link-container {
       text-align: center;
       margin-bottom: 8px;
@@ -231,8 +247,23 @@
 
 <body>
 <header>
-  <h1><span class="header-icons">📊</span>SPXVisuals<span class="header-icons">📈</span></h1>
-  <a href="https://x.com/SPXVisuals" target="_blank" class="x-link">𝕏</a>
+  <h1>
+    <span class="header-icons">📊</span>
+    <a
+      href="https://spxvisuals.github.io/"
+      class="title-link"
+      target="_blank"
+      rel="noopener"
+    >SPXVisuals</a>
+    <span class="header-icons">📈</span>
+  </h1>
+
+  <a
+    href="https://x.com/SPXVisuals"
+    target="_blank"
+    rel="noopener"
+    class="x-link"
+  >𝕏</a>
 
   <div class="controls">
     <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
@@ -247,9 +278,8 @@
 <main id="posts"></main>
 <footer>© 2026 SPXVisuals</footer>
 
+<!-- ================= ORIGINAL JS (UNCHANGED) ================= -->
 <script>
-/* ---------------- ORIGINAL FUNCTIONALITY RESTORED ---------------- */
-
 async function loadPosts() {
   const indexRes = await fetch('output/metadata/index.json');
   const files = await indexRes.json();
@@ -258,6 +288,7 @@ async function loadPosts() {
   for (const file of files) {
     const res = await fetch(`output/metadata/${file}`);
     const daily = await res.json();
+
     const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
     const date = dateMatch ? dateMatch[0] : '';
 
@@ -398,8 +429,8 @@ loadPosts().then(posts => {
 });
 </script>
 
+<!-- ================= IMAGE EXPAND (SAFE ADD-ON) ================= -->
 <script>
-/* ---------------- IMAGE EXPAND ---------------- */
 document.addEventListener('click', e => {
   if (e.target.tagName === 'IMG' && e.target.closest('.post')) {
     const modal = document.createElement('div');
@@ -408,10 +439,11 @@ document.addEventListener('click', e => {
     modal.onclick = () => modal.remove();
     document.addEventListener('keydown', ev => {
       if (ev.key === 'Escape') modal.remove();
-    }, { once:true });
+    }, { once: true });
     document.body.appendChild(modal);
   }
 });
 </script>
+
 </body>
 </html>
