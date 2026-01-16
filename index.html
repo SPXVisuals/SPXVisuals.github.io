@@ -6,7 +6,6 @@
 <title>SPXVisuals</title>
 
 <style>
-/* ---------------- Base Styles ---------------- */
 body {
 font-family: system-ui, sans-serif;
 background: #0f172a;
@@ -15,10 +14,7 @@ margin: 0;
 padding: 24px;
 }
 
-a {
-text-decoration: none;
-color: inherit;
-}
+a { text-decoration: none; color: inherit; }
 
 /* ---------------- Header ---------------- */
 header {
@@ -42,7 +38,7 @@ position: absolute;
 bottom: 4px;
 left: 8px;
 font-size: 0.65rem;
-opacity: 0.55;
+opacity: .55;
 pointer-events: none;
 }
 
@@ -51,7 +47,7 @@ position: absolute;
 bottom: 4px;
 right: 8px;
 font-size: 0.65rem;
-opacity: 0.55;
+opacity: .55;
 pointer-events: none;
 }
 
@@ -63,249 +59,168 @@ align-items: center;
 gap: 12px;
 }
 
-.title-link,
-.x-link {
-color: #ffffff;
-text-decoration: none;
-cursor: pointer;
-}
+.title-link,.x-link { color:#fff; cursor:pointer; }
+.title-link:hover,.x-link:hover { text-decoration:underline; }
 
-.title-link:hover,
-.x-link:hover {
-text-decoration: underline;
-}
-
-.header-icons {
-font-size: 1.5rem;
-}
-
-.x-link {
-font-size: 1.2rem;
-margin-top: -4px;
-}
-
-/* ---------------- Controls ---------------- */
 .controls {
-display: flex;
-flex-direction: column;
-gap: 10px;
-width: 100%;
-max-width: 420px;
-align-items: center;
+display:flex;
+flex-direction:column;
+gap:10px;
+width:100%;
+max-width:420px;
+align-items:center;
 }
 
 input[type="text"] {
-padding: 6px 12px;
-border-radius: 6px;
-border: 1px solid #475569;
-background: #020617;
-color: #e5e7eb;
-width: 100%;
-max-width: 360px;
-text-align: center;
-}
-
-input::placeholder {
-color: #94a3b8;
+padding:6px 12px;
+border-radius:6px;
+border:1px solid #475569;
+background:#020617;
+color:#e5e7eb;
+width:100%;
+max-width:360px;
+text-align:center;
 }
 
 .filter-buttons {
-display: flex;
-gap: 8px;
-flex-wrap: wrap;
-justify-content: center;
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-/* ---------------- Button Styles ---------------- */
 button {
-background: #020617;
---bg-color: #020617;
-background: var(--bg-color);
-color: #e5e7eb;
-border: none;
-border-radius: 6px;
-padding: 6px 12px;
-cursor: pointer;
-transition: background 0.3s, color 0.3s;
+background:#020617;
+color:#e5e7eb;
+border:none;
+border-radius:6px;
+padding:6px 12px;
+cursor:pointer;
+transition:.3s;
 }
 
-button:hover {
-background: #1e293b;
-}
+button:hover { background:#1e293b; }
 
 button.active {
-background: #ffffff;
-color: var(--bg-color);
+background:#fff;
+color:#020617;
 }
 
 #clearSearch {
-background: #111827;
-color: #e5e7eb;
-display: none;
+background:#111827;
+display:none;
 }
 
-#clearSearch:hover {
-background: #1f2937;
-}
-
-/* ---------------- Posts Layout ---------------- */
+/* ---------------- Layout ---------------- */
 main {
-column-count: 2;
-column-gap: 32px;
-margin-top: 32px;
+column-count:2;
+column-gap:32px;
+margin-top:32px;
 }
 
 .post {
-display: inline-block;
-width: 100%;
-margin-bottom: 40px;
-break-inside: avoid;
-background: transparent;
-padding: 0;
-transition: transform 0.35s ease, filter 0.35s ease;
+display:inline-block;
+width:100%;
+margin-bottom:40px;
+break-inside:avoid;
+transition:.35s;
 }
 
 .post:hover {
-transform: scale(1.03);
-filter: drop-shadow(0 14px 36px rgba(59,130,246,0.4));
+transform:scale(1.03);
+filter:drop-shadow(0 14px 36px rgba(59,130,246,.4));
 }
 
 .post img {
-width: 100%;
-border-radius: 10px;
-margin: 16px 0;
-cursor: zoom-in;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+width:100%;
+border-radius:10px;
+margin:16px 0;
+cursor:zoom-in;
+transition:.3s;
 }
 
-.post img:hover {
-transform: scale(1.02);
-box-shadow: 0 0 26px rgba(34,211,238,0.45);
-}
-
-.hashtags {
-display: flex;
-flex-wrap: wrap;
-gap: 6px;
-margin-bottom: 6px;
-}
+.hashtags { display:flex; gap:6px; flex-wrap:wrap; }
 
 .hashtags a {
-font-size: 0.85rem;
-cursor: pointer;
-color: #22d3ee;
-animation: glowPulse 2.5s ease-in-out infinite alternate;
-}
-
-.hashtags a:hover {
-color: #06b6d4;
-text-shadow: 0 0 6px #06b6d4, 0 0 12px #3b82f6;
+font-size:.85rem;
+color:#22d3ee;
 }
 
 .post-date {
-font-size: 0.8rem;
-color: #94a3b8;
-margin-bottom: 6px;
+font-size:.8rem;
+color:#94a3b8;
+margin-bottom:6px;
 }
 
-.empty-state {
-text-align: center;
-font-size: 1rem;
-color: #94a3b8;
-margin-top: 48px;
-}
-
-/* ---------------- "See Post On X" ---------------- */
-.tweet-link-container {
-text-align: center;
-margin-bottom: 8px;
-}
+.tweet-link-container { text-align:center; margin-bottom:8px; }
 
 .tweet-link-container a {
-display: inline-block;
-background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
-background-size: 200% 200%;
-padding: 6px 10px;
-border-radius: 8px;
-font-weight: bold;
-color: #ffffff;
-animation: gradientShift 3s ease infinite;
-transition: transform 0.3s;
+display:inline-block;
+background:linear-gradient(90deg,#3b82f6,#06b6d4,#3b82f6);
+background-size:200% 200%;
+padding:6px 10px;
+border-radius:8px;
+font-weight:bold;
+color:#fff;
+animation:gradientShift 3s ease infinite;
 }
 
-.tweet-link-container a:hover {
-transform: scale(1.08);
-}
-
-/* ---------------- Image Modal ---------------- */
 .image-modal {
-position: fixed;
-inset: 0;
-background: rgba(0,0,0,0.85);
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: 9999;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.85);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
 }
 
 .image-modal img {
-max-width: 95%;
-max-height: 95%;
-border-radius: 12px;
-cursor: zoom-out;
-}
-
-@keyframes glowPulse {
-from { text-shadow: 0 0 6px #22d3ee; }
-to { text-shadow: 0 0 14px #3b82f6; }
+max-width:95%;
+max-height:95%;
+border-radius:12px;
+cursor:zoom-out;
 }
 
 @keyframes gradientShift {
-0% { background-position: 0% 50%; }
-50% { background-position: 100% 50%; }
-100% { background-position: 0% 50%; }
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
 }
 
-footer {
-text-align: center;
-font-size: 0.8rem;
-color: #94a3b8;
-margin-top: 48px;
-}
-
-@media (max-width: 768px) {
-main { column-count: 1; }
+@media (max-width:768px){
+main{column-count:1;}
 }
 </style>
 </head>
 
 <body>
 <header>
-
-<div class="header-watermark">SPXVisuals</div>
-<div class="header-copyright">© 2026 SPXVisuals</div>
+<div class="header-watermark">SPXVisuals • x.com/SPXVisuals</div>
+<div class="header-copyright">© 2026 SPXVisuals All Rights Reserved</div>
 
 <h1>
-<span class="header-icons">📊</span>
-<a href="https://spxvisuals.github.io/" class="title-link" target="_blank" rel="noopener">SPXVisuals</a>
-<span class="header-icons">📈</span>
+📊 <a href="https://spxvisuals.github.io/" class="title-link">SPXVisuals</a> 📈
 </h1>
 
-<a href="https://x.com/SPXVisuals" target="_blank" rel="noopener" class="x-link">𝕏</a>
+<a href="https://x.com/SPXVisuals" class="x-link">𝕏</a>
 
 <div class="controls">
 <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
 <div class="filter-buttons">
-<button id="todayFilter" style="--bg-color:#020617;">Today's Charts</button>
-<button id="weekFilter" style="--bg-color:#020617;">This Week</button>
-<button id="monthFilter" style="--bg-color:#020617;">This Month</button>
+<button id="todayFilter">Today's Charts</button>
+<button id="weekFilter">This Week</button>
+<button id="monthFilter">This Month</button>
 <button id="clearSearch">Clear Search</button>
 </div>
 </div>
 </header>
 
 <main id="posts"></main>
-<footer>© 2026 SPXVisuals — All Rights Reserved</footer>
+
+<footer style="text-align:center;margin-top:48px;font-size:.8rem;color:#94a3b8;">
+© 2026 SPXVisuals — All Rights Reserved
+</footer>
 
 <script>
 async function loadPosts() {
@@ -316,61 +231,140 @@ const all = [];
 for (const file of files) {
 const res = await fetch(`output/metadata/${file}`);
 const daily = await res.json();
-
 const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
 const date = dateMatch ? dateMatch[0] : '';
 
-daily.forEach(p => {
+daily.forEach(p=>{
 all.push({
 date,
-text: p.tweet_text,
-images: p.images,
-url: p.tweet_url,
-hashtags: extractHashtags(p.tweet_text),
-type: p.type
+text:p.tweet_text,
+images:p.images,
+url:p.tweet_url,
+hashtags:extractHashtags(p.tweet_text)
 });
 });
 }
 
-return all.sort((a, b) => b.date.localeCompare(a.date));
+return all.sort((a,b)=>b.date.localeCompare(a.date));
 }
 
-function extractHashtags(text) {
-return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
+function extractHashtags(text){
+return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m=>m[0]);
 }
 
-function reorderForColumns(items, cols = 2) {
-const out = [];
-const rows = Math.ceil(items.length / cols);
-
-for (let c = 0; c < cols; c++) {
-for (let r = 0; r < rows; r++) {
-const i = r * cols + c;
-if (items[i]) out.push(items[i]);
-}
-}
-return out;
+function todayLocalISO(){
+const d=new Date();d.setHours(0,0,0,0);
+return d.toISOString().slice(0,10);
 }
 
-function renderPosts(posts) {
-const container = document.getElementById('posts');
-container.innerHTML = '';
+function normalizeDateInput(input){
+const m=input.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+if(!m) return input;
+return `${m[3]}-${m[1]}-${m[2]}`;
+}
 
-reorderForColumns(posts, 2).forEach(post => {
-const div = document.createElement('div');
-div.className = 'post';
+function renderPosts(posts){
+const c=document.getElementById('posts');
+c.innerHTML='';
 
-div.innerHTML = `
-${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
+if(!posts.length){
+c.innerHTML='<div class="empty-state">No charts match 📉</div>';
+return;
+}
+
+posts.forEach(post=>{
+const d=document.createElement('div');
+d.className='post';
+
+d.innerHTML=`
+${post.url?`<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>`:''}
 <div class="post-date">${post.date}</div>
-<div class="hashtags">${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}</div>
+<div class="hashtags">${post.hashtags.map(t=>`<a href="#">${t}</a>`).join('')}</div>
 <div>${post.text}</div>
-${post.images.map(i => `<img src="${i}" loading="lazy">`).join('')}
+${post.images.map(i=>`<img src="${i}" loading="lazy">`).join('')}
 `;
 
-container.appendChild(div);
+d.querySelectorAll('.hashtags a').forEach(a=>{
+a.onclick=e=>{
+e.preventDefault();
+search.value=a.textContent;
+applyFilters();
+};
+});
+
+c.appendChild(d);
 });
 }
+
+let allPosts=[];
+const filters={today:false,week:false,month:false};
+
+function updateButtons(){
+todayBtn.classList.toggle('active',filters.today);
+weekBtn.classList.toggle('active',filters.week);
+monthBtn.classList.toggle('active',filters.month);
+clearBtn.style.display=(filters.today||filters.week||filters.month||search.value)?'inline-block':'none';
+}
+
+function applyFilters(){
+let input=normalizeDateInput(search.value.toLowerCase());
+
+let filtered=allPosts.filter(p=>
+p.hashtags.some(t=>t.toLowerCase().includes(input))||
+p.date.includes(input)
+);
+
+const now=new Date(todayLocalISO());
+
+if(filters.today){
+filtered=filtered.filter(p=>p.date===todayLocalISO());
+}else if(filters.week){
+const d=new Date(now);d.setDate(now.getDate()-7);
+filtered=filtered.filter(p=>new Date(p.date)>=d);
+}else if(filters.month){
+const d=new Date(now);d.setMonth(now.getMonth()-1);
+filtered=filtered.filter(p=>new Date(p.date)>=d);
+}
+
+renderPosts(filtered);
+updateButtons();
+}
+
+const search=document.getElementById('search');
+const todayBtn=document.getElementById('todayFilter');
+const weekBtn=document.getElementById('weekFilter');
+const monthBtn=document.getElementById('monthFilter');
+const clearBtn=document.getElementById('clearSearch');
+
+search.oninput=applyFilters;
+
+todayBtn.onclick=()=>{filters.today=!filters.today;filters.week=filters.month=false;applyFilters();};
+weekBtn.onclick=()=>{filters.week=!filters.week;filters.today=filters.month=false;applyFilters();};
+monthBtn.onclick=()=>{filters.month=!filters.month;filters.today=filters.week=false;applyFilters();};
+
+clearBtn.onclick=()=>{
+search.value='';
+filters.today=filters.week=filters.month=false;
+renderPosts(allPosts);
+updateButtons();
+};
+
+loadPosts().then(p=>{
+allPosts=p;
+renderPosts(allPosts);
+});
+</script>
+
+<script>
+document.addEventListener('click',e=>{
+if(e.target.tagName==='IMG'&&e.target.closest('.post')){
+const m=document.createElement('div');
+m.className='image-modal';
+m.innerHTML=`<img src="${e.target.src}">`;
+m.onclick=()=>m.remove();
+document.body.appendChild(m);
+}
+});
 </script>
 
 </body>
