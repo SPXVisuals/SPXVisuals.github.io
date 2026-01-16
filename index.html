@@ -71,9 +71,9 @@ color: var(--bg-color, #020617);
 
 #clearSearch { display:none; background:#111827; }
 
-main { column-count: 2; column-gap: 32px; margin-top: 32px; }
+main { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
 
-.post { break-inside: avoid; margin-bottom: 40px; }
+.post { margin-bottom: 40px; }
 
 .post img {
 width:100%;
