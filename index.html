@@ -120,6 +120,7 @@ main {
   margin-top: 32px;
 }
 
+
 .post {
   display: block;
   width: 100%;
@@ -166,11 +167,6 @@ border-radius:8px;
 font-weight:bold;
 color:#fff;
 animation:gradientShift 3s ease infinite;
-transition: transform .3s ease;
-}
-
-.tweet-link-container a:hover {
-transform: scale(1.08);
 }
 
 .image-modal {
@@ -312,23 +308,7 @@ function renderPosts(posts) {
     container.appendChild(div);
   });
 
-  waitForImages();
-}
-
-function waitForImages() {
-  const imgs = document.querySelectorAll('#posts img');
-  let loaded = 0;
-  if (!imgs.length) return applyMasonry();
-
-  imgs.forEach(img => {
-    if (img.complete) {
-      if (++loaded === imgs.length) applyMasonry();
-    } else {
-      img.onload = img.onerror = () => {
-        if (++loaded === imgs.length) applyMasonry();
-      };
-    }
-  });
+  requestAnimationFrame(applyMasonry);
 }
 
 let allPosts = [];
@@ -434,13 +414,16 @@ function applyMasonry() {
   container.style.height = Math.max(...colHeights) + 'px';
 }
 
-window.addEventListener('resize', waitForImages);
+window.addEventListener('resize', () => {
+  requestAnimationFrame(applyMasonry);
+});
 
 loadPosts().then(posts => {
   allPosts = posts;
   renderPosts(allPosts);
 });
 </script>
+
 
 </body>
 </html>
