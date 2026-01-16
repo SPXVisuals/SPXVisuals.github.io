@@ -113,9 +113,13 @@ display:none;
 
 /* ---------------- Layout ---------------- */
 main {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 32px;
   margin-top: 32px;
 }
+
 
 .post {
   display: block;
@@ -163,11 +167,6 @@ border-radius:8px;
 font-weight:bold;
 color:#fff;
 animation:gradientShift 3s ease infinite;
-transition: transform .3s ease;
-}
-
-.tweet-link-container a:hover {
-transform: scale(1.08);
 }
 
 .image-modal {
@@ -194,9 +193,7 @@ cursor:zoom-out;
 }
 
 @media (max-width:768px){
-  main {
-    position: relative;
-  }
+main{column-count:1;}
 }
 </style>
 </head>
@@ -204,10 +201,10 @@ cursor:zoom-out;
 <body>
 <header>
 <div class="header-watermark">SPXVisuals • x.com/SPXVisuals</div>
-<div class="header-copyright">© 2026 SPXVisuals • All Rights Reserved</div>
+<div class="header-copyright">© 2026 SPXVisuals All Rights Reserved</div>
 
 <h1>
-📊 <a>SPXVisuals</a>📈
+📊 <a href="https://spxvisuals.github.io/" class="title-link">SPXVisuals</a> 📈
 </h1>
 
 <a href="https://x.com/SPXVisuals" class="x-link">𝕏</a>
@@ -311,23 +308,7 @@ function renderPosts(posts) {
     container.appendChild(div);
   });
 
-  waitForImages();
-}
-
-function waitForImages() {
-  const imgs = document.querySelectorAll('#posts img');
-  let loaded = 0;
-  if (!imgs.length) return applyMasonry();
-
-  imgs.forEach(img => {
-    if (img.complete) {
-      if (++loaded === imgs.length) applyMasonry();
-    } else {
-      img.onload = img.onerror = () => {
-        if (++loaded === imgs.length) applyMasonry();
-      };
-    }
-  });
+  requestAnimationFrame(applyMasonry);
 }
 
 let allPosts = [];
@@ -433,13 +414,16 @@ function applyMasonry() {
   container.style.height = Math.max(...colHeights) + 'px';
 }
 
-window.addEventListener('resize', waitForImages);
+window.addEventListener('resize', () => {
+  requestAnimationFrame(applyMasonry);
+});
 
 loadPosts().then(posts => {
   allPosts = posts;
   renderPosts(allPosts);
 });
 </script>
+
 
 </body>
 </html>
