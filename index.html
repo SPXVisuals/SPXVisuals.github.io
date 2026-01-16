@@ -325,13 +325,22 @@ function renderPosts(posts) {
     container.appendChild(div);
   });
 
-  requestAnimationFrame(applyMasonry);
+  waitForImages().then(applyMasonry);
   enableImageZoom();
 }
 
 let allPosts = [];
 const filters = { today: false, week: false, month: false };
 
+function waitForImages() {
+  const imgs = document.querySelectorAll('#posts img');
+  return Promise.all([...imgs].map(img => {
+    if (img.complete) return Promise.resolve();
+    return new Promise(res => {
+      img.onload = img.onerror = res;
+    });
+  }));
+}  
 function updateButtons() {
   todayBtn.classList.toggle('active', filters.today);
   weekBtn.classList.toggle('active', filters.week);
