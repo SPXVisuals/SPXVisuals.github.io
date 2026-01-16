@@ -113,10 +113,7 @@ display:none;
 
 /* ---------------- Layout ---------------- */
 main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: dense;
-  gap: 32px;
+  position: relative;
   margin-top: 32px;
 }
 
@@ -197,7 +194,9 @@ cursor:zoom-out;
 }
 
 @media (max-width:768px){
-main{column-count:1;}
+  main {
+    position: relative;
+  }
 }
 </style>
 </head>
