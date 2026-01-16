@@ -6,6 +6,7 @@
 <title>SPXVisuals</title>
 
 <style>
+/* ---------------- Base Styles ---------------- */
 body {
 font-family: system-ui, sans-serif;
 background: #0f172a;
@@ -14,7 +15,10 @@ margin: 0;
 padding: 24px;
 }
 
-a { text-decoration: none; color: inherit; }
+a {
+text-decoration: none;
+color: inherit;
+}
 
 /* ---------------- Header ---------------- */
 header {
@@ -25,17 +29,30 @@ padding: 16px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 6px;
+gap: 10px;
 background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
 background-size: 200% 200%;
 animation: gradientShift 6s ease infinite;
 color: #ffffff;
+position: relative;
 }
 
-.watermark {
+.header-watermark {
+position: absolute;
+bottom: 4px;
+left: 8px;
 font-size: 0.65rem;
-opacity: 0.6;
-margin-top: -4px;
+opacity: 0.55;
+pointer-events: none;
+}
+
+.header-copyright {
+position: absolute;
+bottom: 4px;
+right: 8px;
+font-size: 0.65rem;
+opacity: 0.55;
+pointer-events: none;
 }
 
 h1 {
@@ -46,208 +63,242 @@ align-items: center;
 gap: 12px;
 }
 
-.title-link,.x-link { color:#fff; cursor:pointer; }
-.title-link:hover,.x-link:hover { text-decoration: underline; }
+.title-link,
+.x-link {
+color: #ffffff;
+text-decoration: none;
+cursor: pointer;
+}
 
-.header-icons { font-size:1.5rem; }
-.x-link { font-size:1.2rem; margin-top:-4px; }
+.title-link:hover,
+.x-link:hover {
+text-decoration: underline;
+}
+
+.header-icons {
+font-size: 1.5rem;
+}
+
+.x-link {
+font-size: 1.2rem;
+margin-top: -4px;
+}
 
 /* ---------------- Controls ---------------- */
 .controls {
-display:flex;
-flex-direction:column;
-gap:10px;
-width:100%;
-max-width:420px;
-align-items:center;
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 100%;
+max-width: 420px;
+align-items: center;
 }
 
 input[type="text"] {
-padding:6px 12px;
-border-radius:6px;
-border:1px solid #475569;
-background:#020617;
-color:#e5e7eb;
-width:100%;
-max-width:360px;
-text-align:center;
+padding: 6px 12px;
+border-radius: 6px;
+border: 1px solid #475569;
+background: #020617;
+color: #e5e7eb;
+width: 100%;
+max-width: 360px;
+text-align: center;
+}
+
+input::placeholder {
+color: #94a3b8;
 }
 
 .filter-buttons {
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-justify-content:center;
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+justify-content: center;
 }
 
+/* ---------------- Button Styles ---------------- */
 button {
-background:#020617;
-color:#e5e7eb;
-border:none;
-border-radius:6px;
-padding:6px 12px;
-cursor:pointer;
-transition:background .3s,color .3s;
+background: #020617;
+--bg-color: #020617;
+background: var(--bg-color);
+color: #e5e7eb;
+border: none;
+border-radius: 6px;
+padding: 6px 12px;
+cursor: pointer;
+transition: background 0.3s, color 0.3s;
 }
 
-button:hover { background:#1e293b; }
+button:hover {
+background: #1e293b;
+}
 
 button.active {
-background:#ffffff;
-color:#020617;
+background: #ffffff;
+color: var(--bg-color);
 }
 
 #clearSearch {
-background:#020617;
-display:none;
+background: #111827;
+color: #e5e7eb;
+display: none;
+}
+
+#clearSearch:hover {
+background: #1f2937;
 }
 
 /* ---------------- Posts Layout ---------------- */
 main {
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:32px;
-margin-top:32px;
-grid-auto-flow:dense;
+column-count: 2;
+column-gap: 32px;
+margin-top: 32px;
 }
 
 .post {
-width:100%;
-margin-bottom:0;
-background:transparent;
-padding:0;
-transition:transform .35s ease,filter .35s ease;
+display: inline-block;
+width: 100%;
+margin-bottom: 40px;
+break-inside: avoid;
+background: transparent;
+padding: 0;
+transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .post:hover {
-transform:scale(1.03);
-filter:drop-shadow(0 14px 36px rgba(59,130,246,.4));
+transform: scale(1.03);
+filter: drop-shadow(0 14px 36px rgba(59,130,246,0.4));
 }
 
 .post img {
-width:100%;
-border-radius:10px;
-margin:16px 0;
-cursor:zoom-in;
-transition:transform .3s ease,box-shadow .3s ease;
+width: 100%;
+border-radius: 10px;
+margin: 16px 0;
+cursor: zoom-in;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .post img:hover {
-transform:scale(1.02);
-box-shadow:0 0 26px rgba(34,211,238,.45);
+transform: scale(1.02);
+box-shadow: 0 0 26px rgba(34,211,238,0.45);
 }
 
 .hashtags {
-display:flex;
-flex-wrap:wrap;
-gap:6px;
-margin-bottom:6px;
+display: flex;
+flex-wrap: wrap;
+gap: 6px;
+margin-bottom: 6px;
 }
 
 .hashtags a {
-font-size:.85rem;
-cursor:pointer;
-color:#22d3ee;
-animation:glowPulse 2.5s ease-in-out infinite alternate;
+font-size: 0.85rem;
+cursor: pointer;
+color: #22d3ee;
+animation: glowPulse 2.5s ease-in-out infinite alternate;
 }
 
 .hashtags a:hover {
-color:#06b6d4;
-text-shadow:0 0 6px #06b6d4,0 0 12px #3b82f6;
+color: #06b6d4;
+text-shadow: 0 0 6px #06b6d4, 0 0 12px #3b82f6;
 }
 
 .post-date {
-font-size:.8rem;
-color:#94a3b8;
-margin-bottom:6px;
+font-size: 0.8rem;
+color: #94a3b8;
+margin-bottom: 6px;
 }
 
 .empty-state {
-text-align:center;
-font-size:1rem;
-color:#94a3b8;
-margin-top:48px;
+text-align: center;
+font-size: 1rem;
+color: #94a3b8;
+margin-top: 48px;
 }
 
+/* ---------------- "See Post On X" ---------------- */
 .tweet-link-container {
-text-align:center;
-margin-bottom:8px;
+text-align: center;
+margin-bottom: 8px;
 }
 
 .tweet-link-container a {
-display:inline-block;
-background:linear-gradient(90deg,#3b82f6,#06b6d4,#3b82f6);
-background-size:200% 200%;
-padding:6px 10px;
-border-radius:8px;
-font-weight:bold;
-color:#fff;
-animation:gradientShift 3s ease infinite;
-transition:transform .3s;
+display: inline-block;
+background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
+background-size: 200% 200%;
+padding: 6px 10px;
+border-radius: 8px;
+font-weight: bold;
+color: #ffffff;
+animation: gradientShift 3s ease infinite;
+transition: transform 0.3s;
 }
 
-.tweet-link-container a:hover { transform:scale(1.08); }
+.tweet-link-container a:hover {
+transform: scale(1.08);
+}
 
 /* ---------------- Image Modal ---------------- */
 .image-modal {
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.85);
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:9999;
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.85);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 9999;
 }
 
 .image-modal img {
-max-width:95%;
-max-height:95%;
-border-radius:12px;
-cursor:zoom-out;
+max-width: 95%;
+max-height: 95%;
+border-radius: 12px;
+cursor: zoom-out;
 }
 
 @keyframes glowPulse {
-from { text-shadow:0 0 6px #22d3ee; }
-to { text-shadow:0 0 14px #3b82f6; }
+from { text-shadow: 0 0 6px #22d3ee; }
+to { text-shadow: 0 0 14px #3b82f6; }
 }
 
 @keyframes gradientShift {
-0% { background-position:0% 50%; }
-50% { background-position:100% 50%; }
-100% { background-position:0% 50%; }
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
 }
 
 footer {
-text-align:center;
-font-size:.8rem;
-color:#94a3b8;
-margin-top:48px;
+text-align: center;
+font-size: 0.8rem;
+color: #94a3b8;
+margin-top: 48px;
 }
 
-@media (max-width:768px) {
-main { grid-template-columns:1fr; }
+@media (max-width: 768px) {
+main { column-count: 1; }
 }
 </style>
 </head>
 
 <body>
 <header>
+
+<div class="header-watermark">SPXVisuals</div>
+<div class="header-copyright">© 2026 SPXVisuals</div>
+
 <h1>
 <span class="header-icons">📊</span>
-<a href="https://spxvisuals.github.io/" class="title-link" target="_blank">SPXVisuals</a>
+<a href="https://spxvisuals.github.io/" class="title-link" target="_blank" rel="noopener">SPXVisuals</a>
 <span class="header-icons">📈</span>
 </h1>
 
-<div class="watermark">© SPXVisuals</div>
-
-<a href="https://x.com/SPXVisuals" target="_blank" class="x-link">𝕏</a>
+<a href="https://x.com/SPXVisuals" target="_blank" rel="noopener" class="x-link">𝕏</a>
 
 <div class="controls">
 <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
 <div class="filter-buttons">
-<button id="todayFilter">Today's Charts</button>
-<button id="weekFilter">This Week</button>
-<button id="monthFilter">This Month</button>
+<button id="todayFilter" style="--bg-color:#020617;">Today's Charts</button>
+<button id="weekFilter" style="--bg-color:#020617;">This Week</button>
+<button id="monthFilter" style="--bg-color:#020617;">This Month</button>
 <button id="clearSearch">Clear Search</button>
 </div>
 </div>
@@ -272,142 +323,54 @@ const date = dateMatch ? dateMatch[0] : '';
 daily.forEach(p => {
 all.push({
 date,
-text:p.tweet_text,
-images:p.images,
-url:p.tweet_url,
-hashtags:extractHashtags(p.tweet_text),
-type:p.type
+text: p.tweet_text,
+images: p.images,
+url: p.tweet_url,
+hashtags: extractHashtags(p.tweet_text),
+type: p.type
 });
 });
 }
 
-return all.sort((a,b)=>b.date.localeCompare(a.date));
+return all.sort((a, b) => b.date.localeCompare(a.date));
 }
 
-function extractHashtags(text){
-return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m=>m[0]);
+function extractHashtags(text) {
+return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
 }
 
-function todayLocalISO(){
-const d=new Date();d.setHours(0,0,0,0);
-return d.toISOString().slice(0,10);
+function reorderForColumns(items, cols = 2) {
+const out = [];
+const rows = Math.ceil(items.length / cols);
+
+for (let c = 0; c < cols; c++) {
+for (let r = 0; r < rows; r++) {
+const i = r * cols + c;
+if (items[i]) out.push(items[i]);
+}
+}
+return out;
 }
 
-function normalizeDateInput(input){
-const match=input.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-if(!match) return input;
-const[,mm,dd,yyyy]=match;
-return `${yyyy}-${mm}-${dd}`;
-}
+function renderPosts(posts) {
+const container = document.getElementById('posts');
+container.innerHTML = '';
 
-function renderPosts(posts){
-const container=document.getElementById('posts');
-container.innerHTML='';
+reorderForColumns(posts, 2).forEach(post => {
+const div = document.createElement('div');
+div.className = 'post';
 
-if(!posts.length){
-const empty=document.createElement('div');
-empty.className='empty-state';
-empty.textContent='No charts match your filters 📉';
-container.appendChild(empty);
-return;
-}
-
-posts.forEach(post=>{
-const div=document.createElement('div');
-div.className='post';
-
-div.innerHTML=`
-${post.url?`<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>`:''}
+div.innerHTML = `
+${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
 <div class="post-date">${post.date}</div>
-<div class="hashtags">${post.hashtags.map(t=>`<a href="#">${t}</a>`).join('')}</div>
+<div class="hashtags">${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}</div>
 <div>${post.text}</div>
-${post.images.map(i=>`<img src="${i}" loading="lazy">`).join('')}
+${post.images.map(i => `<img src="${i}" loading="lazy">`).join('')}
 `;
-
-div.querySelectorAll('.hashtags a').forEach(a=>{
-a.addEventListener('click',e=>{
-e.preventDefault();
-document.getElementById('search').value=a.textContent;
-applyFilters();
-});
-});
 
 container.appendChild(div);
 });
 }
-
-let allPosts=[];
-const filters={today:false,week:false,month:false};
-
-function updateButtons(){
-todayBtn.classList.toggle('active',filters.today);
-weekBtn.classList.toggle('active',filters.week);
-monthBtn.classList.toggle('active',filters.month);
-const searchValue=document.getElementById('search').value;
-clearBtn.style.display=(filters.today||filters.week||filters.month||searchValue)?'inline-block':'none';
-}
-
-function applyFilters(){
-let input=normalizeDateInput(document.getElementById('search').value.toLowerCase());
-
-let filtered=allPosts.filter(post=>
-post.hashtags.some(t=>t.toLowerCase().includes(input))||
-post.date.includes(input)
-);
-
-const now=new Date(todayLocalISO());
-
-if(filters.today){
-filtered=filtered.filter(p=>p.date===todayLocalISO());
-}else if(filters.week){
-const d=new Date(now);d.setDate(now.getDate()-7);
-filtered=filtered.filter(p=>new Date(p.date)>=d);
-}else if(filters.month){
-const d=new Date(now);d.setMonth(now.getMonth()-1);
-filtered=filtered.filter(p=>new Date(p.date)>=d);
-}
-
-renderPosts(filtered);
-updateButtons();
-}
-
-document.getElementById('search').addEventListener('input',applyFilters);
-
-const todayBtn=document.getElementById('todayFilter');
-const weekBtn=document.getElementById('weekFilter');
-const monthBtn=document.getElementById('monthFilter');
-const clearBtn=document.getElementById('clearSearch');
-
-todayBtn.onclick=()=>{filters.today=!filters.today;filters.week=filters.month=false;applyFilters();};
-weekBtn.onclick=()=>{filters.week=!filters.week;filters.today=filters.month=false;applyFilters();};
-monthBtn.onclick=()=>{filters.month=!filters.month;filters.today=filters.week=false;applyFilters();};
-
-clearBtn.onclick=()=>{
-document.getElementById('search').value='';
-filters.today=filters.week=filters.month=false;
-renderPosts(allPosts);
-updateButtons();
-};
-
-loadPosts().then(posts=>{
-allPosts=posts;
-renderPosts(allPosts);
-});
-</script>
-
-<script>
-document.addEventListener('click',e=>{
-if(e.target.tagName==='IMG'&&e.target.closest('.post')){
-const modal=document.createElement('div');
-modal.className='image-modal';
-modal.innerHTML=`<img src="${e.target.src}">`;
-modal.onclick=()=>modal.remove();
-document.addEventListener('keydown',ev=>{
-if(ev.key==='Escape') modal.remove();
-},{once:true});
-document.body.appendChild(modal);
-}
-});
 </script>
 
 </body>
