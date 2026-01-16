@@ -6,6 +6,7 @@
 <title>SPXVisuals</title>
 
 <style>
+/* ---------------- Base Styles ---------------- */
 body {
 font-family: system-ui, sans-serif;
 background: #0f172a;
@@ -14,8 +15,12 @@ margin: 0;
 padding: 24px;
 }
 
-a { text-decoration: none; color: inherit; }
+a {
+text-decoration: none;
+color: inherit;
+}
 
+/* ---------------- Header ---------------- */
 header {
 position: sticky;
 top: 0;
@@ -39,9 +44,28 @@ align-items: center;
 gap: 12px;
 }
 
-.title-link,.x-link { color: #ffffff; cursor: pointer; }
-.title-link:hover,.x-link:hover { text-decoration: underline; }
+.title-link,
+.x-link {
+color: #ffffff;
+text-decoration: none;
+cursor: pointer;
+}
 
+.title-link:hover,
+.x-link:hover {
+text-decoration: underline;
+}
+
+.header-icons {
+font-size: 1.5rem;
+}
+
+.x-link {
+font-size: 1.2rem;
+margin-top: -4px;
+}
+
+/* ---------------- Controls ---------------- */
 .controls {
 display: flex;
 flex-direction: column;
@@ -62,6 +86,10 @@ max-width: 360px;
 text-align: center;
 }
 
+input::placeholder {
+color: #94a3b8;
+}
+
 .filter-buttons {
 display: flex;
 gap: 8px;
@@ -69,17 +97,27 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
+/* ---------------- Button Styles ---------------- */
 button {
 background: #020617;
+--bg-color: #020617;
+background: var(--bg-color);
 color: #e5e7eb;
 border: none;
 border-radius: 6px;
 padding: 6px 12px;
 cursor: pointer;
+transition: background 0.3s, color 0.3s;
 }
 
-button:hover { background: #1e293b; }
-button.active { background: #3b82f6; }
+button:hover {
+background: #1e293b;
+}
+
+button.active {
+background: #ffffff;
+color: var(--bg-color);
+}
 
 #clearSearch {
 background: #111827;
@@ -87,6 +125,12 @@ color: #e5e7eb;
 display: none;
 }
 
+#clearSearch:hover {
+background: #1f2937;
+color: #e5e7eb;
+}
+
+/* ---------------- Posts Layout ---------------- */
 main {
 column-count: 2;
 column-gap: 32px;
@@ -98,6 +142,8 @@ display: inline-block;
 width: 100%;
 margin-bottom: 40px;
 break-inside: avoid;
+background: transparent;
+padding: 0;
 transition: transform 0.35s ease, filter 0.35s ease;
 }
 
@@ -111,6 +157,12 @@ width: 100%;
 border-radius: 10px;
 margin: 16px 0;
 cursor: zoom-in;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post img:hover {
+transform: scale(1.02);
+box-shadow: 0 0 26px rgba(34,211,238,0.45);
 }
 
 .hashtags {
@@ -124,6 +176,12 @@ margin-bottom: 6px;
 font-size: 0.85rem;
 cursor: pointer;
 color: #22d3ee;
+animation: glowPulse 2.5s ease-in-out infinite alternate;
+}
+
+.hashtags a:hover {
+color: #06b6d4;
+text-shadow: 0 0 6px #06b6d4, 0 0 12px #3b82f6;
 }
 
 .post-date {
@@ -139,6 +197,7 @@ color: #94a3b8;
 margin-top: 48px;
 }
 
+/* ---------------- "See Post On X" ---------------- */
 .tweet-link-container {
 text-align: center;
 margin-bottom: 8px;
@@ -147,12 +206,20 @@ margin-bottom: 8px;
 .tweet-link-container a {
 display: inline-block;
 background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
+background-size: 200% 200%;
 padding: 6px 10px;
 border-radius: 8px;
 font-weight: bold;
 color: #ffffff;
+animation: gradientShift 3s ease infinite;
+transition: transform 0.3s;
 }
 
+.tweet-link-container a:hover {
+transform: scale(1.08);
+}
+
+/* ---------------- Image Modal ---------------- */
 .image-modal {
 position: fixed;
 inset: 0;
@@ -170,10 +237,22 @@ border-radius: 12px;
 cursor: zoom-out;
 }
 
+@keyframes glowPulse {
+from { text-shadow: 0 0 6px #22d3ee; }
+to { text-shadow: 0 0 14px #3b82f6; }
+}
+
 @keyframes gradientShift {
 0% { background-position: 0% 50%; }
 50% { background-position: 100% 50%; }
 100% { background-position: 0% 50%; }
+}
+
+footer {
+text-align: center;
+font-size: 0.8rem;
+color: #94a3b8;
+margin-top: 48px;
 }
 
 @media (max-width: 768px) {
@@ -185,12 +264,12 @@ main { column-count: 1; }
 <body>
 <header>
 <h1>
-<span>📊</span>
-<a href="https://spxvisuals.github.io/" class="title-link" target="_blank">SPXVisuals</a>
-<span>📈</span>
+<span class="header-icons">📊</span>
+<a href="https://spxvisuals.github.io/" class="title-link" target="_blank" rel="noopener">SPXVisuals</a>
+<span class="header-icons">📈</span>
 </h1>
 
-<a href="https://x.com/SPXVisuals" target="_blank" class="x-link">𝕏</a>
+<a href="https://x.com/SPXVisuals" target="_blank" rel="noopener" class="x-link">𝕏</a>
 
 <div class="controls">
 <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
@@ -208,128 +287,112 @@ main { column-count: 1; }
 
 <script>
 async function loadPosts() {
-  const indexRes = await fetch('output/metadata/index.json');
-  const files = await indexRes.json();
-  const all = [];
+const res = await fetch('output/metadata/all_posts.json');
+const daily = await res.json();
+const all = [];
 
-  for (const file of files) {
-    const res = await fetch(`output/metadata/${file}`);
-    const daily = await res.json();
+daily.forEach(p => {
+all.push({
+date: p.date || '',
+text: p.tweet_text,
+images: p.images || [],
+url: p.tweet_url,
+hashtags: extractHashtags(p.tweet_text || ''),
+type: p.type
+});
+});
 
-    const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
-    const date = dateMatch ? dateMatch[0] : '';
-
-    daily.forEach(p => {
-      all.push({
-        date,
-        text: p.tweet_text,
-        images: p.images || [],
-        url: p.tweet_url,
-        hashtags: extractHashtags(p.tweet_text || ''),
-        type: p.type
-      });
-    });
-  }
-
-  return all.sort((a, b) => b.date.localeCompare(a.date));
+return all.sort((a, b) => b.date.localeCompare(a.date));
 }
 
 function extractHashtags(text) {
-  return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
+return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
 }
 
 function todayLocalISO() {
-  const d = new Date();
-  d.setHours(0,0,0,0);
-  return d.toISOString().slice(0,10);
+const d = new Date();
+d.setHours(0,0,0,0);
+return d.toISOString().slice(0,10);
 }
 
 function normalizeDateInput(input) {
-  const match = input.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-  if (!match) return input;
-  const [, mm, dd, yyyy] = match;
-  return `${yyyy}-${mm}-${dd}`;
+const match = input.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+if (!match) return input;
+const [, mm, dd, yyyy] = match;
+return `${yyyy}-${mm}-${dd}`;
 }
 
 function renderPosts(posts) {
-  const container = document.getElementById('posts');
-  container.innerHTML = '';
+const container = document.getElementById('posts');
+container.innerHTML = '';
 
-  if (!posts.length) {
-    const empty = document.createElement('div');
-    empty.className = 'empty-state';
-    empty.textContent = 'No charts match your filters 📉';
-    container.appendChild(empty);
-    return;
-  }
+if (!posts.length) {
+const empty = document.createElement('div');
+empty.className = 'empty-state';
+empty.textContent = 'No charts match your filters 📉';
+container.appendChild(empty);
+return;
+}
 
-  posts.forEach(post => {
-    const div = document.createElement('div');
-    div.className = 'post';
+posts.forEach(post => {
+const div = document.createElement('div');
+div.className = 'post';
 
-    div.innerHTML = `
-      ${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
-      <div class="post-date">${post.date}</div>
-      <div class="hashtags">
-        ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
-      </div>
-      <div>${post.text}</div>
-      ${(post.images || []).map(i => `<img src="${i}" loading="lazy">`).join('')}
-    `;
+div.innerHTML = `
+${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
+<div class="post-date">${post.date}</div>
+<div class="hashtags">${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}</div>
+<div>${post.text}</div>
+${post.images.map(i => `<img src="${i}" loading="lazy">`).join('')}
+`;
 
-    div.querySelectorAll('.hashtags a').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.getElementById('search').value = a.textContent;
-        applyFilters();
-      });
-    });
+div.querySelectorAll('.hashtags a').forEach(a => {
+a.addEventListener('click', e => {
+e.preventDefault();
+document.getElementById('search').value = a.textContent;
+applyFilters();
+});
+});
 
-    container.appendChild(div);
-  });
+container.appendChild(div);
+});
 }
 
 let allPosts = [];
 const filters = { today: false, week: false, month: false };
 
 function updateButtons() {
-  todayBtn.classList.toggle('active', filters.today);
-  weekBtn.classList.toggle('active', filters.week);
-  monthBtn.classList.toggle('active', filters.month);
-
-  const searchValue = document.getElementById('search').value;
-  clearBtn.style.display =
-    (filters.today || filters.week || filters.month || searchValue)
-      ? 'inline-block'
-      : 'none';
+todayBtn.classList.toggle('active', filters.today);
+weekBtn.classList.toggle('active', filters.week);
+monthBtn.classList.toggle('active', filters.month);
+const searchValue = document.getElementById('search').value;
+clearBtn.style.display = (filters.today || filters.week || filters.month || searchValue) ? 'inline-block' : 'none';
 }
 
 function applyFilters() {
-  let input = normalizeDateInput(
-    document.getElementById('search').value.toLowerCase()
-  );
+let input = normalizeDateInput(document.getElementById('search').value.toLowerCase());
 
-  let filtered = allPosts.filter(post =>
-    post.hashtags.some(t => t.toLowerCase().includes(input)) ||
-    post.date.includes(input)
-  );
+let filtered = allPosts.filter(post =>
+post.hashtags.some(t => t.toLowerCase().includes(input)) ||
+post.date.includes(input)
+);
 
-  const now = new Date(todayLocalISO());
+const now = new Date(todayLocalISO());
 
-  if (filters.today) {
-    filtered = filtered.filter(p => p.date === todayLocalISO());
-  } else if (filters.week) {
-    const d = new Date(now);
-    d.setDate(now.getDate() - 7);
-    filtered = filtered.filter(p => new Date(p.date) >= d);
-  } else if (filters.month) {
-    const d = new Date(now);
-    d.setMonth(now.getMonth() - 1);
-    filtered = filtered.filter(p => new Date(p.date) >= d);
-  }
+if (filters.today) {
+filtered = filtered.filter(p => p.date === todayLocalISO());
+} else if (filters.week) {
+const d = new Date(now);
+d.setDate(now.getDate() - 7);
+filtered = filtered.filter(p => new Date(p.date) >= d);
+} else if (filters.month) {
+const d = new Date(now);
+d.setMonth(now.getMonth() - 1);
+filtered = filtered.filter(p => new Date(p.date) >= d);
+}
 
-  renderPosts(filtered);
-  updateButtons();
+renderPosts(filtered);
+updateButtons();
 }
 
 document.getElementById('search').addEventListener('input', applyFilters);
@@ -339,46 +402,35 @@ const weekBtn = document.getElementById('weekFilter');
 const monthBtn = document.getElementById('monthFilter');
 const clearBtn = document.getElementById('clearSearch');
 
-todayBtn.onclick = () => {
-  filters.today = !filters.today;
-  filters.week = filters.month = false;
-  applyFilters();
-};
-
-weekBtn.onclick = () => {
-  filters.week = !filters.week;
-  filters.today = filters.month = false;
-  applyFilters();
-};
-
-monthBtn.onclick = () => {
-  filters.month = !filters.month;
-  filters.today = filters.week = false;
-  applyFilters();
-};
+todayBtn.onclick = () => { filters.today = !filters.today; filters.week = filters.month = false; applyFilters(); };
+weekBtn.onclick = () => { filters.week = !filters.week; filters.today = filters.month = false; applyFilters(); };
+monthBtn.onclick = () => { filters.month = !filters.month; filters.today = filters.week = false; applyFilters(); };
 
 clearBtn.onclick = () => {
-  document.getElementById('search').value = '';
-  filters.today = filters.week = filters.month = false;
-  renderPosts(allPosts);
-  updateButtons();
+document.getElementById('search').value = '';
+filters.today = filters.week = filters.month = false;
+renderPosts(allPosts);
+updateButtons();
 };
 
 loadPosts().then(posts => {
-  allPosts = posts;
-  renderPosts(allPosts);
+allPosts = posts;
+renderPosts(allPosts);
 });
 </script>
 
 <script>
 document.addEventListener('click', e => {
-  if (e.target.tagName === 'IMG' && e.target.closest('.post')) {
-    const modal = document.createElement('div');
-    modal.className = 'image-modal';
-    modal.innerHTML = `<img src="${e.target.src}">`;
-    modal.onclick = () => modal.remove();
-    document.body.appendChild(modal);
-  }
+if (e.target.tagName === 'IMG' && e.target.closest('.post')) {
+const modal = document.createElement('div');
+modal.className = 'image-modal';
+modal.innerHTML = `<img src="${e.target.src}">`;
+modal.onclick = () => modal.remove();
+document.addEventListener('keydown', ev => {
+if (ev.key === 'Escape') modal.remove();
+}, { once: true });
+document.body.appendChild(modal);
+}
 });
 </script>
 
