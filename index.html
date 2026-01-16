@@ -39,7 +39,8 @@ align-items: center;
 gap: 12px;
 }
 
-.title-link, .x-link { color: #ffffff; cursor: pointer; }
+.title-link,.x-link { color: #ffffff; cursor: pointer; }
+.title-link:hover,.x-link:hover { text-decoration: underline; }
 
 .controls {
 display: flex;
@@ -69,25 +70,20 @@ justify-content: center;
 }
 
 button {
---bg-color: #020617;
-background: var(--bg-color);
+background: #020617;
 color: #e5e7eb;
 border: none;
 border-radius: 6px;
 padding: 6px 12px;
 cursor: pointer;
-transition: background 0.3s, color 0.3s;
 }
 
 button:hover { background: #1e293b; }
-
-button.active {
-background: #ffffff;
-color: var(--bg-color);
-}
+button.active { background: #3b82f6; }
 
 #clearSearch {
 background: #111827;
+color: #e5e7eb;
 display: none;
 }
 
@@ -117,16 +113,22 @@ margin: 16px 0;
 cursor: zoom-in;
 }
 
-.post-date {
-font-size: 0.8rem;
-color: #94a3b8;
-margin-bottom: 6px;
-}
-
 .hashtags {
 display: flex;
 flex-wrap: wrap;
 gap: 6px;
+margin-bottom: 6px;
+}
+
+.hashtags a {
+font-size: 0.85rem;
+cursor: pointer;
+color: #22d3ee;
+}
+
+.post-date {
+font-size: 0.8rem;
+color: #94a3b8;
 margin-bottom: 6px;
 }
 
@@ -140,6 +142,15 @@ margin-top: 48px;
 .tweet-link-container {
 text-align: center;
 margin-bottom: 8px;
+}
+
+.tweet-link-container a {
+display: inline-block;
+background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
+padding: 6px 10px;
+border-radius: 8px;
+font-weight: bold;
+color: #ffffff;
 }
 
 .image-modal {
@@ -165,13 +176,6 @@ cursor: zoom-out;
 100% { background-position: 0% 50%; }
 }
 
-footer {
-text-align: center;
-font-size: 0.8rem;
-color: #94a3b8;
-margin-top: 48px;
-}
-
 @media (max-width: 768px) {
 main { column-count: 1; }
 }
@@ -182,19 +186,19 @@ main { column-count: 1; }
 <header>
 <h1>
 <span>📊</span>
-<a href="https://spxvisuals.github.io/" class="title-link">SPXVisuals</a>
+<a href="https://spxvisuals.github.io/" class="title-link" target="_blank">SPXVisuals</a>
 <span>📈</span>
 </h1>
 
-<a href="https://x.com/SPXVisuals" class="x-link">𝕏</a>
+<a href="https://x.com/SPXVisuals" target="_blank" class="x-link">𝕏</a>
 
 <div class="controls">
 <input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
 <div class="filter-buttons">
-  <button id="todayFilter" style="--bg-color:#3b82f6;">Today's Charts</button>
-  <button id="weekFilter" style="--bg-color:#06b6d4;">This Week</button>
-  <button id="monthFilter" style="--bg-color:#3b82f6;">This Month</button>
-  <button id="clearSearch">Clear Search</button>
+<button id="todayFilter">Today's Charts</button>
+<button id="weekFilter">This Week</button>
+<button id="monthFilter">This Month</button>
+<button id="clearSearch">Clear Search</button>
 </div>
 </div>
 </header>
@@ -206,7 +210,6 @@ main { column-count: 1; }
 async function loadPosts() {
   const indexRes = await fetch('output/metadata/index.json');
   const files = await indexRes.json();
-
   const all = [];
 
   for (const file of files) {
@@ -295,11 +298,16 @@ function updateButtons() {
   monthBtn.classList.toggle('active', filters.month);
 
   const searchValue = document.getElementById('search').value;
-  clearBtn.style.display = (filters.today || filters.week || filters.month || searchValue) ? 'inline-block' : 'none';
+  clearBtn.style.display =
+    (filters.today || filters.week || filters.month || searchValue)
+      ? 'inline-block'
+      : 'none';
 }
 
 function applyFilters() {
-  let input = normalizeDateInput(document.getElementById('search').value.toLowerCase());
+  let input = normalizeDateInput(
+    document.getElementById('search').value.toLowerCase()
+  );
 
   let filtered = allPosts.filter(post =>
     post.hashtags.some(t => t.toLowerCase().includes(input)) ||
