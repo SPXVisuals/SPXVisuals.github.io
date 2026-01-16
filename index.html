@@ -6,6 +6,7 @@
 <title>SPXVisuals</title>
 
 <style>
+/* ---------------- Base Styles ---------------- */
 body {
 font-family: system-ui, sans-serif;
 background: #0f172a;
@@ -30,25 +31,6 @@ background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
 background-size: 200% 200%;
 animation: gradientShift 6s ease infinite;
 color: #ffffff;
-position: relative;
-}
-
-.header-watermark {
-position: absolute;
-bottom: 4px;
-left: 8px;
-font-size: 0.65rem;
-opacity: .55;
-pointer-events: none;
-}
-
-.header-copyright {
-position: absolute;
-bottom: 4px;
-right: 8px;
-font-size: 0.65rem;
-opacity: .55;
-pointer-events: none;
 }
 
 h1 {
@@ -59,114 +41,112 @@ align-items: center;
 gap: 12px;
 }
 
-.title-link,.x-link { color:#fff; cursor:pointer; }
-.title-link:hover,.x-link:hover { text-decoration:underline; }
+.title-link, .x-link { color: #ffffff; cursor: pointer; }
+.title-link:hover, .x-link:hover { text-decoration: underline; }
 
+.header-icons { font-size: 1.5rem; }
+.x-link { font-size: 1.2rem; margin-top: -4px; }
+
+/* ---------------- Controls ---------------- */
 .controls {
-display:flex;
-flex-direction:column;
-gap:10px;
-width:100%;
-max-width:420px;
-align-items:center;
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 100%;
+max-width: 420px;
+align-items: center;
 }
 
 input[type="text"] {
-padding:6px 12px;
-border-radius:6px;
-border:1px solid #475569;
-background:#020617;
-color:#e5e7eb;
-width:100%;
-max-width:360px;
-text-align:center;
+padding: 6px 12px;
+border-radius: 6px;
+border: 1px solid #475569;
+background: #020617;
+color: #e5e7eb;
+width: 100%;
+max-width: 360px;
+text-align: center;
 }
 
 .filter-buttons {
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-justify-content:center;
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 button {
-background:#020617;
-color:#e5e7eb;
-border:none;
-border-radius:6px;
-padding:6px 12px;
-cursor:pointer;
-transition:.3s;
+background: #020617;
+color: #e5e7eb;
+border: none;
+border-radius: 6px;
+padding: 6px 12px;
+cursor: pointer;
+transition: background 0.3s;
 }
 
-button:hover { background:#1e293b; }
-
-button.active {
-background:#fff;
-color:#020617;
-}
+button:hover { background: #1e293b; }
+button.active { background: #3b82f6; }
 
 #clearSearch {
-background:#111827;
-display:none;
+background: #111827;
+display: none;
 }
 
-/* ---------------- Layout ---------------- */
+/* ---------------- Posts Layout ---------------- */
 main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: dense;
-  gap: 32px;
-  margin-top: 32px;
+position: relative;
+margin-top: 32px;
 }
 
 .post {
-  display: block;
-  width: 100%;
-  break-inside: avoid;
-  background: transparent;
-  padding: 0;
-  transition: transform 0.35s ease, filter 0.35s ease;
+width: 100%;
+margin-bottom: 40px;
+break-inside: avoid;
+transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .post:hover {
-transform:scale(1.03);
-filter:drop-shadow(0 14px 36px rgba(59,130,246,.4));
+transform: scale(1.03);
+filter: drop-shadow(0 14px 36px rgba(59,130,246,0.4));
 }
 
 .post img {
-width:100%;
-border-radius:10px;
-margin:16px 0;
-cursor:zoom-in;
-transition:.3s;
+width: 100%;
+border-radius: 10px;
+margin: 16px 0;
+cursor: zoom-in;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hashtags { display:flex; gap:6px; flex-wrap:wrap; }
-
-.hashtags a {
-font-size:.85rem;
-color:#22d3ee;
+.post img:hover {
+transform: scale(1.02);
+box-shadow: 0 0 26px rgba(34,211,238,0.45);
 }
 
-.post-date {
-font-size:.8rem;
-color:#94a3b8;
-margin-bottom:6px;
-}
+.hashtags { display: flex; flex-wrap: wrap; gap: 6px; }
+.hashtags a { font-size: .85rem; color:#22d3ee; }
 
-.tweet-link-container { text-align:center; margin-bottom:8px; }
+.post-date { font-size:.8rem; color:#94a3b8; }
+
+.tweet-link-container {
+text-align:center;
+margin-bottom:8px;
+}
 
 .tweet-link-container a {
 display:inline-block;
-background:linear-gradient(90deg,#3b82f6,#06b6d4,#3b82f6);
+background: linear-gradient(90deg,#3b82f6,#06b6d4,#3b82f6);
 background-size:200% 200%;
 padding:6px 10px;
 border-radius:8px;
 font-weight:bold;
 color:#fff;
 animation:gradientShift 3s ease infinite;
+transition:transform .3s;
 }
+
+.tweet-link-container a:hover { transform:scale(1.08); }
 
 .image-modal {
 position:fixed;
@@ -190,20 +170,16 @@ cursor:zoom-out;
 50%{background-position:100% 50%}
 100%{background-position:0% 50%}
 }
-
-@media (max-width:768px){
-main{column-count:1;}
-}
 </style>
 </head>
 
 <body>
-<header>
-<div class="header-watermark">SPXVisuals • x.com/SPXVisuals</div>
-<div class="header-copyright">© 2026 SPXVisuals All Rights Reserved</div>
 
+<header>
 <h1>
-📊 <a href="https://spxvisuals.github.io/" class="title-link">SPXVisuals</a> 📈
+<span class="header-icons">📊</span>
+<a href="https://spxvisuals.github.io/" class="title-link">SPXVisuals</a>
+<span class="header-icons">📈</span>
 </h1>
 
 <a href="https://x.com/SPXVisuals" class="x-link">𝕏</a>
@@ -214,212 +190,123 @@ main{column-count:1;}
 <button id="todayFilter">Today's Charts</button>
 <button id="weekFilter">This Week</button>
 <button id="monthFilter">This Month</button>
-<button id="clearSearch">Clear Search</button>
+<button id="clearSearch">Clear</button>
 </div>
 </div>
 </header>
 
 <main id="posts"></main>
 
-<footer style="text-align:center;margin-top:48px;font-size:.8rem;color:#94a3b8;">
-© 2026 SPXVisuals — All Rights Reserved
-</footer>
-
 <script>
 async function loadPosts() {
-  const indexRes = await fetch('output/metadata/index.json');
-  const files = await indexRes.json();
-  const all = [];
+const indexRes = await fetch('output/metadata/index.json');
+const files = await indexRes.json();
+const all = [];
 
-  for (const file of files) {
-    const res = await fetch(`output/metadata/${file}`);
-    const daily = await res.json();
+for (const file of files) {
+const res = await fetch(`output/metadata/${file}`);
+const daily = await res.json();
 
-    const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
-    const date = dateMatch ? dateMatch[0] : '';
+const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
+const date = dateMatch ? dateMatch[0] : '';
 
-    daily.forEach(p => {
-      all.push({
-        date,
-        text: p.tweet_text,
-        images: p.images,
-        url: p.tweet_url,
-        hashtags: extractHashtags(p.tweet_text),
-        type: p.type
-      });
-    });
-  }
-
-  return all.sort((a, b) => b.date.localeCompare(a.date));
+daily.forEach(p => {
+all.push({
+date,
+text: p.tweet_text,
+images: p.images,
+url: p.tweet_url,
+hashtags: extractHashtags(p.tweet_text)
+});
+});
 }
 
-function extractHashtags(text) {
-  return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
+return all.sort((a,b)=>b.date.localeCompare(a.date));
 }
 
-function todayLocalISO() {
-  const d = new Date();
-  d.setHours(0,0,0,0);
-  return d.toISOString().slice(0,10);
+function extractHashtags(text){
+return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m=>m[0]);
 }
 
-function normalizeDateInput(input) {
-  const match = input.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-  if (!match) return input;
-  const [, mm, dd, yyyy] = match;
-  return `${yyyy}-${mm}-${dd}`;
-}
+function renderPosts(posts){
+const container=document.getElementById('posts');
+container.innerHTML='';
 
-function renderPosts(posts) {
-  const container = document.getElementById('posts');
-  container.innerHTML = '';
+posts.forEach(post=>{
+const div=document.createElement('div');
+div.className='post';
 
-  if (!posts.length) {
-    const empty = document.createElement('div');
-    empty.className = 'empty-state';
-    empty.textContent = 'No charts match your filters 📉';
-    container.appendChild(empty);
-    return;
-  }
+div.innerHTML=`
+${post.url?`<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>`:''}
+<div class="post-date">${post.date}</div>
+<div class="hashtags">${post.hashtags.map(t=>`<a href="#">${t}</a>`).join('')}</div>
+<div>${post.text}</div>
+${post.images.map(i=>`<img src="${i}" loading="lazy">`).join('')}
+`;
 
-  posts.forEach(post => {
-    const div = document.createElement('div');
-    div.className = 'post';
-
-    div.innerHTML = `
-      ${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
-      <div class="post-date">${post.date}</div>
-      <div class="hashtags">
-        ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
-      </div>
-      <div>${post.text}</div>
-      ${post.images.map(i => `<img src="${i}" loading="lazy">`).join('')}
-    `;
-
-    div.querySelectorAll('.hashtags a').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.getElementById('search').value = a.textContent;
-        applyFilters();
-      });
-    });
-
-    container.appendChild(div);
-  });
-
-  requestAnimationFrame(applyMasonry);
-}
-
-let allPosts = [];
-const filters = { today: false, week: false, month: false };
-
-function updateButtons() {
-  todayBtn.classList.toggle('active', filters.today);
-  weekBtn.classList.toggle('active', filters.week);
-  monthBtn.classList.toggle('active', filters.month);
-
-  const searchValue = document.getElementById('search').value;
-  clearBtn.style.display =
-    (filters.today || filters.week || filters.month || searchValue)
-      ? 'inline-block'
-      : 'none';
-}
-
-function applyFilters() {
-  let input = normalizeDateInput(
-    document.getElementById('search').value.toLowerCase()
-  );
-
-  let filtered = allPosts.filter(post =>
-    post.hashtags.some(t => t.toLowerCase().includes(input)) ||
-    post.date.includes(input)
-  );
-
-  const now = new Date(todayLocalISO());
-
-  if (filters.today) {
-    filtered = filtered.filter(p => p.date === todayLocalISO());
-  } else if (filters.week) {
-    const d = new Date(now);
-    d.setDate(now.getDate() - 7);
-    filtered = filtered.filter(p => new Date(p.date) >= d);
-  } else if (filters.month) {
-    const d = new Date(now);
-    d.setMonth(now.getMonth() - 1);
-    filtered = filtered.filter(p => new Date(p.date) >= d);
-  }
-
-  renderPosts(filtered);
-  updateButtons();
-}
-
-document.getElementById('search').addEventListener('input', applyFilters);
-
-const todayBtn = document.getElementById('todayFilter');
-const weekBtn = document.getElementById('weekFilter');
-const monthBtn = document.getElementById('monthFilter');
-const clearBtn = document.getElementById('clearSearch');
-
-todayBtn.onclick = () => {
-  filters.today = !filters.today;
-  filters.week = filters.month = false;
-  applyFilters();
-};
-
-weekBtn.onclick = () => {
-  filters.week = !filters.week;
-  filters.today = filters.month = false;
-  applyFilters();
-};
-
-monthBtn.onclick = () => {
-  filters.month = !filters.month;
-  filters.today = filters.week = false;
-  applyFilters();
-};
-
-clearBtn.onclick = () => {
-  document.getElementById('search').value = '';
-  filters.today = filters.week = filters.month = false;
-  renderPosts(allPosts);
-  updateButtons();
-};
-
-function applyMasonry() {
-  const container = document.getElementById('posts');
-  const items = [...container.children];
-  if (!items.length) return;
-
-  const cols = window.innerWidth < 768 ? 1 : 2;
-  const gap = 32;
-  const colHeights = Array(cols).fill(0);
-  const colWidth = (container.clientWidth - gap) / cols;
-
-  container.style.position = 'relative';
-
-  items.forEach(item => {
-    item.style.position = 'absolute';
-    item.style.width = colWidth + 'px';
-
-    const minCol = colHeights.indexOf(Math.min(...colHeights));
-    const x = minCol * (colWidth + gap);
-    const y = colHeights[minCol];
-
-    item.style.transform = `translate(${x}px, ${y}px)`;
-
-    colHeights[minCol] += item.offsetHeight + gap;
-  });
-
-  container.style.height = Math.max(...colHeights) + 'px';
-}
-
-window.addEventListener('resize', () => {
-  requestAnimationFrame(applyMasonry);
+container.appendChild(div);
 });
 
-loadPosts().then(posts => {
-  allPosts = posts;
-  renderPosts(allPosts);
+waitForImages();
+}
+
+function applyMasonry(){
+const container=document.getElementById('posts');
+const items=[...container.children];
+if(!items.length) return;
+
+const cols=window.innerWidth<768?1:2;
+const gap=32;
+const heights=Array(cols).fill(0);
+const colWidth=(container.clientWidth-gap)/cols;
+
+container.style.position='relative';
+
+items.forEach(item=>{
+item.style.position='absolute';
+item.style.width=colWidth+'px';
+
+const col=heights.indexOf(Math.min(...heights));
+const x=col*(colWidth+gap);
+const y=heights[col];
+
+item.style.left=x+'px';
+item.style.top=y+'px';
+
+heights[col]+=item.offsetHeight+gap;
+});
+
+container.style.height=Math.max(...heights)+'px';
+}
+
+function waitForImages(){
+const imgs=document.querySelectorAll('#posts img');
+let loaded=0;
+if(!imgs.length){applyMasonry();return;}
+
+imgs.forEach(img=>{
+if(img.complete){
+if(++loaded===imgs.length) applyMasonry();
+}else{
+img.onload=img.onerror=()=>{ if(++loaded===imgs.length) applyMasonry(); };
+}
+});
+}
+
+window.addEventListener('resize', waitForImages);
+
+loadPosts().then(posts=>renderPosts(posts));
+</script>
+
+<script>
+document.addEventListener('click',e=>{
+if(e.target.tagName==='IMG'&&e.target.closest('.post')){
+const modal=document.createElement('div');
+modal.className='image-modal';
+modal.innerHTML=`<img src="${e.target.src}">`;
+modal.onclick=()=>modal.remove();
+document.body.appendChild(modal);
+}
 });
 </script>
 
