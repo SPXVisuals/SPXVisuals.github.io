@@ -25,20 +25,17 @@ padding: 16px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 10px;
+gap: 6px;
 background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
 background-size: 200% 200%;
 animation: gradientShift 6s ease infinite;
 color: #ffffff;
 }
 
-.header-watermark {
-position: absolute;
-right: 14px;
-bottom: 6px;
-font-size: 0.7rem;
-opacity: 0.45;
-pointer-events: none;
+.watermark {
+font-size: 0.65rem;
+opacity: 0.6;
+margin-top: -4px;
 }
 
 h1 {
@@ -50,8 +47,12 @@ gap: 12px;
 }
 
 .title-link,.x-link { color:#fff; cursor:pointer; }
-.title-link:hover,.x-link:hover { text-decoration:underline; }
+.title-link:hover,.x-link:hover { text-decoration: underline; }
 
+.header-icons { font-size:1.5rem; }
+.x-link { font-size:1.2rem; margin-top:-4px; }
+
+/* ---------------- Controls ---------------- */
 .controls {
 display:flex;
 flex-direction:column;
@@ -97,7 +98,7 @@ color:#020617;
 }
 
 #clearSearch {
-background:#111827;
+background:#020617;
 display:none;
 }
 
@@ -112,7 +113,7 @@ grid-auto-flow:dense;
 
 .post {
 width:100%;
-margin-bottom:40px;
+margin-bottom:0;
 background:transparent;
 padding:0;
 transition:transform .35s ease,filter .35s ease;
@@ -131,6 +132,11 @@ cursor:zoom-in;
 transition:transform .3s ease,box-shadow .3s ease;
 }
 
+.post img:hover {
+transform:scale(1.02);
+box-shadow:0 0 26px rgba(34,211,238,.45);
+}
+
 .hashtags {
 display:flex;
 flex-wrap:wrap;
@@ -145,10 +151,22 @@ color:#22d3ee;
 animation:glowPulse 2.5s ease-in-out infinite alternate;
 }
 
+.hashtags a:hover {
+color:#06b6d4;
+text-shadow:0 0 6px #06b6d4,0 0 12px #3b82f6;
+}
+
 .post-date {
 font-size:.8rem;
 color:#94a3b8;
 margin-bottom:6px;
+}
+
+.empty-state {
+text-align:center;
+font-size:1rem;
+color:#94a3b8;
+margin-top:48px;
 }
 
 .tweet-link-container {
@@ -168,6 +186,9 @@ animation:gradientShift 3s ease infinite;
 transition:transform .3s;
 }
 
+.tweet-link-container a:hover { transform:scale(1.08); }
+
+/* ---------------- Image Modal ---------------- */
 .image-modal {
 position:fixed;
 inset:0;
@@ -178,6 +199,24 @@ justify-content:center;
 z-index:9999;
 }
 
+.image-modal img {
+max-width:95%;
+max-height:95%;
+border-radius:12px;
+cursor:zoom-out;
+}
+
+@keyframes glowPulse {
+from { text-shadow:0 0 6px #22d3ee; }
+to { text-shadow:0 0 14px #3b82f6; }
+}
+
+@keyframes gradientShift {
+0% { background-position:0% 50%; }
+50% { background-position:100% 50%; }
+100% { background-position:0% 50%; }
+}
+
 footer {
 text-align:center;
 font-size:.8rem;
@@ -185,32 +224,21 @@ color:#94a3b8;
 margin-top:48px;
 }
 
-@media(max-width:768px){
-main{grid-template-columns:1fr;}
-}
-
-@keyframes glowPulse {
-from{text-shadow:0 0 6px #22d3ee;}
-to{text-shadow:0 0 14px #3b82f6;}
-}
-
-@keyframes gradientShift {
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+@media (max-width:768px) {
+main { grid-template-columns:1fr; }
 }
 </style>
 </head>
 
 <body>
 <header>
-<div class="header-watermark">© SPXVisuals</div>
-
 <h1>
-<span>📊</span>
-<a href="https://spxvisuals.github.io/" class="title-link">SPXVisuals</a>
-<span>📈</span>
+<span class="header-icons">📊</span>
+<a href="https://spxvisuals.github.io/" class="title-link" target="_blank">SPXVisuals</a>
+<span class="header-icons">📈</span>
 </h1>
+
+<div class="watermark">© SPXVisuals</div>
 
 <a href="https://x.com/SPXVisuals" target="_blank" class="x-link">𝕏</a>
 
@@ -229,74 +257,157 @@ to{text-shadow:0 0 14px #3b82f6;}
 <footer>© 2026 SPXVisuals — All Rights Reserved</footer>
 
 <script>
-async function loadPosts(){
-const indexRes=await fetch('output/metadata/index.json');
-const files=await indexRes.json();
-const all=[];
-for(const file of files){
-const res=await fetch(`output/metadata/${file}`);
-const daily=await res.json();
-const dateMatch=file.match(/\d{4}-\d{2}-\d{2}/);
-const date=dateMatch?dateMatch[0]:'';
-daily.forEach(p=>{
-all.push({date,text:p.tweet_text,images:p.images,url:p.tweet_url,hashtags:extractHashtags(p.tweet_text)});
+async function loadPosts() {
+const indexRes = await fetch('output/metadata/index.json');
+const files = await indexRes.json();
+const all = [];
+
+for (const file of files) {
+const res = await fetch(`output/metadata/${file}`);
+const daily = await res.json();
+
+const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
+const date = dateMatch ? dateMatch[0] : '';
+
+daily.forEach(p => {
+all.push({
+date,
+text:p.tweet_text,
+images:p.images,
+url:p.tweet_url,
+hashtags:extractHashtags(p.tweet_text),
+type:p.type
+});
 });
 }
+
 return all.sort((a,b)=>b.date.localeCompare(a.date));
 }
 
-function extractHashtags(t){return [...t.matchAll(/#[A-Za-z0-9_]+/g)].map(m=>m[0]);}
+function extractHashtags(text){
+return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m=>m[0]);
+}
 
 function todayLocalISO(){
 const d=new Date();d.setHours(0,0,0,0);
 return d.toISOString().slice(0,10);
 }
 
-function normalizeDateInput(i){
-const m=i.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-if(!m)return i;
-return `${m[3]}-${m[1]}-${m[2]}`;
+function normalizeDateInput(input){
+const match=input.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+if(!match) return input;
+const[,mm,dd,yyyy]=match;
+return `${yyyy}-${mm}-${dd}`;
 }
 
 function renderPosts(posts){
-const c=document.getElementById('posts');
-c.innerHTML='';
+const container=document.getElementById('posts');
+container.innerHTML='';
+
+if(!posts.length){
+const empty=document.createElement('div');
+empty.className='empty-state';
+empty.textContent='No charts match your filters 📉';
+container.appendChild(empty);
+return;
+}
+
 posts.forEach(post=>{
-const d=document.createElement('div');
-d.className='post';
-d.innerHTML=`
+const div=document.createElement('div');
+div.className='post';
+
+div.innerHTML=`
 ${post.url?`<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>`:''}
 <div class="post-date">${post.date}</div>
 <div class="hashtags">${post.hashtags.map(t=>`<a href="#">${t}</a>`).join('')}</div>
 <div>${post.text}</div>
 ${post.images.map(i=>`<img src="${i}" loading="lazy">`).join('')}
 `;
-c.appendChild(d);
+
+div.querySelectorAll('.hashtags a').forEach(a=>{
+a.addEventListener('click',e=>{
+e.preventDefault();
+document.getElementById('search').value=a.textContent;
+applyFilters();
+});
+});
+
+container.appendChild(div);
 });
 }
 
 let allPosts=[];
 const filters={today:false,week:false,month:false};
 
-function applyFilters(){
-let input=normalizeDateInput(document.getElementById('search').value.toLowerCase());
-let filtered=allPosts.filter(p=>p.hashtags.some(t=>t.toLowerCase().includes(input))||p.date.includes(input));
-const now=new Date(todayLocalISO());
-
-if(filters.today)filtered=filtered.filter(p=>p.date===todayLocalISO());
-if(filters.week){const d=new Date(now);d.setDate(now.getDate()-7);filtered=filtered.filter(p=>new Date(p.date)>=d);}
-if(filters.month){const d=new Date(now);d.setMonth(now.getMonth()-1);filtered=filtered.filter(p=>new Date(p.date)>=d);}
-
-renderPosts(filtered);
+function updateButtons(){
+todayBtn.classList.toggle('active',filters.today);
+weekBtn.classList.toggle('active',filters.week);
+monthBtn.classList.toggle('active',filters.month);
+const searchValue=document.getElementById('search').value;
+clearBtn.style.display=(filters.today||filters.week||filters.month||searchValue)?'inline-block':'none';
 }
 
-document.getElementById('search').oninput=applyFilters;
-todayFilter.onclick=()=>{filters.today=!filters.today;filters.week=filters.month=false;applyFilters();};
-weekFilter.onclick=()=>{filters.week=!filters.week;filters.today=filters.month=false;applyFilters();};
-monthFilter.onclick=()=>{filters.month=!filters.month;filters.today=filters.week=false;applyFilters();};
-clearSearch.onclick=()=>{search.value='';filters.today=filters.week=filters.month=false;renderPosts(allPosts);};
+function applyFilters(){
+let input=normalizeDateInput(document.getElementById('search').value.toLowerCase());
 
-loadPosts().then(p=>{allPosts=p;renderPosts(allPosts);});
+let filtered=allPosts.filter(post=>
+post.hashtags.some(t=>t.toLowerCase().includes(input))||
+post.date.includes(input)
+);
+
+const now=new Date(todayLocalISO());
+
+if(filters.today){
+filtered=filtered.filter(p=>p.date===todayLocalISO());
+}else if(filters.week){
+const d=new Date(now);d.setDate(now.getDate()-7);
+filtered=filtered.filter(p=>new Date(p.date)>=d);
+}else if(filters.month){
+const d=new Date(now);d.setMonth(now.getMonth()-1);
+filtered=filtered.filter(p=>new Date(p.date)>=d);
+}
+
+renderPosts(filtered);
+updateButtons();
+}
+
+document.getElementById('search').addEventListener('input',applyFilters);
+
+const todayBtn=document.getElementById('todayFilter');
+const weekBtn=document.getElementById('weekFilter');
+const monthBtn=document.getElementById('monthFilter');
+const clearBtn=document.getElementById('clearSearch');
+
+todayBtn.onclick=()=>{filters.today=!filters.today;filters.week=filters.month=false;applyFilters();};
+weekBtn.onclick=()=>{filters.week=!filters.week;filters.today=filters.month=false;applyFilters();};
+monthBtn.onclick=()=>{filters.month=!filters.month;filters.today=filters.week=false;applyFilters();};
+
+clearBtn.onclick=()=>{
+document.getElementById('search').value='';
+filters.today=filters.week=filters.month=false;
+renderPosts(allPosts);
+updateButtons();
+};
+
+loadPosts().then(posts=>{
+allPosts=posts;
+renderPosts(allPosts);
+});
+</script>
+
+<script>
+document.addEventListener('click',e=>{
+if(e.target.tagName==='IMG'&&e.target.closest('.post')){
+const modal=document.createElement('div');
+modal.className='image-modal';
+modal.innerHTML=`<img src="${e.target.src}">`;
+modal.onclick=()=>modal.remove();
+document.addEventListener('keydown',ev=>{
+if(ev.key==='Escape') modal.remove();
+},{once:true});
+document.body.appendChild(modal);
+}
+});
 </script>
 
 </body>
