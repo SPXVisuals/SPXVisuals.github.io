@@ -444,7 +444,13 @@ function applyMasonry() {
 window.addEventListener('resize', () => {
   requestAnimationFrame(applyMasonry);
 });
-
+  
+document.getElementById('posts').addEventListener('load', e => {
+  if (e.target.tagName === 'IMG') {
+    requestAnimationFrame(applyMasonry);
+  }
+}, true);
+  
 loadPosts().then(posts => {
   allPosts = posts;
   renderPosts(allPosts);
