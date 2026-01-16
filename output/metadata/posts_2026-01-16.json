@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-16_gainers_losers_1w.png"
+    ],
+    "timeframe": "1w",
+    "tweet_id": "2012235966786810303",
+    "tweet_text": "1w - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012235966786810303"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-16_1w_0.png",
+      "output/normalized/2026-01-16_1w_1.png",
+      "output/normalized/2026-01-16_1w_2.png",
+      "output/normalized/2026-01-16_1w_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2012244351347310601",
+    "tweet_text": "1w - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012244351347310601"
+  },
+  {
+    "type": "ma",
+    "ticker": "MU",
+    "images": [
+      "output/ma/2026-01-16_MU_SMA_1y.png",
+      "output/ma/2026-01-16_MU_EMA_1y.png"
+    ],
+    "tweet_id": "2012251221025820912",
+    "tweet_text": "1y - MU SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #MU #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012251221025820912"
+  },
+  {
+    "type": "ma",
+    "ticker": "GM",
+    "images": [
+      "output/ma/2026-01-16_GM_SMA_1y.png",
+      "output/ma/2026-01-16_GM_EMA_1y.png"
+    ],
+    "tweet_id": "2012261932124766366",
+    "tweet_text": "1y - GM SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #GM #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012261932124766366"
+  },
+  {
+    "type": "ma",
+    "ticker": "WMB",
+    "images": [
+      "output/ma/2026-01-16_WMB_SMA_1y.png",
+      "output/ma/2026-01-16_WMB_EMA_1y.png"
+    ],
+    "tweet_id": "2012269660608037237",
+    "tweet_text": "1y - WMB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #WMB #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012269660608037237"
+  }
+]
