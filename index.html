@@ -326,6 +326,7 @@ function renderPosts(posts) {
   });
 
   requestAnimationFrame(applyMasonry);
+  enableImageZoom();
 }
 
 let allPosts = [];
@@ -439,6 +440,23 @@ loadPosts().then(posts => {
   allPosts = posts;
   renderPosts(allPosts);
 });
+  
+function enableImageZoom() {
+  document.querySelectorAll('#posts img').forEach(img => {
+    img.addEventListener('click', () => {
+      const modal = document.createElement('div');
+      modal.className = 'image-modal';
+
+      const big = document.createElement('img');
+      big.src = img.src;
+
+      modal.appendChild(big);
+      document.body.appendChild(modal);
+
+      modal.addEventListener('click', () => modal.remove());
+    });
+  });
+}
 </script>
 
 
