@@ -113,17 +113,20 @@ display:none;
 
 /* ---------------- Layout ---------------- */
 main {
-column-count:2;
-column-gap:32px;
-margin-top:32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 32px;
+  margin-top: 32px;
 }
 
 .post {
-display:inline-block;
-width:100%;
-margin-bottom:40px;
-break-inside:avoid;
-transition:.35s;
+  display: block;
+  width: 100%;
+  break-inside: avoid;
+  background: transparent;
+  padding: 0;
+  transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .post:hover {
