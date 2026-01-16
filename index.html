@@ -325,7 +325,7 @@ function renderPosts(posts) {
     container.appendChild(div);
   });
 
-  waitForImages().then(applyMasonry);
+  waitForImages().then(requestAnimationFrame(applyMasonry));
   enableImageZoom();
 }
 
