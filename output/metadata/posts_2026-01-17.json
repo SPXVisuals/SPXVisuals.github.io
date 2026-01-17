@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-17_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD",
+    "tweet_id": "2012571279908282636",
+    "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012571279908282636"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-17_YTD_0.png",
+      "output/normalized/2026-01-17_YTD_1.png",
+      "output/normalized/2026-01-17_YTD_2.png",
+      "output/normalized/2026-01-17_YTD_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2012580343836987821",
+    "tweet_text": "YTD - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012580343836987821"
+  },
+  {
+    "type": "ma",
+    "ticker": "ANET",
+    "images": [
+      "output/ma/2026-01-17_ANET_SMA_1y.png",
+      "output/ma/2026-01-17_ANET_EMA_1y.png"
+    ],
+    "tweet_id": "2012589449998176544",
+    "tweet_text": "1y - ANET SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #ANET #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012589449998176544"
+  },
+  {
+    "type": "ma",
+    "ticker": "TT",
+    "images": [
+      "output/ma/2026-01-17_TT_SMA_1y.png",
+      "output/ma/2026-01-17_TT_EMA_1y.png"
+    ],
+    "tweet_id": "2012596231013285939",
+    "tweet_text": "1y - TT SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #TT #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012596231013285939"
+  },
+  {
+    "type": "ma",
+    "ticker": "ETN",
+    "images": [
+      "output/ma/2026-01-17_ETN_SMA_1y.png",
+      "output/ma/2026-01-17_ETN_EMA_1y.png"
+    ],
+    "tweet_id": "2012606175015997870",
+    "tweet_text": "1y - ETN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #ETN #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012606175015997870"
+  }
+]
