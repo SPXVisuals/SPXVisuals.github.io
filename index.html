@@ -156,6 +156,11 @@ cursor:zoom-in;
 transition:.3s;
 }
 
+.post-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
 .hashtags { display:flex; gap:6px; flex-wrap:wrap; }
 
 .hashtags a {
@@ -311,7 +316,7 @@ function renderPosts(posts) {
     div.innerHTML = `
       ${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
       <div class="post-date">${post.date}</div>
-      <div>${stripHashtags(post.text)}</div>
+      <div class = "post-text">${stripHashtags(post.text)}</div>
       <div class="hashtags">
         ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
       </div>
