@@ -2,7 +2,10 @@ name: Build Metadata Index
 
 on:
   push:
-    branches: [ main ]
+    paths:
+      - "output/metadata/posts_*.json"
+  repository_dispatch:
+    types: [ rebuild_index ]
   workflow_dispatch:
 
 permissions:
