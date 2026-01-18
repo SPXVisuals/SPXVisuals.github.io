@@ -2,370 +2,58 @@
   {
     "type": "gainers_losers",
     "images": [
-      "output/leaders_laggards/2026-01-08_gainers_losers_1mo.png"
-    ],
-    "timeframe": "1mo",
-    "tweet_id": "2009361408925028512",
-    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009361408925028512"
-  },
-  {
-    "type": "normalized",
-    "images": [
-      "output/normalized/2026-01-08_1mo_0.png",
-      "output/normalized/2026-01-08_1mo_1.png",
-      "output/normalized/2026-01-08_1mo_2.png",
-      "output/normalized/2026-01-08_1mo_3.png"
-    ],
-    "label": "1_40",
-    "tweet_id": "2009368529087426681",
-    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009368529087426681"
-  },
-  {
-    "type": "ma",
-    "ticker": "BRO",
-    "images": [
-      "output/ma/2026-01-08_BRO_SMA_1y.png",
-      "output/ma/2026-01-08_BRO_EMA_1y.png"
-    ],
-    "tweet_id": "2009375295971971307",
-    "tweet_text": "1y - BRO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #BRO #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009375295971971307"
-  },
-  {
-    "type": "ma",
-    "ticker": "SOLV",
-    "images": [
-      "output/ma/2026-01-08_SOLV_SMA_1y.png",
-      "output/ma/2026-01-08_SOLV_EMA_1y.png"
-    ],
-    "tweet_id": "2009382743164248474",
-    "tweet_text": "1y - SOLV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #SOLV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009382743164248474"
-  },
-  {
-    "type": "ma",
-    "ticker": "APTV",
-    "images": [
-      "output/ma/2026-01-08_APTV_SMA_1y.png",
-      "output/ma/2026-01-08_APTV_EMA_1y.png"
-    ],
-    "tweet_id": "2009392598297788687",
-    "tweet_text": "1y - APTV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #APTV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009392598297788687"
-  },
-  {
-    "type": "gainers_losers",
-    "images": [
-      "output/leaders_laggards/2026-01-10_gainers_losers_YTD.png"
+      "output/leaders_laggards/2026-01-17_gainers_losers_YTD.png"
     ],
     "timeframe": "YTD",
-    "tweet_id": "2010041021678407877",
+    "tweet_id": "2012571279908282636",
     "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010041021678407877"
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012571279908282636"
   },
   {
     "type": "normalized",
     "images": [
-      "output/normalized/2026-01-10_YTD_0.png",
-      "output/normalized/2026-01-10_YTD_1.png",
-      "output/normalized/2026-01-10_YTD_2.png",
-      "output/normalized/2026-01-10_YTD_3.png"
+      "output/normalized/2026-01-17_YTD_0.png",
+      "output/normalized/2026-01-17_YTD_1.png",
+      "output/normalized/2026-01-17_YTD_2.png",
+      "output/normalized/2026-01-17_YTD_3.png"
     ],
     "label": "1_40",
-    "tweet_id": "2010047869848580116",
+    "tweet_id": "2012580343836987821",
     "tweet_text": "YTD - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010047869848580116"
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012580343836987821"
   },
   {
     "type": "ma",
-    "ticker": "TKO",
+    "ticker": "ANET",
     "images": [
-      "output/ma/2026-01-10_TKO_SMA_1y.png",
-      "output/ma/2026-01-10_TKO_EMA_1y.png"
+      "output/ma/2026-01-17_ANET_SMA_1y.png",
+      "output/ma/2026-01-17_ANET_EMA_1y.png"
     ],
-    "tweet_id": "2010056621196796006",
-    "tweet_text": "1y - TKO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #TKO #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010056621196796006"
+    "tweet_id": "2012589449998176544",
+    "tweet_text": "1y - ANET SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #ANET #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012589449998176544"
   },
   {
     "type": "ma",
-    "ticker": "MA",
+    "ticker": "TT",
     "images": [
-      "output/ma/2026-01-10_MA_SMA_1y.png",
-      "output/ma/2026-01-10_MA_EMA_1y.png"
+      "output/ma/2026-01-17_TT_SMA_1y.png",
+      "output/ma/2026-01-17_TT_EMA_1y.png"
     ],
-    "tweet_id": "2010063217444417573",
-    "tweet_text": "1y - MA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #MA #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010063217444417573"
+    "tweet_id": "2012596231013285939",
+    "tweet_text": "1y - TT SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #TT #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012596231013285939"
   },
   {
     "type": "ma",
-    "ticker": "FTV",
+    "ticker": "ETN",
     "images": [
-      "output/ma/2026-01-10_FTV_SMA_1y.png",
-      "output/ma/2026-01-10_FTV_EMA_1y.png"
+      "output/ma/2026-01-17_ETN_SMA_1y.png",
+      "output/ma/2026-01-17_ETN_EMA_1y.png"
     ],
-    "tweet_id": "2010073218649035157",
-    "tweet_text": "1y - FTV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FTV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010073218649035157"
-  },
-  {
-    "type": "marketcap",
-    "images": [
-      "output/marketcap/2026-01-11_marketcap_1_10.png",
-      "output/marketcap/2026-01-11_marketcap_11_25.png",
-      "output/marketcap/2026-01-11_marketcap_26_50.png"
-    ],
-    "label": "1_50",
-    "tweet_id": "2010395295264235869",
-    "tweet_text": "Market Capitalization Distribution Charts For The 50 Largest S&P 500 Index Components \ud83c\udf69 \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketCapitalization #MarketCap",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010395295264235869"
-  },
-  {
-    "type": "pe",
-    "images": [
-      "output/pe/2026-01-11_pe_trailing.png"
-    ],
-    "subtype": "trailing",
-    "tweet_id": "2010406571801514170",
-    "tweet_text": "Trailing P/E Chart For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010406571801514170"
-  },
-  {
-    "type": "pe",
-    "images": [
-      "output/pe/2026-01-11_pe_forward.png"
-    ],
-    "subtype": "forward",
-    "tweet_id": "2010415725131776304",
-    "tweet_text": "Forward P/E Chart For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010415725131776304"
-  },
-  {
-    "type": "gainers_losers",
-    "images": [
-      "output/leaders_laggards/2026-01-12_gainers_losers_3y.png"
-    ],
-    "timeframe": "3y",
-    "tweet_id": "2010790868790161519",
-    "tweet_text": "3y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010790868790161519"
-  },
-  {
-    "type": "normalized",
-    "images": [
-      "output/normalized/2026-01-12_3y_0.png",
-      "output/normalized/2026-01-12_3y_1.png",
-      "output/normalized/2026-01-12_3y_2.png",
-      "output/normalized/2026-01-12_3y_3.png"
-    ],
-    "label": "1_40",
-    "tweet_id": "2010797809956491502",
-    "tweet_text": "3y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010797809956491502"
-  },
-  {
-    "type": "ma",
-    "ticker": "UAL",
-    "images": [
-      "output/ma/2026-01-12_UAL_SMA_1y.png",
-      "output/ma/2026-01-12_UAL_EMA_1y.png"
-    ],
-    "tweet_id": "2010808929459003879",
-    "tweet_text": "1y - UAL SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #UAL #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010808929459003879"
-  },
-  {
-    "type": "ma",
-    "ticker": "TSN",
-    "images": [
-      "output/ma/2026-01-12_TSN_SMA_1y.png",
-      "output/ma/2026-01-12_TSN_EMA_1y.png"
-    ],
-    "tweet_id": "2010816696387244145",
-    "tweet_text": "1y - TSN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #TSN #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010816696387244145"
-  },
-  {
-    "type": "ma",
-    "ticker": "WMB",
-    "images": [
-      "output/ma/2026-01-12_WMB_SMA_1y.png",
-      "output/ma/2026-01-12_WMB_EMA_1y.png"
-    ],
-    "tweet_id": "2010827789281145303",
-    "tweet_text": "1y - WMB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #WMB #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010827789281145303"
-  },
-  {
-    "type": "gainers_losers",
-    "images": [
-      "output/leaders_laggards/2026-01-13_gainers_losers_1y.png"
-    ],
-    "timeframe": "1y",
-    "tweet_id": "2011129934580793790",
-    "tweet_text": "1y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011129934580793790"
-  },
-  {
-    "type": "normalized",
-    "images": [
-      "output/normalized/2026-01-13_1y_0.png",
-      "output/normalized/2026-01-13_1y_1.png",
-      "output/normalized/2026-01-13_1y_2.png",
-      "output/normalized/2026-01-13_1y_3.png"
-    ],
-    "label": "1_40",
-    "tweet_id": "2011138252984791442",
-    "tweet_text": "1y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011138252984791442"
-  },
-  {
-    "type": "ma",
-    "ticker": "EOG",
-    "images": [
-      "output/ma/2026-01-13_EOG_SMA_1y.png",
-      "output/ma/2026-01-13_EOG_EMA_1y.png"
-    ],
-    "tweet_id": "2011144568256020890",
-    "tweet_text": "1y - EOG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #EOG #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011144568256020890"
-  },
-  {
-    "type": "ma",
-    "ticker": "LVS",
-    "images": [
-      "output/ma/2026-01-13_LVS_SMA_1y.png",
-      "output/ma/2026-01-13_LVS_EMA_1y.png"
-    ],
-    "tweet_id": "2011155665549660556",
-    "tweet_text": "1y - LVS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #LVS #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011155665549660556"
-  },
-  {
-    "type": "ma",
-    "ticker": "WST",
-    "images": [
-      "output/ma/2026-01-13_WST_SMA_1y.png",
-      "output/ma/2026-01-13_WST_EMA_1y.png"
-    ],
-    "tweet_id": "2011162933192216775",
-    "tweet_text": "1y - WST SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #WST #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011162933192216775"
-  },
-  {
-    "type": "gainers_losers",
-    "images": [
-      "output/leaders_laggards/2026-01-14_gainers_losers_3mo.png"
-    ],
-    "timeframe": "3mo",
-    "tweet_id": "2011488403947143646",
-    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011488403947143646"
-  },
-  {
-    "type": "normalized",
-    "images": [
-      "output/normalized/2026-01-14_3mo_0.png",
-      "output/normalized/2026-01-14_3mo_1.png",
-      "output/normalized/2026-01-14_3mo_2.png",
-      "output/normalized/2026-01-14_3mo_3.png"
-    ],
-    "label": "1_40",
-    "tweet_id": "2011497651166913001",
-    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011497651166913001"
-  },
-  {
-    "type": "ma",
-    "ticker": "CPB",
-    "images": [
-      "output/ma/2026-01-14_CPB_SMA_1y.png",
-      "output/ma/2026-01-14_CPB_EMA_1y.png"
-    ],
-    "tweet_id": "2011507710303301646",
-    "tweet_text": "1y - CPB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #CPB #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011507710303301646"
-  },
-  {
-    "type": "ma",
-    "ticker": "FCX",
-    "images": [
-      "output/ma/2026-01-14_FCX_SMA_1y.png",
-      "output/ma/2026-01-14_FCX_EMA_1y.png"
-    ],
-    "tweet_id": "2011518247535784203",
-    "tweet_text": "1y - FCX SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FCX #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011518247535784203"
-  },
-  {
-    "type": "ma",
-    "ticker": "BLDR",
-    "images": [
-      "output/ma/2026-01-14_BLDR_SMA_1y.png",
-      "output/ma/2026-01-14_BLDR_EMA_1y.png"
-    ],
-    "tweet_id": "2011528998526783868",
-    "tweet_text": "1y - BLDR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #BLDR #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011528998526783868"
-  },
-  {
-    "type": "gainers_losers",
-    "images": [
-      "output/leaders_laggards/2026-01-15_gainers_losers_1mo.png"
-    ],
-    "timeframe": "1mo",
-    "tweet_id": "2011863940448358438",
-    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011863940448358438"
-  },
-  {
-    "type": "normalized",
-    "images": [
-      "output/normalized/2026-01-15_1mo_0.png",
-      "output/normalized/2026-01-15_1mo_1.png",
-      "output/normalized/2026-01-15_1mo_2.png",
-      "output/normalized/2026-01-15_1mo_3.png"
-    ],
-    "label": "1_40",
-    "tweet_id": "2011870611891486763",
-    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011870611891486763"
-  },
-  {
-    "type": "ma",
-    "ticker": "DVA",
-    "images": [
-      "output/ma/2026-01-15_DVA_SMA_1y.png",
-      "output/ma/2026-01-15_DVA_EMA_1y.png"
-    ],
-    "tweet_id": "2011879902924984334",
-    "tweet_text": "1y - DVA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #DVA #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011879902924984334"
-  },
-  {
-    "type": "ma",
-    "ticker": "CTRA",
-    "images": [
-      "output/ma/2026-01-15_CTRA_SMA_1y.png",
-      "output/ma/2026-01-15_CTRA_EMA_1y.png"
-    ],
-    "tweet_id": "2011889888455495770",
-    "tweet_text": "1y - CTRA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #CTRA #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011889888455495770"
-  },
-  {
-    "type": "ma",
-    "ticker": "FISV",
-    "images": [
-      "output/ma/2026-01-15_FISV_SMA_1y.png",
-      "output/ma/2026-01-15_FISV_EMA_1y.png"
-    ],
-    "tweet_id": "2011900497641271332",
-    "tweet_text": "1y - FISV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FISV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011900497641271332"
+    "tweet_id": "2012606175015997870",
+    "tweet_text": "1y - ETN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #ETN #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012606175015997870"
   },
   {
     "type": "gainers_losers",
@@ -426,57 +114,369 @@
   {
     "type": "gainers_losers",
     "images": [
-      "output/leaders_laggards/2026-01-17_gainers_losers_YTD.png"
+      "output/leaders_laggards/2026-01-15_gainers_losers_1mo.png"
     ],
-    "timeframe": "YTD",
-    "tweet_id": "2012571279908282636",
-    "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012571279908282636"
+    "timeframe": "1mo",
+    "tweet_id": "2011863940448358438",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011863940448358438"
   },
   {
     "type": "normalized",
     "images": [
-      "output/normalized/2026-01-17_YTD_0.png",
-      "output/normalized/2026-01-17_YTD_1.png",
-      "output/normalized/2026-01-17_YTD_2.png",
-      "output/normalized/2026-01-17_YTD_3.png"
+      "output/normalized/2026-01-15_1mo_0.png",
+      "output/normalized/2026-01-15_1mo_1.png",
+      "output/normalized/2026-01-15_1mo_2.png",
+      "output/normalized/2026-01-15_1mo_3.png"
     ],
     "label": "1_40",
-    "tweet_id": "2012580343836987821",
+    "tweet_id": "2011870611891486763",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011870611891486763"
+  },
+  {
+    "type": "ma",
+    "ticker": "DVA",
+    "images": [
+      "output/ma/2026-01-15_DVA_SMA_1y.png",
+      "output/ma/2026-01-15_DVA_EMA_1y.png"
+    ],
+    "tweet_id": "2011879902924984334",
+    "tweet_text": "1y - DVA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #DVA #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011879902924984334"
+  },
+  {
+    "type": "ma",
+    "ticker": "CTRA",
+    "images": [
+      "output/ma/2026-01-15_CTRA_SMA_1y.png",
+      "output/ma/2026-01-15_CTRA_EMA_1y.png"
+    ],
+    "tweet_id": "2011889888455495770",
+    "tweet_text": "1y - CTRA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #CTRA #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011889888455495770"
+  },
+  {
+    "type": "ma",
+    "ticker": "FISV",
+    "images": [
+      "output/ma/2026-01-15_FISV_SMA_1y.png",
+      "output/ma/2026-01-15_FISV_EMA_1y.png"
+    ],
+    "tweet_id": "2011900497641271332",
+    "tweet_text": "1y - FISV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FISV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011900497641271332"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-14_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2011488403947143646",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011488403947143646"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-14_3mo_0.png",
+      "output/normalized/2026-01-14_3mo_1.png",
+      "output/normalized/2026-01-14_3mo_2.png",
+      "output/normalized/2026-01-14_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2011497651166913001",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011497651166913001"
+  },
+  {
+    "type": "ma",
+    "ticker": "CPB",
+    "images": [
+      "output/ma/2026-01-14_CPB_SMA_1y.png",
+      "output/ma/2026-01-14_CPB_EMA_1y.png"
+    ],
+    "tweet_id": "2011507710303301646",
+    "tweet_text": "1y - CPB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #CPB #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011507710303301646"
+  },
+  {
+    "type": "ma",
+    "ticker": "FCX",
+    "images": [
+      "output/ma/2026-01-14_FCX_SMA_1y.png",
+      "output/ma/2026-01-14_FCX_EMA_1y.png"
+    ],
+    "tweet_id": "2011518247535784203",
+    "tweet_text": "1y - FCX SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FCX #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011518247535784203"
+  },
+  {
+    "type": "ma",
+    "ticker": "BLDR",
+    "images": [
+      "output/ma/2026-01-14_BLDR_SMA_1y.png",
+      "output/ma/2026-01-14_BLDR_EMA_1y.png"
+    ],
+    "tweet_id": "2011528998526783868",
+    "tweet_text": "1y - BLDR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #BLDR #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011528998526783868"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-13_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_id": "2011129934580793790",
+    "tweet_text": "1y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011129934580793790"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-13_1y_0.png",
+      "output/normalized/2026-01-13_1y_1.png",
+      "output/normalized/2026-01-13_1y_2.png",
+      "output/normalized/2026-01-13_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2011138252984791442",
+    "tweet_text": "1y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011138252984791442"
+  },
+  {
+    "type": "ma",
+    "ticker": "EOG",
+    "images": [
+      "output/ma/2026-01-13_EOG_SMA_1y.png",
+      "output/ma/2026-01-13_EOG_EMA_1y.png"
+    ],
+    "tweet_id": "2011144568256020890",
+    "tweet_text": "1y - EOG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #EOG #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011144568256020890"
+  },
+  {
+    "type": "ma",
+    "ticker": "LVS",
+    "images": [
+      "output/ma/2026-01-13_LVS_SMA_1y.png",
+      "output/ma/2026-01-13_LVS_EMA_1y.png"
+    ],
+    "tweet_id": "2011155665549660556",
+    "tweet_text": "1y - LVS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #LVS #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011155665549660556"
+  },
+  {
+    "type": "ma",
+    "ticker": "WST",
+    "images": [
+      "output/ma/2026-01-13_WST_SMA_1y.png",
+      "output/ma/2026-01-13_WST_EMA_1y.png"
+    ],
+    "tweet_id": "2011162933192216775",
+    "tweet_text": "1y - WST SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #WST #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2011162933192216775"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-12_gainers_losers_3y.png"
+    ],
+    "timeframe": "3y",
+    "tweet_id": "2010790868790161519",
+    "tweet_text": "3y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010790868790161519"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-12_3y_0.png",
+      "output/normalized/2026-01-12_3y_1.png",
+      "output/normalized/2026-01-12_3y_2.png",
+      "output/normalized/2026-01-12_3y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2010797809956491502",
+    "tweet_text": "3y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010797809956491502"
+  },
+  {
+    "type": "ma",
+    "ticker": "UAL",
+    "images": [
+      "output/ma/2026-01-12_UAL_SMA_1y.png",
+      "output/ma/2026-01-12_UAL_EMA_1y.png"
+    ],
+    "tweet_id": "2010808929459003879",
+    "tweet_text": "1y - UAL SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #UAL #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010808929459003879"
+  },
+  {
+    "type": "ma",
+    "ticker": "TSN",
+    "images": [
+      "output/ma/2026-01-12_TSN_SMA_1y.png",
+      "output/ma/2026-01-12_TSN_EMA_1y.png"
+    ],
+    "tweet_id": "2010816696387244145",
+    "tweet_text": "1y - TSN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #TSN #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010816696387244145"
+  },
+  {
+    "type": "ma",
+    "ticker": "WMB",
+    "images": [
+      "output/ma/2026-01-12_WMB_SMA_1y.png",
+      "output/ma/2026-01-12_WMB_EMA_1y.png"
+    ],
+    "tweet_id": "2010827789281145303",
+    "tweet_text": "1y - WMB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #WMB #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010827789281145303"
+  },
+  {
+    "type": "marketcap",
+    "images": [
+      "output/marketcap/2026-01-11_marketcap_1_10.png",
+      "output/marketcap/2026-01-11_marketcap_11_25.png",
+      "output/marketcap/2026-01-11_marketcap_26_50.png"
+    ],
+    "label": "1_50",
+    "tweet_id": "2010395295264235869",
+    "tweet_text": "Market Capitalization Distribution Charts For The 50 Largest S&P 500 Index Components \ud83c\udf69 \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketCapitalization #MarketCap",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010395295264235869"
+  },
+  {
+    "type": "pe",
+    "images": [
+      "output/pe/2026-01-11_pe_trailing.png"
+    ],
+    "subtype": "trailing",
+    "tweet_id": "2010406571801514170",
+    "tweet_text": "Trailing P/E Chart For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010406571801514170"
+  },
+  {
+    "type": "pe",
+    "images": [
+      "output/pe/2026-01-11_pe_forward.png"
+    ],
+    "subtype": "forward",
+    "tweet_id": "2010415725131776304",
+    "tweet_text": "Forward P/E Chart For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010415725131776304"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-10_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD",
+    "tweet_id": "2010041021678407877",
+    "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010041021678407877"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-10_YTD_0.png",
+      "output/normalized/2026-01-10_YTD_1.png",
+      "output/normalized/2026-01-10_YTD_2.png",
+      "output/normalized/2026-01-10_YTD_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2010047869848580116",
     "tweet_text": "YTD - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012580343836987821"
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010047869848580116"
   },
   {
     "type": "ma",
-    "ticker": "ANET",
+    "ticker": "TKO",
     "images": [
-      "output/ma/2026-01-17_ANET_SMA_1y.png",
-      "output/ma/2026-01-17_ANET_EMA_1y.png"
+      "output/ma/2026-01-10_TKO_SMA_1y.png",
+      "output/ma/2026-01-10_TKO_EMA_1y.png"
     ],
-    "tweet_id": "2012589449998176544",
-    "tweet_text": "1y - ANET SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #ANET #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012589449998176544"
+    "tweet_id": "2010056621196796006",
+    "tweet_text": "1y - TKO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #TKO #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010056621196796006"
   },
   {
     "type": "ma",
-    "ticker": "TT",
+    "ticker": "MA",
     "images": [
-      "output/ma/2026-01-17_TT_SMA_1y.png",
-      "output/ma/2026-01-17_TT_EMA_1y.png"
+      "output/ma/2026-01-10_MA_SMA_1y.png",
+      "output/ma/2026-01-10_MA_EMA_1y.png"
     ],
-    "tweet_id": "2012596231013285939",
-    "tweet_text": "1y - TT SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #TT #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012596231013285939"
+    "tweet_id": "2010063217444417573",
+    "tweet_text": "1y - MA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #MA #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010063217444417573"
   },
   {
     "type": "ma",
-    "ticker": "ETN",
+    "ticker": "FTV",
     "images": [
-      "output/ma/2026-01-17_ETN_SMA_1y.png",
-      "output/ma/2026-01-17_ETN_EMA_1y.png"
+      "output/ma/2026-01-10_FTV_SMA_1y.png",
+      "output/ma/2026-01-10_FTV_EMA_1y.png"
     ],
-    "tweet_id": "2012606175015997870",
-    "tweet_text": "1y - ETN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #ETN #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2012606175015997870"
+    "tweet_id": "2010073218649035157",
+    "tweet_text": "1y - FTV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FTV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2010073218649035157"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-08_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2009361408925028512",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009361408925028512"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-08_1mo_0.png",
+      "output/normalized/2026-01-08_1mo_1.png",
+      "output/normalized/2026-01-08_1mo_2.png",
+      "output/normalized/2026-01-08_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2009368529087426681",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009368529087426681"
+  },
+  {
+    "type": "ma",
+    "ticker": "BRO",
+    "images": [
+      "output/ma/2026-01-08_BRO_SMA_1y.png",
+      "output/ma/2026-01-08_BRO_EMA_1y.png"
+    ],
+    "tweet_id": "2009375295971971307",
+    "tweet_text": "1y - BRO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #BRO #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009375295971971307"
+  },
+  {
+    "type": "ma",
+    "ticker": "SOLV",
+    "images": [
+      "output/ma/2026-01-08_SOLV_SMA_1y.png",
+      "output/ma/2026-01-08_SOLV_EMA_1y.png"
+    ],
+    "tweet_id": "2009382743164248474",
+    "tweet_text": "1y - SOLV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #SOLV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009382743164248474"
+  },
+  {
+    "type": "ma",
+    "ticker": "APTV",
+    "images": [
+      "output/ma/2026-01-08_APTV_SMA_1y.png",
+      "output/ma/2026-01-08_APTV_EMA_1y.png"
+    ],
+    "tweet_id": "2009392598297788687",
+    "tweet_text": "1y - APTV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #APTV #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2009392598297788687"
   }
 ]
