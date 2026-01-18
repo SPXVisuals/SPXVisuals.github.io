@@ -274,7 +274,11 @@ async function loadPosts() {
 function extractHashtags(text) {
   return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
 }
-
+  
+function stripHashtags(text) {
+  return text.replace(/#[A-Za-z0-9_]+/g, '').replace(/\s{2,}/g, ' ').trim();
+}
+  
 function todayLocalISO() {
   const d = new Date();
   d.setHours(0,0,0,0);
@@ -307,10 +311,10 @@ function renderPosts(posts) {
     div.innerHTML = `
       ${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
       <div class="post-date">${post.date}</div>
+      <div>${stripHashtags(post.text)}</div>
       <div class="hashtags">
         ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
       </div>
-      <div>${post.text}</div>
       ${post.images.map(i => `<img src="${i}" loading="lazy">`).join('')}
     `;
 
