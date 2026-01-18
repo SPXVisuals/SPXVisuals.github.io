@@ -2,8 +2,7 @@ name: Build Metadata Index
 
 on:
   push:
-    paths:
-      - "output/metadata/*.json"
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -14,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Build index.json
+      - name: Build index.json + all_posts.json
         run: |
           python << 'EOF'
           import os, json
@@ -26,8 +26,9 @@ jobs:
           ALL_POSTS_FILE = os.path.join(METADATA_DIR, "all_posts.json")
 
           files = sorted(
-              f for f in os.listdir(METADATA_DIR)
-              if f.startswith("posts_") and f.endswith(".json")
+              (f for f in os.listdir(METADATA_DIR)
+               if f.startswith("posts_") and f.endswith(".json")),
+              reverse=True
           )
 
           if not files:
@@ -35,12 +36,11 @@ jobs:
 
           all_posts = []
           for f in files:
-              with open(os.path.join(METADATA_DIR, f), "r", encoding="utf-8") as fh:
+              path = os.path.join(METADATA_DIR, f)
+              with open(path, "r", encoding="utf-8") as fh:
                   data = json.load(fh)
                   if isinstance(data, list):
                       all_posts.extend(data)
-
-          all_posts.sort(key=lambda p: p.get("date",""), reverse=True)
 
           with open(INDEX_FILE, "w", encoding="utf-8") as f:
               json.dump(files, f, indent=2)
@@ -48,13 +48,13 @@ jobs:
           with open(ALL_POSTS_FILE, "w", encoding="utf-8") as f:
               json.dump(all_posts, f, indent=2)
 
-          print("✅ index.json + all_posts.json rebuilt")
+          print("✅ Rebuilt index.json and all_posts.json")
           EOF
 
       - name: Commit changes
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add output/metadata/index.json output/metadata/all_posts.json
-          git commit -m "Auto rebuild index" || echo "No changes"
+          git add output/metadata
+          git commit -m "Auto rebuild metadata index" || echo "No changes"
           git push
