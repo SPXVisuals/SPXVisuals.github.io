@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-01-20_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_id": "2013666038034870392",
+    "tweet_text": "1y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2013666038034870392"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-20_1y_0.png",
+      "output/normalized/2026-01-20_1y_1.png",
+      "output/normalized/2026-01-20_1y_2.png",
+      "output/normalized/2026-01-20_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2013673450645172344",
+    "tweet_text": "1y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2013673450645172344"
+  },
+  {
+    "type": "ma",
+    "ticker": "PWR",
+    "images": [
+      "output/ma/2026-01-20_PWR_SMA_1y.png",
+      "output/ma/2026-01-20_PWR_EMA_1y.png"
+    ],
+    "tweet_id": "2013684032114983015",
+    "tweet_text": "1y - PWR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #PWR #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2013684032114983015"
+  },
+  {
+    "type": "ma",
+    "ticker": "AVB",
+    "images": [
+      "output/ma/2026-01-20_AVB_SMA_1y.png",
+      "output/ma/2026-01-20_AVB_EMA_1y.png"
+    ],
+    "tweet_id": "2013691937304260987",
+    "tweet_text": "1y - AVB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #AVB #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2013691937304260987"
+  },
+  {
+    "type": "ma",
+    "ticker": "PTC",
+    "images": [
+      "output/ma/2026-01-20_PTC_SMA_1y.png",
+      "output/ma/2026-01-20_PTC_EMA_1y.png"
+    ],
+    "tweet_id": "2013702266838974795",
+    "tweet_text": "1y - PTC SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #PTC #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2013702266838974795"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-01-19_gainers_losers_3y.png"
     ],
     "timeframe": "3y",
