@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-01-21_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2014045154236141783",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014045154236141783"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-21_3mo_0.png",
+      "output/normalized/2026-01-21_3mo_1.png",
+      "output/normalized/2026-01-21_3mo_2.png",
+      "output/normalized/2026-01-21_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2014053930150265189",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014053930150265189"
+  },
+  {
+    "type": "ma",
+    "ticker": "VRTX",
+    "images": [
+      "output/ma/2026-01-21_VRTX_SMA_1y.png",
+      "output/ma/2026-01-21_VRTX_EMA_1y.png"
+    ],
+    "tweet_id": "2014060246075908343",
+    "tweet_text": "1y - VRTX SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #VRTX #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014060246075908343"
+  },
+  {
+    "type": "ma",
+    "ticker": "HLT",
+    "images": [
+      "output/ma/2026-01-21_HLT_SMA_1y.png",
+      "output/ma/2026-01-21_HLT_EMA_1y.png"
+    ],
+    "tweet_id": "2014067400858034508",
+    "tweet_text": "1y - HLT SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #HLT #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014067400858034508"
+  },
+  {
+    "type": "ma",
+    "ticker": "TMO",
+    "images": [
+      "output/ma/2026-01-21_TMO_SMA_1y.png",
+      "output/ma/2026-01-21_TMO_EMA_1y.png"
+    ],
+    "tweet_id": "2014074127208849687",
+    "tweet_text": "1y - TMO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #TMO #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014074127208849687"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-01-20_gainers_losers_1y.png"
     ],
     "timeframe": "1y",
