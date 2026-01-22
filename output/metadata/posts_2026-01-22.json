@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-22_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2014386753956659658",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014386753956659658"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-22_1mo_0.png",
+      "output/normalized/2026-01-22_1mo_1.png",
+      "output/normalized/2026-01-22_1mo_2.png",
+      "output/normalized/2026-01-22_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2014396035863306587",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014396035863306587"
+  },
+  {
+    "type": "ma",
+    "ticker": "CARR",
+    "images": [
+      "output/ma/2026-01-22_CARR_SMA_1y.png",
+      "output/ma/2026-01-22_CARR_EMA_1y.png"
+    ],
+    "tweet_id": "2014406181553385531",
+    "tweet_text": "1y - CARR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #CARR #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014406181553385531"
+  },
+  {
+    "type": "ma",
+    "ticker": "O",
+    "images": [
+      "output/ma/2026-01-22_O_SMA_1y.png",
+      "output/ma/2026-01-22_O_EMA_1y.png"
+    ],
+    "tweet_id": "2014414870796550438",
+    "tweet_text": "1y - O SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #O #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014414870796550438"
+  },
+  {
+    "type": "ma",
+    "ticker": "NSC",
+    "images": [
+      "output/ma/2026-01-22_NSC_SMA_1y.png",
+      "output/ma/2026-01-22_NSC_EMA_1y.png"
+    ],
+    "tweet_id": "2014423800251638117",
+    "tweet_text": "1y - NSC SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #NSC #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2014423800251638117"
+  }
+]
