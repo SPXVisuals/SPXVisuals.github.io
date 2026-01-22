@@ -441,7 +441,10 @@ function applyMasonry() {
     item.style.width = colWidth + 'px';
 
     const minCol = colHeights.indexOf(Math.min(...colHeights));
-    const x = minCol * (colWidth + gap);
+    let x = minCol * (colWidth + gap);
+    if (cols === 1) {
+      x = (container.clientWidth - colWidth) / 2;
+    }
     const y = colHeights[minCol];
 
     item.style.transform = `translate(${x}px, ${y}px)`;
