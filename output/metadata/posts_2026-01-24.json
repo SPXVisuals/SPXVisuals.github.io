@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-24_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD",
+    "tweet_id": "2015106515737141589",
+    "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015106515737141589"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-24_YTD_0.png",
+      "output/normalized/2026-01-24_YTD_1.png",
+      "output/normalized/2026-01-24_YTD_2.png",
+      "output/normalized/2026-01-24_YTD_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2015114338252526027",
+    "tweet_text": "YTD - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015114338252526027"
+  },
+  {
+    "type": "ma",
+    "ticker": "EQIX",
+    "images": [
+      "output/ma/2026-01-24_EQIX_SMA_1y.png",
+      "output/ma/2026-01-24_EQIX_EMA_1y.png"
+    ],
+    "tweet_id": "2015120946739204422",
+    "tweet_text": "1y - EQIX SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #EQIX #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015120946739204422"
+  },
+  {
+    "type": "ma",
+    "ticker": "BKR",
+    "images": [
+      "output/ma/2026-01-24_BKR_SMA_1y.png",
+      "output/ma/2026-01-24_BKR_EMA_1y.png"
+    ],
+    "tweet_id": "2015131971844813100",
+    "tweet_text": "1y - BKR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #BKR #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015131971844813100"
+  },
+  {
+    "type": "ma",
+    "ticker": "PKG",
+    "images": [
+      "output/ma/2026-01-24_PKG_SMA_1y.png",
+      "output/ma/2026-01-24_PKG_EMA_1y.png"
+    ],
+    "tweet_id": "2015140189153177625",
+    "tweet_text": "1y - PKG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #PKG #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015140189153177625"
+  }
+]
