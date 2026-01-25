@@ -153,12 +153,7 @@ width:100%;
 border-radius:10px;
 margin:16px 0;
 cursor:zoom-in;
-transition: filter .4s ease, transform .3s ease;
-filter: blur(8px);
-}
-
-.post img.loaded {
-  filter: blur(0);
+transition:.3s;
 }
 
 .post-text {
@@ -344,11 +339,6 @@ function renderPosts(posts) {
     });
 
     container.appendChild(div);
-
-    div.querySelectorAll('img').forEach(img => {
-      if (img.complete) img.classList.add('loaded');
-      else img.onload = () => img.classList.add('loaded');
-      });
   });
 
   waitForImages().then(requestAnimationFrame(applyMasonry));
