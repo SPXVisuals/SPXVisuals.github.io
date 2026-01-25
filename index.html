@@ -252,14 +252,19 @@ For Educational Purposes Only
 
 <script>
 async function loadPosts() {
-  const indexRes = await fetch('output/metadata/index.json');
+  const indexRes = await fetch('output/metadata/index.json', { cache: "force-cache" });
   const files = await indexRes.json();
+
+  const requests = files.map(file =>
+    fetch(`output/metadata/${file}`, { cache: "force-cache" })
+      .then(r => r.json())
+      .then(daily => ({ file, daily }))
+  );
+
+  const results = await Promise.all(requests);
   const all = [];
 
-  for (const file of files) {
-    const res = await fetch(`output/metadata/${file}`);
-    const daily = await res.json();
-
+  results.forEach(({ file, daily }) => {
     const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
     const date = dateMatch ? dateMatch[0] : '';
 
@@ -273,7 +278,7 @@ async function loadPosts() {
         type: p.type
       });
     });
-  }
+  });
 
   return all.sort((a, b) => b.date.localeCompare(a.date));
 }
