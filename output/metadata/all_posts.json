@@ -1,5 +1,37 @@
 [
   {
+    "type": "marketcap",
+    "images": [
+      "output/marketcap/2026-01-25_marketcap_1_10.png",
+      "output/marketcap/2026-01-25_marketcap_11_25.png",
+      "output/marketcap/2026-01-25_marketcap_26_50.png"
+    ],
+    "label": "1_50",
+    "tweet_id": "2015498708629021128",
+    "tweet_text": "Market Capitalization Distribution Charts For The 50 Largest S&P 500 Index Components \ud83c\udf69 \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketCapitalization #MarketCap",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015498708629021128"
+  },
+  {
+    "type": "pe",
+    "images": [
+      "output/pe/2026-01-25_pe_trailing.png"
+    ],
+    "subtype": "trailing",
+    "tweet_id": "2015509576947269793",
+    "tweet_text": "Trailing P/E Chart For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015509576947269793"
+  },
+  {
+    "type": "pe",
+    "images": [
+      "output/pe/2026-01-25_pe_forward.png"
+    ],
+    "subtype": "forward",
+    "tweet_id": "2015520169099927727",
+    "tweet_text": "Forward P/E Chart For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015520169099927727"
+  },
+  {
     "type": "gainers_losers",
     "images": [
       "output/leaders_laggards/2026-01-24_gainers_losers_YTD.png"
