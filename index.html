@@ -327,7 +327,7 @@ function renderPosts(posts) {
       <div class="hashtags">
         ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
       </div>
-      ${post.images.map(i => `<img src="${i}" loading="lazy">`).join('')}
+      ${post.images.map(i => `<img src="${i}" loading="lazy" decoding="async">`).join('')}
     `;
 
     div.querySelectorAll('.hashtags a').forEach(a => {
