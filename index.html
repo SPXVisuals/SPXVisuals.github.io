@@ -256,11 +256,11 @@ For Educational Purposes Only
 
 <script>
 async function loadPosts() {
-  const indexRes = await fetch('output/metadata/index.json', { cache: "force-cache" });
+  const indexRes = await fetch(`output/metadata/index.json?t=${Date.now()}`, { cache: "no-store" });
   const files = await indexRes.json();
 
   const requests = files.map(file =>
-    fetch(`output/metadata/${file}`, { cache: "force-cache" })
+    fetch(`output/metadata/${file}?t=${Date.now()}`, { cache: "no-store" })
       .then(r => r.json())
       .then(daily => ({ file, daily }))
   );
