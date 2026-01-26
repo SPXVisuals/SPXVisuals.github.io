@@ -1,5 +1,61 @@
 [
   {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-01-26_gainers_losers_3y.png"
+    ],
+    "timeframe": "3y",
+    "tweet_id": "2015838669022626212",
+    "tweet_text": "3y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015838669022626212"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-26_3y_0.png",
+      "output/normalized/2026-01-26_3y_1.png",
+      "output/normalized/2026-01-26_3y_2.png",
+      "output/normalized/2026-01-26_3y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2015849722183930333",
+    "tweet_text": "3y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015849722183930333"
+  },
+  {
+    "type": "ma",
+    "ticker": "DHI",
+    "images": [
+      "output/ma/2026-01-26_DHI_SMA_1y.png",
+      "output/ma/2026-01-26_DHI_EMA_1y.png"
+    ],
+    "tweet_id": "2015860341553426728",
+    "tweet_text": "1y - DHI SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #DHI #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015860341553426728"
+  },
+  {
+    "type": "ma",
+    "ticker": "FRT",
+    "images": [
+      "output/ma/2026-01-26_FRT_SMA_1y.png",
+      "output/ma/2026-01-26_FRT_EMA_1y.png"
+    ],
+    "tweet_id": "2015869139882016812",
+    "tweet_text": "1y - FRT SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #FRT #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015869139882016812"
+  },
+  {
+    "type": "ma",
+    "ticker": "AVY",
+    "images": [
+      "output/ma/2026-01-26_AVY_SMA_1y.png",
+      "output/ma/2026-01-26_AVY_EMA_1y.png"
+    ],
+    "tweet_id": "2015879113148383734",
+    "tweet_text": "1y - AVY SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #AVY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2015879113148383734"
+  },
+  {
     "type": "marketcap",
     "images": [
       "output/marketcap/2026-01-25_marketcap_1_10.png",
