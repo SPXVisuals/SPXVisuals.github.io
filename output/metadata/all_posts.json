@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-01-27_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_id": "2016199036970406043",
+    "tweet_text": "1y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016199036970406043"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-27_1y_0.png",
+      "output/normalized/2026-01-27_1y_1.png",
+      "output/normalized/2026-01-27_1y_2.png",
+      "output/normalized/2026-01-27_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2016207000724799573",
+    "tweet_text": "1y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016207000724799573"
+  },
+  {
+    "type": "ma",
+    "ticker": "ZTS",
+    "images": [
+      "output/ma/2026-01-27_ZTS_SMA_1y.png",
+      "output/ma/2026-01-27_ZTS_EMA_1y.png"
+    ],
+    "tweet_id": "2016215363474928052",
+    "tweet_text": "1y - ZTS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #ZTS #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016215363474928052"
+  },
+  {
+    "type": "ma",
+    "ticker": "BX",
+    "images": [
+      "output/ma/2026-01-27_BX_SMA_1y.png",
+      "output/ma/2026-01-27_BX_EMA_1y.png"
+    ],
+    "tweet_id": "2016222286186242265",
+    "tweet_text": "1y - BX SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #BX #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016222286186242265"
+  },
+  {
+    "type": "ma",
+    "ticker": "ROP",
+    "images": [
+      "output/ma/2026-01-27_ROP_SMA_1y.png",
+      "output/ma/2026-01-27_ROP_EMA_1y.png"
+    ],
+    "tweet_id": "2016232703876849787",
+    "tweet_text": "1y - ROP SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #ROP #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016232703876849787"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-01-26_gainers_losers_3y.png"
     ],
     "timeframe": "3y",
