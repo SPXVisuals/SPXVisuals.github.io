@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-01-29_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2016944907504488737",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing $SPY $SPX #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016944907504488737"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-29_1mo_0.png",
+      "output/normalized/2026-01-29_1mo_1.png",
+      "output/normalized/2026-01-29_1mo_2.png",
+      "output/normalized/2026-01-29_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2016953088637071493",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing $SPY $SPX #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016953088637071493"
+  },
+  {
+    "type": "ma",
+    "ticker": "BEN",
+    "images": [
+      "output/ma/2026-01-29_BEN_SMA_1y.png",
+      "output/ma/2026-01-29_BEN_EMA_1y.png"
+    ],
+    "tweet_id": "2016963633788387462",
+    "tweet_text": "1y - BEN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #BEN $BEN #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing $SPY $SPX #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016963633788387462"
+  },
+  {
+    "type": "ma",
+    "ticker": "GPN",
+    "images": [
+      "output/ma/2026-01-29_GPN_SMA_1y.png",
+      "output/ma/2026-01-29_GPN_EMA_1y.png"
+    ],
+    "tweet_id": "2016970395123925017",
+    "tweet_text": "1y - GPN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #GPN $GPN #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing $SPY $SPX #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016970395123925017"
+  },
+  {
+    "type": "ma",
+    "ticker": "SPG",
+    "images": [
+      "output/ma/2026-01-29_SPG_SMA_1y.png",
+      "output/ma/2026-01-29_SPG_EMA_1y.png"
+    ],
+    "tweet_id": "2016981406107279665",
+    "tweet_text": "1y - SPG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals #SPG $SPG #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing $SPY $SPX #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2016981406107279665"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-01-28_gainers_losers_3mo.png"
     ],
     "timeframe": "3mo",
