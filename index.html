@@ -303,11 +303,21 @@ async function loadPosts() {
 }
 
 function extractHashtags(text) {
-  return [...text.matchAll(/#[A-Za-z0-9_]+/g)].map(m => m[0]);
+  if (!text) return [];
+
+  const tagMatches = text.match(/#[A-Za-z0-9_]+/g) || [];
+  const cashMatches = text.match(/\$[A-Za-z0-9_]+/g) || [];
+
+  return [...new Set([...tagMatches, ...cashMatches])];
 }
   
 function stripHashtags(text) {
-  return text.replace(/#[A-Za-z0-9_]+/g, '').replace(/\s{2,}/g, ' ').trim();
+  if (!text) return "";
+  return text
+    .replace(/#[A-Za-z0-9_]+/g, '')
+    .replace(/\$[A-Za-z0-9_]+/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
 }
   
 function todayLocalISO() {
