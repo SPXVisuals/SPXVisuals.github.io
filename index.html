@@ -256,35 +256,50 @@ For Educational Purposes Only
 
 <script>
 async function loadPosts() {
-  const indexRes = await fetch(`output/metadata/index.json?t=${Date.now()}`, { cache: "no-store" });
-  const files = await indexRes.json();
+  try {
+    const indexRes = await fetch(`output/metadata/index.json?t=${Date.now()}`, { cache: "no-store" });
 
-  const requests = files.map(file =>
-    fetch(`output/metadata/${file}?t=${Date.now()}`, { cache: "no-store" })
-      .then(r => r.json())
-      .then(daily => ({ file, daily }))
-  );
+    if (!indexRes.ok) {
+      throw new Error("Index fetch failed: " + indexRes.status);
+    }
 
-  const results = await Promise.all(requests);
-  const all = [];
+    const files = await indexRes.json();
 
-  results.forEach(({ file, daily }) => {
-    const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
-    const date = dateMatch ? dateMatch[0] : '';
+    const requests = files.map(file =>
+      fetch(`output/metadata/${file}?t=${Date.now()}`, { cache: "no-store" })
+        .then(r => {
+          if (!r.ok) throw new Error(file + " failed");
+          return r.json();
+        })
+        .then(daily => ({ file, daily }))
+    );
 
-    daily.forEach(p => {
-      all.push({
-        date,
-        text: p.tweet_text,
-        images: p.images,
-        url: p.tweet_url,
-        hashtags: extractHashtags(p.tweet_text),
-        type: p.type
+    const results = await Promise.all(requests);
+    const all = [];
+
+    results.forEach(({ file, daily }) => {
+      const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
+      const date = dateMatch ? dateMatch[0] : '';
+
+      daily.forEach(p => {
+        all.push({
+          date,
+          text: p.tweet_text || "",
+          images: p.images || [],
+          url: p.tweet_url || "",
+          hashtags: extractHashtags(p.tweet_text || ""),
+          type: p.type || ""
+        });
       });
     });
-  });
 
-  return all.sort((a, b) => b.date.localeCompare(a.date));
+    return all.sort((a, b) => b.date.localeCompare(a.date));
+  } catch (err) {
+    console.error("SPXVisuals load error:", err);
+    document.getElementById("posts").innerHTML =
+      "<p style='text-align:center'>⚠️ Data failed to load.</p>";
+    return [];
+  }
 }
 
 function extractHashtags(text) {
