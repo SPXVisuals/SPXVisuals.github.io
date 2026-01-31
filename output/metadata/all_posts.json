@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-01-31_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD",
+    "tweet_id": "2017639073234792886",
+    "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2017639073234792886"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-01-31_YTD_0.png",
+      "output/normalized/2026-01-31_YTD_1.png",
+      "output/normalized/2026-01-31_YTD_2.png",
+      "output/normalized/2026-01-31_YTD_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2017648860701855863",
+    "tweet_text": "YTD - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2017648860701855863"
+  },
+  {
+    "type": "ma",
+    "ticker": "T",
+    "images": [
+      "output/ma/2026-01-31_T_SMA_1y.png",
+      "output/ma/2026-01-31_T_EMA_1y.png"
+    ],
+    "tweet_id": "2017657125703672236",
+    "tweet_text": "1y - T SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $T #T $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2017657125703672236"
+  },
+  {
+    "type": "ma",
+    "ticker": "CLX",
+    "images": [
+      "output/ma/2026-01-31_CLX_SMA_1y.png",
+      "output/ma/2026-01-31_CLX_EMA_1y.png"
+    ],
+    "tweet_id": "2017665020826685574",
+    "tweet_text": "1y - CLX SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CLX #CLX $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2017665020826685574"
+  },
+  {
+    "type": "ma",
+    "ticker": "ACN",
+    "images": [
+      "output/ma/2026-01-31_ACN_SMA_1y.png",
+      "output/ma/2026-01-31_ACN_EMA_1y.png"
+    ],
+    "tweet_id": "2017674317958680747",
+    "tweet_text": "1y - ACN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ACN #ACN $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2017674317958680747"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-01-30_gainers_losers_1w.png"
     ],
     "timeframe": "1w",
