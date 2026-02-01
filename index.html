@@ -261,15 +261,14 @@ let allFiles = [];
 let loadBatch = 10;
 let filtersActive = false; // pause infinite scroll while filtering
 
-// Create the observer globally
+// IntersectionObserver for infinite scroll
 let observer = new IntersectionObserver(entries => {
-  if (filtersActive) return; // ignore while filtering
+  if (filtersActive) return; // pause while filtering
   entries.forEach(entry => {
     if (entry.isIntersecting) loadPostsBatch();
   });
 }, { rootMargin: "300px" });
 
-// Load posts in batches for infinite scroll
 async function loadPostsBatch() {
   if (loadPostsBatch.loading || filtersActive) return;
   loadPostsBatch.loading = true;
@@ -289,10 +288,7 @@ async function loadPostsBatch() {
 
     const requests = nextFiles.map(file =>
       fetch(`output/metadata/${file}?t=${Date.now()}`, { cache: "no-store" })
-        .then(r => {
-          if (!r.ok) throw new Error(file + " failed");
-          return r.json();
-        })
+        .then(r => { if (!r.ok) throw new Error(file + " failed"); return r.json(); })
         .then(daily => ({ file, daily }))
     );
 
@@ -302,15 +298,19 @@ async function loadPostsBatch() {
       const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
       const date = dateMatch ? dateMatch[0] : '';
 
+      // Create local midnight dateObj
+      const [y, m, d] = date.split('-').map(Number);
+      const dateObj = new Date(y, m-1, d);
+
       daily.forEach(p => {
         allPosts.push({
           date,
+          dateObj,
           text: p.tweet_text || "",
           images: p.images || [],
           url: p.tweet_url || "",
           hashtags: extractHashtags(p.tweet_text || ""),
-          type: p.type || "",
-          dateObj: new Date(date) // convert once for filtering
+          type: p.type || ""
         });
       });
 
@@ -318,6 +318,7 @@ async function loadPostsBatch() {
     });
 
     allPosts.sort((a, b) => b.date.localeCompare(a.date));
+
     renderLimited(allPosts);
   } catch (err) {
     console.error("SPXVisuals load error:", err);
@@ -380,10 +381,7 @@ function renderPosts(posts) {
       <div class="hashtags">
         ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
       </div>
-      ${post.images.map((i, idx) => {
-        const eager = idx < 4;
-        return `<img src="${i}" loading="${eager ? 'eager' : 'lazy'}" decoding="async" fetchpriority="${eager ? 'high' : 'low'}">`;
-      }).join('')}
+      ${post.images.map(i => `<img src="${i}" loading="lazy" decoding="async">`).join('')}
     `;
 
     div.querySelectorAll('.hashtags a').forEach(a => {
@@ -440,7 +438,7 @@ function updateButtons() {
 }
 
 function applyFilters() {
-  filtersActive = true;
+  filtersActive = true; // pause infinite scroll
 
   let input = normalizeDateInput(
     document.getElementById('search').value.toLowerCase()
@@ -452,25 +450,23 @@ function applyFilters() {
   );
 
   const now = new Date();
-  now.setHours(23,59,59,999);
+  now.setHours(23,59,59,999); // end of today
 
   if (filters.today) {
-    filtered = filtered.filter(p => p.date === todayLocalISO());
+    filtered = filtered.filter(p => p.dateObj.getTime() === new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime());
   } else if (filters.week) {
-    // Sunday → today
     const sunday = new Date(now);
-    sunday.setDate(now.getDate() - now.getDay());
+    sunday.setDate(now.getDate() - now.getDay()); // Sunday of current week
     sunday.setHours(0,0,0,0);
     filtered = filtered.filter(p => p.dateObj >= sunday && p.dateObj <= now);
   } else if (filters.month) {
     const firstDay = new Date(now.getFullYear(), now.getMonth(), 1);
+    firstDay.setHours(0,0,0,0);
     filtered = filtered.filter(p => p.dateObj >= firstDay && p.dateObj <= now);
   }
 
   renderPosts(filtered);
   updateButtons();
-
-  observer.disconnect(); // pause infinite scroll
 }
 
 document.getElementById('search').addEventListener('input', applyFilters);
@@ -501,9 +497,9 @@ monthBtn.onclick = () => {
 clearBtn.onclick = () => {
   document.getElementById('search').value = '';
   filters.today = filters.week = filters.month = false;
-  filtersActive = false;
+  filtersActive = false; // resume infinite scroll
   renderLimited(allPosts);
-  observer.observe(document.getElementById('scrollSentinel'));
+  observer.observe(document.getElementById('scrollSentinel')); // reconnect observer
   updateButtons();
 };
 
