@@ -255,6 +255,10 @@ For Educational Purposes Only
 </footer>
 
 <script>
+let allPosts = [];
+let visibleDays = 10;
+let groupedByDate = {};
+  
 async function loadPosts() {
   try {
     const indexRes = await fetch(`output/metadata/index.json?t=${Date.now()}`, { cache: "no-store" });
@@ -422,7 +426,9 @@ function applyFilters() {
     filtered = filtered.filter(p => new Date(p.date) >= d);
   }
 
-  renderPosts(filtered);
+  groupedByDate = groupPostsByDate(filtered);
+  visibleDays = 10;
+  renderVisibleDays();
   updateButtons();
 }
 
@@ -454,7 +460,9 @@ monthBtn.onclick = () => {
 clearBtn.onclick = () => {
   document.getElementById('search').value = '';
   filters.today = filters.week = filters.month = false;
-  renderPosts(allPosts);
+  groupedByDate = groupPostsByDate(allPosts);
+  visibleDays = 10;
+  renderVisibleDays();
   updateButtons();
 };
 
@@ -501,8 +509,51 @@ document.getElementById('posts').addEventListener('load', e => {
   
 loadPosts().then(posts => {
   allPosts = posts;
-  renderPosts(allPosts);
+  groupedByDate = groupPostsByDate(allPosts);
+  renderVisibleDays();
 });
+
+function groupPostsByDate(posts) {
+  return posts.reduce((acc, p) => {
+    if (!acc[p.date]) acc[p.date] = [];
+    acc[p.date].push(p);
+    return acc;
+  }, {});
+}
+
+function renderVisibleDays() {
+  const dates = Object.keys(groupedByDate).sort((a,b)=>b.localeCompare(a));
+  const allowedDates = dates.slice(0, visibleDays);
+
+  let visiblePosts = [];
+  allowedDates.forEach(d => {
+    visiblePosts = visiblePosts.concat(groupedByDate[d]);
+  });
+
+  renderPosts(visiblePosts);
+  renderLoadMoreButton(dates.length);
+}
+
+function renderLoadMoreButton(totalDays) {
+  let btn = document.getElementById('loadMoreBtn');
+
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'loadMoreBtn';
+    btn.textContent = 'Load More Charts';
+    btn.style.margin = '40px auto';
+    btn.style.display = 'block';
+
+    btn.onclick = () => {
+      visibleDays += 10;
+      renderVisibleDays();
+    };
+
+    document.body.appendChild(btn);
+  }
+
+  btn.style.display = visibleDays >= totalDays ? 'none' : 'block';
+}
   
 function enableImageZoom() {
   document.querySelectorAll('#posts img').forEach(img => {
