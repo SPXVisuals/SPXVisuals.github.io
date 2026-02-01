@@ -1,3 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SPXVisuals</title>
+
+<style>
+body {
+font-family: system-ui, sans-serif;
+background: #0f172a;
+color: #e5e7eb;
+margin: 0;
+padding: 24px;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* ---------------- Header ---------------- */
+header {
+position: sticky;
+top: 0;
+z-index: 100;
+padding: 16px 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
+background-size: 200% 200%;
+animation: gradientShift 6s ease infinite;
+color: #ffffff;
+position: relative;
+}
+
+.header-watermark {
+position: absolute;
+bottom: 4px;
+left: 8px;
+font-size: 0.65rem;
+opacity: .55;
+pointer-events: none;
+}
+
+.header-copyright {
+position: absolute;
+bottom: 4px;
+right: 8px;
+font-size: 0.65rem;
+opacity: .55;
+pointer-events: none;
+}
+
+@media (max-width:768px){
+  .header-watermark,
+  .header-copyright {
+    font-size: 0.45rem;
+    opacity: 0.55;
+  }
+
+  .header-watermark {
+    left: 6px;
+    bottom: 2px;
+  }
+
+  .header-copyright {
+    right: 6px;
+    bottom: 2px;
+  }
+}
+  
+h1 {
+margin: 0;
+font-size: 2rem;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.title-link,.x-link { color:#fff; cursor:pointer; }
+.title-link:hover,.x-link:hover { text-decoration:underline; }
+
+.controls {
+display:flex;
+flex-direction:column;
+gap:10px;
+width:100%;
+max-width:420px;
+align-items:center;
+}
+
+input[type="text"] {
+padding:6px 12px;
+border-radius:6px;
+border:1px solid #475569;
+background:#020617;
+color:#e5e7eb;
+width:100%;
+max-width:360px;
+text-align:center;
+}
+
+.filter-buttons {
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+button {
+background:#020617;
+color:#e5e7eb;
+border:none;
+border-radius:6px;
+padding:6px 12px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover { background:#1e293b; }
+
+button.active {
+background:#fff;
+color:#020617;
+}
+
+#clearSearch {
+background:#111827;
+display:none;
+}
+
+/* ---------------- Layout ---------------- */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+
+.post {
+  display: block;
+  width: 100%;
+  break-inside: avoid;
+  background: transparent;
+  padding: 0;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.post img {
+width:100%;
+border-radius:10px;
+margin:16px 0;
+cursor:zoom-in;
+transition:.3s;
+image-rendering: auto;
+backface-visibility: hidden;
+transform: translateZ(0);
+will-change: transform;
+}
+
+.post-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+  
+.hashtags { display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin:.5rem;}
+
+.hashtags a {
+font-size:.85rem;
+color:#22d3ee;
+}
+
+.post-date {
+font-size:.8rem;
+color:#94a3b8;
+margin-bottom:6px;
+}
+
+.tweet-link-container { text-align:center; margin-bottom:8px; }
+
+.tweet-link-container a {
+display:inline-block;
+background:linear-gradient(90deg,#3b82f6,#06b6d4,#3b82f6);
+background-size:200% 200%;
+padding:6px 10px;
+border-radius:8px;
+font-weight:bold;
+color:#fff;
+animation:gradientShift 3s ease infinite;
+}
+
+.tweet-link-container a:hover {
+  transform: scale(1.08);
+}
+
+.image-modal {
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.85);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+}
+
+.image-modal img {
+max-width:95%;
+max-height:95%;
+border-radius:12px;
+cursor:zoom-out;
+}
+
+@keyframes gradientShift {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+@media (max-width:768px){
+main{column-count:1;}
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="header-watermark">SPXVisuals • x.com/SPXVisuals</div>
+<div class="header-copyright">© 2026 SPXVisuals • All Rights Reserved</div>
+
+<h1>
+📊 <a>SPXVisuals</a> 📈
+</h1>
+
+<a href="https://x.com/SPXVisuals" class="x-link">𝕏</a>
+
+<div class="controls">
+<input type="text" id="search" placeholder="Search by hashtag or MM/DD/YYYY" />
+<div class="filter-buttons">
+<button id="todayFilter">Today's Charts</button>
+<button id="weekFilter">This Week</button>
+<button id="monthFilter">This Month</button>
+<button id="clearSearch">Clear Search</button>
+</div>
+</div>
+</header>
+
+<main id="posts"></main>
+
+<footer style="text-align:center;margin-top:48px;font-size:.8rem;color:#94a3b8;">
+© 2026 SPXVisuals • All Rights Reserved<br>
+For Educational Purposes Only
+</footer>
+
 <script>
 let allPosts = [];
 let loadedFiles = [];
@@ -304,3 +560,6 @@ function enableImageZoom() {
 // INITIAL LOAD
 loadPostsBatch();
 </script>
+
+</body>
+</html>
