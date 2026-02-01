@@ -256,20 +256,22 @@ For Educational Purposes Only
 
 <script>
 let allPosts = [];
-let visibleDays = 10;
-let groupedByDate = {};
-  
-async function loadPosts() {
-  try {
-    const indexRes = await fetch(`output/metadata/index.json?t=${Date.now()}`, { cache: "no-store" });
+let loadedFiles = [];
+let allFiles = [];
+let loadBatch = 10;
 
-    if (!indexRes.ok) {
-      throw new Error("Index fetch failed: " + indexRes.status);
+async function loadPostsBatch() {
+  try {
+    if (!allFiles.length) {
+      const indexRes = await fetch(`output/metadata/index.json?t=${Date.now()}`, { cache: "no-store" });
+      if (!indexRes.ok) throw new Error("Index fetch failed");
+      allFiles = (await indexRes.json()).sort().reverse();
     }
 
-    const files = await indexRes.json();
+    const nextFiles = allFiles.slice(loadedFiles.length, loadedFiles.length + loadBatch);
+    if (!nextFiles.length) return;
 
-    const requests = files.map(file =>
+    const requests = nextFiles.map(file =>
       fetch(`output/metadata/${file}?t=${Date.now()}`, { cache: "no-store" })
         .then(r => {
           if (!r.ok) throw new Error(file + " failed");
@@ -279,14 +281,13 @@ async function loadPosts() {
     );
 
     const results = await Promise.all(requests);
-    const all = [];
 
     results.forEach(({ file, daily }) => {
       const dateMatch = file.match(/\d{4}-\d{2}-\d{2}/);
       const date = dateMatch ? dateMatch[0] : '';
 
       daily.forEach(p => {
-        all.push({
+        allPosts.push({
           date,
           text: p.tweet_text || "",
           images: p.images || [],
@@ -295,26 +296,27 @@ async function loadPosts() {
           type: p.type || ""
         });
       });
+
+      loadedFiles.push(file);
     });
 
-    return all.sort((a, b) => b.date.localeCompare(a.date));
+    allPosts.sort((a, b) => b.date.localeCompare(a.date));
+
+    renderLimited(allPosts);
   } catch (err) {
     console.error("SPXVisuals load error:", err);
     document.getElementById("posts").innerHTML =
       "<p style='text-align:center'>⚠️ Data failed to load.</p>";
-    return [];
   }
 }
 
 function extractHashtags(text) {
   if (!text) return [];
-
   const tagMatches = text.match(/#[A-Za-z0-9_]+/g) || [];
   const cashMatches = text.match(/\$[A-Za-z0-9_]+/g) || [];
-
   return [...new Set([...tagMatches, ...cashMatches])];
 }
-  
+
 function stripHashtags(text) {
   if (!text) return "";
   return text
@@ -323,7 +325,7 @@ function stripHashtags(text) {
     .replace(/\s{2,}/g, ' ')
     .trim();
 }
-  
+
 function todayLocalISO() {
   const d = new Date();
   d.setHours(0,0,0,0);
@@ -356,11 +358,11 @@ function renderPosts(posts) {
     div.innerHTML = `
       ${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
       <div class="post-date">${post.date}</div>
-      <div class = "post-text">${stripHashtags(post.text)}</div>
+      <div class="post-text">${stripHashtags(post.text)}</div>
       <div class="hashtags">
         ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
       </div>
-      ${post.images.map(i => `<img src="${i}" loading="lazy">`).join('')}
+      ${post.images.map(i => `<img src="${i}" loading="lazy" decoding="async">`).join('')}
     `;
 
     div.querySelectorAll('.hashtags a').forEach(a => {
@@ -374,22 +376,37 @@ function renderPosts(posts) {
     container.appendChild(div);
   });
 
-  waitForImages().then(requestAnimationFrame(applyMasonry));
+  waitForImages().then(() => requestAnimationFrame(applyMasonry));
   enableImageZoom();
 }
 
-let allPosts = [];
+function renderLimited(posts) {
+  renderPosts(posts);
+
+  let btn = document.getElementById('loadMoreBtn');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'loadMoreBtn';
+    btn.textContent = 'Load More Charts';
+    btn.style.margin = '48px auto';
+    btn.style.display = 'block';
+    btn.onclick = loadPostsBatch;
+    document.body.appendChild(btn);
+  }
+
+  btn.style.display = loadedFiles.length >= allFiles.length ? 'none' : 'block';
+}
+
 const filters = { today: false, week: false, month: false };
 
 function waitForImages() {
   const imgs = document.querySelectorAll('#posts img');
   return Promise.all([...imgs].map(img => {
     if (img.complete) return Promise.resolve();
-    return new Promise(res => {
-      img.onload = img.onerror = res;
-    });
+    return new Promise(res => { img.onload = img.onerror = res; });
   }));
-}  
+}
+
 function updateButtons() {
   todayBtn.classList.toggle('active', filters.today);
   weekBtn.classList.toggle('active', filters.week);
@@ -426,9 +443,7 @@ function applyFilters() {
     filtered = filtered.filter(p => new Date(p.date) >= d);
   }
 
-  groupedByDate = groupPostsByDate(filtered);
-  visibleDays = 10;
-  renderVisibleDays();
+  renderPosts(filtered);
   updateButtons();
 }
 
@@ -460,9 +475,7 @@ monthBtn.onclick = () => {
 clearBtn.onclick = () => {
   document.getElementById('search').value = '';
   filters.today = filters.week = filters.month = false;
-  groupedByDate = groupPostsByDate(allPosts);
-  visibleDays = 10;
-  renderVisibleDays();
+  renderLimited(allPosts);
   updateButtons();
 };
 
@@ -484,13 +497,10 @@ function applyMasonry() {
 
     const minCol = colHeights.indexOf(Math.min(...colHeights));
     let x = minCol * (colWidth + gap);
-    if (cols === 1) {
-      x = (container.clientWidth - colWidth) / 2;
-    }
+    if (cols === 1) x = (container.clientWidth - colWidth) / 2;
     const y = colHeights[minCol];
 
     item.style.transform = `translate(${x}px, ${y}px)`;
-
     colHeights[minCol] += item.offsetHeight + gap;
   });
 
@@ -500,78 +510,30 @@ function applyMasonry() {
 window.addEventListener('resize', () => {
   requestAnimationFrame(applyMasonry);
 });
-  
+
 document.getElementById('posts').addEventListener('load', e => {
   if (e.target.tagName === 'IMG') {
     requestAnimationFrame(applyMasonry);
   }
 }, true);
-  
-loadPosts().then(posts => {
-  allPosts = posts;
-  groupedByDate = groupPostsByDate(allPosts);
-  renderVisibleDays();
-});
 
-function groupPostsByDate(posts) {
-  return posts.reduce((acc, p) => {
-    if (!acc[p.date]) acc[p.date] = [];
-    acc[p.date].push(p);
-    return acc;
-  }, {});
-}
-
-function renderVisibleDays() {
-  const dates = Object.keys(groupedByDate).sort((a,b)=>b.localeCompare(a));
-  const allowedDates = dates.slice(0, visibleDays);
-
-  let visiblePosts = [];
-  allowedDates.forEach(d => {
-    visiblePosts = visiblePosts.concat(groupedByDate[d]);
-  });
-
-  renderPosts(visiblePosts);
-  renderLoadMoreButton(dates.length);
-}
-
-function renderLoadMoreButton(totalDays) {
-  let btn = document.getElementById('loadMoreBtn');
-
-  if (!btn) {
-    btn = document.createElement('button');
-    btn.id = 'loadMoreBtn';
-    btn.textContent = 'Load More Charts';
-    btn.style.margin = '40px auto';
-    btn.style.display = 'block';
-
-    btn.onclick = () => {
-      visibleDays += 10;
-      renderVisibleDays();
-    };
-
-    document.body.appendChild(btn);
-  }
-
-  btn.style.display = visibleDays >= totalDays ? 'none' : 'block';
-}
-  
 function enableImageZoom() {
   document.querySelectorAll('#posts img').forEach(img => {
     img.addEventListener('click', () => {
       const modal = document.createElement('div');
       modal.className = 'image-modal';
-
       const big = document.createElement('img');
       big.src = img.src;
-
       modal.appendChild(big);
       document.body.appendChild(modal);
-
       modal.addEventListener('click', () => modal.remove());
     });
   });
 }
+
+loadPostsBatch();
 </script>
+
 
 
 </body>
