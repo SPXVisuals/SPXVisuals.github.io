@@ -260,7 +260,18 @@ let loadedFiles = [];
 let allFiles = [];
 let loadBatch = 10;
 
+let observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      loadPostsBatch();
+    }
+  });
+}, { rootMargin: "300px" });
+
 async function loadPostsBatch() {
+  if (loadPostsBatch.loading) return;
+  loadPostsBatch.loading = true;
+
   try {
     if (!allFiles.length) {
       const indexRes = await fetch(`output/metadata/index.json?t=${Date.now()}`, { cache: "no-store" });
@@ -269,7 +280,10 @@ async function loadPostsBatch() {
     }
 
     const nextFiles = allFiles.slice(loadedFiles.length, loadedFiles.length + loadBatch);
-    if (!nextFiles.length) return;
+    if (!nextFiles.length) {
+      loadPostsBatch.loading = false;
+      return;
+    }
 
     const requests = nextFiles.map(file =>
       fetch(`output/metadata/${file}?t=${Date.now()}`, { cache: "no-store" })
@@ -308,6 +322,8 @@ async function loadPostsBatch() {
     document.getElementById("posts").innerHTML =
       "<p style='text-align:center'>⚠️ Data failed to load.</p>";
   }
+
+  loadPostsBatch.loading = false;
 }
 
 function extractHashtags(text) {
@@ -383,18 +399,18 @@ function renderPosts(posts) {
 function renderLimited(posts) {
   renderPosts(posts);
 
-  let btn = document.getElementById('loadMoreBtn');
-  if (!btn) {
-    btn = document.createElement('button');
-    btn.id = 'loadMoreBtn';
-    btn.textContent = 'Load More Charts';
-    btn.style.margin = '48px auto';
-    btn.style.display = 'block';
-    btn.onclick = loadPostsBatch;
-    document.body.appendChild(btn);
+  let sentinel = document.getElementById('scrollSentinel');
+
+  if (!sentinel) {
+    sentinel = document.createElement('div');
+    sentinel.id = 'scrollSentinel';
+    sentinel.style.height = '80px';
+    sentinel.style.margin = '80px 0';
+    document.body.appendChild(sentinel);
+    observer.observe(sentinel);
   }
 
-  btn.style.display = loadedFiles.length >= allFiles.length ? 'none' : 'block';
+  sentinel.style.display = loadedFiles.length >= allFiles.length ? 'none' : 'block';
 }
 
 const filters = { today: false, week: false, month: false };
@@ -533,8 +549,6 @@ function enableImageZoom() {
 
 loadPostsBatch();
 </script>
-
-
 
 </body>
 </html>
