@@ -263,14 +263,15 @@ let filtersActive = false; // pause infinite scroll while filtering
 
 // Create the observer globally
 let observer = new IntersectionObserver(entries => {
-  if (filtersActive) return; // completely ignore while filtering
+  if (filtersActive) return; // ignore while filtering
   entries.forEach(entry => {
     if (entry.isIntersecting) loadPostsBatch();
   });
 }, { rootMargin: "300px" });
 
+// Load posts in batches for infinite scroll
 async function loadPostsBatch() {
-  if (loadPostsBatch.loading || filtersActive) return; // guard while filtering
+  if (loadPostsBatch.loading || filtersActive) return;
   loadPostsBatch.loading = true;
 
   try {
@@ -308,7 +309,8 @@ async function loadPostsBatch() {
           images: p.images || [],
           url: p.tweet_url || "",
           hashtags: extractHashtags(p.tweet_text || ""),
-          type: p.type || ""
+          type: p.type || "",
+          dateObj: new Date(date) // convert once for filtering
         });
       });
 
@@ -316,7 +318,6 @@ async function loadPostsBatch() {
     });
 
     allPosts.sort((a, b) => b.date.localeCompare(a.date));
-
     renderLimited(allPosts);
   } catch (err) {
     console.error("SPXVisuals load error:", err);
@@ -380,7 +381,7 @@ function renderPosts(posts) {
         ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
       </div>
       ${post.images.map((i, idx) => {
-        const eager = idx < 4; // first 4 images eager
+        const eager = idx < 4;
         return `<img src="${i}" loading="${eager ? 'eager' : 'lazy'}" decoding="async" fetchpriority="${eager ? 'high' : 'low'}">`;
       }).join('')}
     `;
@@ -404,7 +405,6 @@ function renderLimited(posts) {
   renderPosts(posts);
 
   let sentinel = document.getElementById('scrollSentinel');
-
   if (!sentinel) {
     sentinel = document.createElement('div');
     sentinel.id = 'scrollSentinel';
@@ -440,7 +440,7 @@ function updateButtons() {
 }
 
 function applyFilters() {
-  filtersActive = true; // pause infinite scroll
+  filtersActive = true;
 
   let input = normalizeDateInput(
     document.getElementById('search').value.toLowerCase()
@@ -451,29 +451,26 @@ function applyFilters() {
     post.date.includes(input)
   );
 
-  const now = new Date(todayLocalISO());
+  const now = new Date();
+  now.setHours(23,59,59,999);
 
   if (filters.today) {
     filtered = filtered.filter(p => p.date === todayLocalISO());
   } else if (filters.week) {
-    // Get Monday of the current week
-    const monday = new Date(now);
-    const day = monday.getDay(); // Sunday = 0, Monday = 1 ...
-    const diff = (day === 0 ? 6 : day - 1); // shift Sunday to previous Monday
-    monday.setDate(now.getDate() - diff);
-    monday.setHours(0,0,0,0);
-
-    filtered = filtered.filter(p => new Date(p.date) >= monday);
+    // Sunday → today
+    const sunday = new Date(now);
+    sunday.setDate(now.getDate() - now.getDay());
+    sunday.setHours(0,0,0,0);
+    filtered = filtered.filter(p => p.dateObj >= sunday && p.dateObj <= now);
   } else if (filters.month) {
-    // First day of the current month
     const firstDay = new Date(now.getFullYear(), now.getMonth(), 1);
-    filtered = filtered.filter(p => new Date(p.date) >= firstDay);
+    filtered = filtered.filter(p => p.dateObj >= firstDay && p.dateObj <= now);
   }
 
   renderPosts(filtered);
   updateButtons();
 
-  observer.disconnect(); // stop infinite scroll while filtering
+  observer.disconnect(); // pause infinite scroll
 }
 
 document.getElementById('search').addEventListener('input', applyFilters);
@@ -504,9 +501,9 @@ monthBtn.onclick = () => {
 clearBtn.onclick = () => {
   document.getElementById('search').value = '';
   filters.today = filters.week = filters.month = false;
-  filtersActive = false; // resume infinite scroll
+  filtersActive = false;
   renderLimited(allPosts);
-  observer.observe(document.getElementById('scrollSentinel')); // reconnect observer
+  observer.observe(document.getElementById('scrollSentinel'));
   updateButtons();
 };
 
