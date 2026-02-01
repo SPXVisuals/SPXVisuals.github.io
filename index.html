@@ -456,19 +456,24 @@ function applyFilters() {
   if (filters.today) {
     filtered = filtered.filter(p => p.date === todayLocalISO());
   } else if (filters.week) {
-    const d = new Date(now);
-    d.setDate(now.getDate() - 7);
-    filtered = filtered.filter(p => new Date(p.date) >= d);
+    // Get Monday of the current week
+    const monday = new Date(now);
+    const day = monday.getDay(); // Sunday = 0, Monday = 1 ...
+    const diff = (day === 0 ? 6 : day - 1); // shift Sunday to previous Monday
+    monday.setDate(now.getDate() - diff);
+    monday.setHours(0,0,0,0);
+
+    filtered = filtered.filter(p => new Date(p.date) >= monday);
   } else if (filters.month) {
-    const d = new Date(now);
-    d.setMonth(now.getMonth() - 1);
-    filtered = filtered.filter(p => new Date(p.date) >= d);
+    // First day of the current month
+    const firstDay = new Date(now.getFullYear(), now.getMonth(), 1);
+    filtered = filtered.filter(p => new Date(p.date) >= firstDay);
   }
 
   renderPosts(filtered);
   updateButtons();
 
-  observer.disconnect(); // stop all infinite scroll triggers while filtering
+  observer.disconnect(); // stop infinite scroll while filtering
 }
 
 document.getElementById('search').addEventListener('input', applyFilters);
