@@ -258,7 +258,8 @@ For Educational Purposes Only
 let allPosts = [];
 let loadedFiles = [];
 let allFiles = [];
-let loadBatch = 5;
+let loadBatch = 10;
+let filtersActive = false; // NEW: pause infinite scroll when filtering
 
 let observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -269,7 +270,7 @@ let observer = new IntersectionObserver(entries => {
 }, { rootMargin: "300px" });
 
 async function loadPostsBatch() {
-  if (loadPostsBatch.loading) return;
+  if (loadPostsBatch.loading || filtersActive) return; // UPDATED: guard while filtering
   loadPostsBatch.loading = true;
 
   try {
@@ -378,7 +379,10 @@ function renderPosts(posts) {
       <div class="hashtags">
         ${post.hashtags.map(t => `<a href="#">${t}</a>`).join('')}
       </div>
-      ${post.images.map(i => `<img src="${i}" loading="lazy" decoding="async">`).join('')}
+      ${post.images.map((i, idx) => {
+        const eager = idx < 4; // NEW: first 4 images eager
+        return `<img src="${i}" loading="${eager ? 'eager' : 'lazy'}" decoding="async" fetchpriority="${eager ? 'high' : 'low'}">`;
+      }).join('')}
     `;
 
     div.querySelectorAll('.hashtags a').forEach(a => {
@@ -392,7 +396,7 @@ function renderPosts(posts) {
     container.appendChild(div);
   });
 
-  waitForImages().then(() => requestAnimationFrame(applyMasonry));
+  waitForImages().then(() => requestAnimationFrame(() => requestAnimationFrame(applyMasonry)));
   enableImageZoom();
 }
 
@@ -436,6 +440,8 @@ function updateButtons() {
 }
 
 function applyFilters() {
+  filtersActive = true; // NEW: pause infinite scroll while filtering
+
   let input = normalizeDateInput(
     document.getElementById('search').value.toLowerCase()
   );
@@ -461,6 +467,8 @@ function applyFilters() {
 
   renderPosts(filtered);
   updateButtons();
+
+  observer.disconnect(); // NEW: stop infinite scroll temporarily
 }
 
 document.getElementById('search').addEventListener('input', applyFilters);
@@ -491,7 +499,9 @@ monthBtn.onclick = () => {
 clearBtn.onclick = () => {
   document.getElementById('search').value = '';
   filters.today = filters.week = filters.month = false;
+  filtersActive = false; // NEW: resume infinite scroll
   renderLimited(allPosts);
+  observer.observe(document.getElementById('scrollSentinel'));
   updateButtons();
 };
 
@@ -529,7 +539,7 @@ window.addEventListener('resize', () => {
 
 document.getElementById('posts').addEventListener('load', e => {
   if (e.target.tagName === 'IMG') {
-    requestAnimationFrame(applyMasonry);
+    requestAnimationFrame(() => requestAnimationFrame(applyMasonry));
   }
 }, true);
 
