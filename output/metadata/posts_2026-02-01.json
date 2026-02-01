@@ -1,0 +1,34 @@
+[
+  {
+    "type": "marketcap",
+    "images": [
+      "output/marketcap/2026-02-01_marketcap_1_10.png",
+      "output/marketcap/2026-02-01_marketcap_11_25.png",
+      "output/marketcap/2026-02-01_marketcap_26_50.png"
+    ],
+    "label": "1_50",
+    "tweet_id": "2018004024033673634",
+    "tweet_text": "Market Capitalization Distribution Charts For The 50 Largest S&P 500 Index Components \ud83c\udf69 \ud83d\udcca #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketCapitalization #MarketCap",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018004024033673634"
+  },
+  {
+    "type": "pe",
+    "images": [
+      "output/pe/2026-02-01_pe_trailing.png"
+    ],
+    "subtype": "trailing",
+    "tweet_id": "2018011029465145707",
+    "tweet_text": "Trailing P/E Chart For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018011029465145707"
+  },
+  {
+    "type": "pe",
+    "images": [
+      "output/pe/2026-02-01_pe_forward.png"
+    ],
+    "subtype": "forward",
+    "tweet_id": "2018018806828810739",
+    "tweet_text": "Forward P/E Chart For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018018806828810739"
+  }
+]
