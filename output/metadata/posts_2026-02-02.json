@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-02_gainers_losers_3y.png"
+    ],
+    "timeframe": "3y",
+    "tweet_id": "2018368099603378232",
+    "tweet_text": "3y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018368099603378232"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-02_3y_0.png",
+      "output/normalized/2026-02-02_3y_1.png",
+      "output/normalized/2026-02-02_3y_2.png",
+      "output/normalized/2026-02-02_3y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2018375549345829348",
+    "tweet_text": "3y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018375549345829348"
+  },
+  {
+    "type": "ma",
+    "ticker": "APA",
+    "images": [
+      "output/ma/2026-02-02_APA_SMA_1y.png",
+      "output/ma/2026-02-02_APA_EMA_1y.png"
+    ],
+    "tweet_id": "2018381998822212044",
+    "tweet_text": "1y - APA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $APA #APA $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018381998822212044"
+  },
+  {
+    "type": "ma",
+    "ticker": "QCOM",
+    "images": [
+      "output/ma/2026-02-02_QCOM_SMA_1y.png",
+      "output/ma/2026-02-02_QCOM_EMA_1y.png"
+    ],
+    "tweet_id": "2018388616368500973",
+    "tweet_text": "1y - QCOM SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $QCOM #QCOM $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018388616368500973"
+  },
+  {
+    "type": "ma",
+    "ticker": "GEN",
+    "images": [
+      "output/ma/2026-02-02_GEN_SMA_1y.png",
+      "output/ma/2026-02-02_GEN_EMA_1y.png"
+    ],
+    "tweet_id": "2018397862799757562",
+    "tweet_text": "1y - GEN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $GEN #GEN $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018397862799757562"
+  }
+]
