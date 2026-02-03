@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-03_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_id": "2018735296041652475",
+    "tweet_text": "1y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018735296041652475"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-03_1y_0.png",
+      "output/normalized/2026-02-03_1y_1.png",
+      "output/normalized/2026-02-03_1y_2.png",
+      "output/normalized/2026-02-03_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2018745282557780079",
+    "tweet_text": "1y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018745282557780079"
+  },
+  {
+    "type": "ma",
+    "ticker": "ICE",
+    "images": [
+      "output/ma/2026-02-03_ICE_SMA_1y.png",
+      "output/ma/2026-02-03_ICE_EMA_1y.png"
+    ],
+    "tweet_id": "2018752004462620999",
+    "tweet_text": "1y - ICE SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ICE #ICE $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018752004462620999"
+  },
+  {
+    "type": "ma",
+    "ticker": "HUBB",
+    "images": [
+      "output/ma/2026-02-03_HUBB_SMA_1y.png",
+      "output/ma/2026-02-03_HUBB_EMA_1y.png"
+    ],
+    "tweet_id": "2018761216429302071",
+    "tweet_text": "1y - HUBB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $HUBB #HUBB $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018761216429302071"
+  },
+  {
+    "type": "ma",
+    "ticker": "APH",
+    "images": [
+      "output/ma/2026-02-03_APH_SMA_1y.png",
+      "output/ma/2026-02-03_APH_EMA_1y.png"
+    ],
+    "tweet_id": "2018769594090135968",
+    "tweet_text": "1y - APH SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $APH #APH $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2018769594090135968"
+  }
+]
