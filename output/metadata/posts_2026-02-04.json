@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-04_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2019094996972880065",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019094996972880065"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-04_3mo_0.png",
+      "output/normalized/2026-02-04_3mo_1.png",
+      "output/normalized/2026-02-04_3mo_2.png",
+      "output/normalized/2026-02-04_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2019104825724530757",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019104825724530757"
+  },
+  {
+    "type": "ma",
+    "ticker": "FE",
+    "images": [
+      "output/ma/2026-02-04_FE_SMA_1y.png",
+      "output/ma/2026-02-04_FE_EMA_1y.png"
+    ],
+    "tweet_id": "2019114978284908976",
+    "tweet_text": "1y - FE SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $FE #FE $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019114978284908976"
+  },
+  {
+    "type": "ma",
+    "ticker": "PODD",
+    "images": [
+      "output/ma/2026-02-04_PODD_SMA_1y.png",
+      "output/ma/2026-02-04_PODD_EMA_1y.png"
+    ],
+    "tweet_id": "2019121654551495091",
+    "tweet_text": "1y - PODD SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $PODD #PODD $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019121654551495091"
+  },
+  {
+    "type": "ma",
+    "ticker": "MCO",
+    "images": [
+      "output/ma/2026-02-04_MCO_SMA_1y.png",
+      "output/ma/2026-02-04_MCO_EMA_1y.png"
+    ],
+    "tweet_id": "2019132378677932214",
+    "tweet_text": "1y - MCO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $MCO #MCO $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019132378677932214"
+  }
+]
