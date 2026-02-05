@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-05_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2019463090123997665",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019463090123997665"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-05_1mo_0.png",
+      "output/normalized/2026-02-05_1mo_1.png",
+      "output/normalized/2026-02-05_1mo_2.png",
+      "output/normalized/2026-02-05_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2019472830350651480",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019472830350651480"
+  },
+  {
+    "type": "ma",
+    "ticker": "TMO",
+    "images": [
+      "output/ma/2026-02-05_TMO_SMA_1y.png",
+      "output/ma/2026-02-05_TMO_EMA_1y.png"
+    ],
+    "tweet_id": "2019483889367187489",
+    "tweet_text": "1y - TMO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $TMO #TMO $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019483889367187489"
+  },
+  {
+    "type": "ma",
+    "ticker": "ROP",
+    "images": [
+      "output/ma/2026-02-05_ROP_SMA_1y.png",
+      "output/ma/2026-02-05_ROP_EMA_1y.png"
+    ],
+    "tweet_id": "2019492253736333596",
+    "tweet_text": "1y - ROP SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ROP #ROP $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019492253736333596"
+  },
+  {
+    "type": "ma",
+    "ticker": "WYNN",
+    "images": [
+      "output/ma/2026-02-05_WYNN_SMA_1y.png",
+      "output/ma/2026-02-05_WYNN_EMA_1y.png"
+    ],
+    "tweet_id": "2019499253773762713",
+    "tweet_text": "1y - WYNN SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $WYNN #WYNN $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2019499253773762713"
+  }
+]
