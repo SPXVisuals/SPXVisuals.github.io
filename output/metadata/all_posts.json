@@ -1,37 +1,5 @@
 [
   {
-    "type": "marketcap",
-    "images": [
-      "output/marketcap/2026-02-08_marketcap_1_10.png",
-      "output/marketcap/2026-02-08_marketcap_11_25.png",
-      "output/marketcap/2026-02-08_marketcap_26_50.png"
-    ],
-    "label": "1_50"
-  },
-  {
-    "type": "pe",
-    "images": [
-      "output/pe/2026-02-08_pe_trailing.png"
-    ],
-    "subtype": "trailing"
-  },
-  {
-    "type": "pe",
-    "images": [
-      "output/pe/2026-02-08_pe_forward.png"
-    ],
-    "subtype": "forward"
-  },
-  {
-    "type": "volume",
-    "images": [
-      "output/volume/2026-02-08_top_volume_1w.png",
-      "output/volume/2026-02-08_top_volume_1mo.png",
-      "output/volume/2026-02-08_top_volume_YTD.png",
-      "output/volume/2026-02-08_top_volume_1y.png"
-    ]
-  },
-  {
     "type": "gainers_losers",
     "images": [
       "output/leaders_laggards/2026-02-07_gainers_losers_YTD.png"
