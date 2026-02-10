@@ -2,6 +2,47 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-02-10_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-10_1y_0.png",
+      "output/normalized/2026-02-10_1y_1.png",
+      "output/normalized/2026-02-10_1y_2.png",
+      "output/normalized/2026-02-10_1y_3.png"
+    ],
+    "label": "1_40"
+  },
+  {
+    "type": "ma",
+    "ticker": "LYB",
+    "images": [
+      "output/ma/2026-02-10_LYB_SMA_1y.png",
+      "output/ma/2026-02-10_LYB_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "ma",
+    "ticker": "ABT",
+    "images": [
+      "output/ma/2026-02-10_ABT_SMA_1y.png",
+      "output/ma/2026-02-10_ABT_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "ma",
+    "ticker": "TXN",
+    "images": [
+      "output/ma/2026-02-10_TXN_SMA_1y.png",
+      "output/ma/2026-02-10_TXN_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-02-09_gainers_losers_3y.png"
     ],
     "timeframe": "3y",
