@@ -2,12 +2,55 @@
   {
     "type": "gainers_losers",
     "images": [
-      "output/leaders_laggards/2026-02-09_daily_gainers_losers.png"
+      "output/leaders_laggards/2026-02-09_gainers_losers_3y.png"
     ],
-    "timeframe": "Daily",
-    "tweet_id": "2020885679073354138",
-    "tweet_text": "Daily - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
-    "tweet_url": "https://x.com/YOUR_HANDLE/status/2020885679073354138"
+    "timeframe": "3y",
+    "tweet_id": "2020981626101219618",
+    "tweet_text": "3y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2020981626101219618"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-09_3y_0.png",
+      "output/normalized/2026-02-09_3y_1.png",
+      "output/normalized/2026-02-09_3y_2.png",
+      "output/normalized/2026-02-09_3y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2020990852873716079",
+    "tweet_text": "3y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2020990852873716079"
+  },
+  {
+    "type": "ma",
+    "ticker": "TTD",
+    "images": [
+      "output/ma/2026-02-09_TTD_SMA_1y.png",
+      "output/ma/2026-02-09_TTD_EMA_1y.png"
+    ],
+    "tweet_id": "2020998494379704632",
+    "tweet_text": "1y - TTD SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $TTD #TTD $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2020998494379704632"
+  },
+  {
+    "type": "ma",
+    "ticker": "POOL",
+    "images": [
+      "output/ma/2026-02-09_POOL_SMA_1y.png",
+      "output/ma/2026-02-09_POOL_EMA_1y.png"
+    ],
+    "tweet_id": "2021007173048991805",
+    "tweet_text": "1y - POOL SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $POOL #POOL $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2021007173048991805"
+  },
+  {
+    "type": "ma",
+    "ticker": "DLTR",
+    "images": [
+      "output/ma/2026-02-09_DLTR_SMA_1y.png",
+      "output/ma/2026-02-09_DLTR_EMA_1y.png"
+    ]
   },
   {
     "type": "marketcap",
