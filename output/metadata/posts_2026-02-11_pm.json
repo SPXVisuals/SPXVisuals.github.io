@@ -1,0 +1,55 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-11_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2021704958987366830",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2021704958987366830"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-11_3mo_0.png",
+      "output/normalized/2026-02-11_3mo_1.png",
+      "output/normalized/2026-02-11_3mo_2.png",
+      "output/normalized/2026-02-11_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2021713002383241551",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2021713002383241551"
+  },
+  {
+    "type": "ma",
+    "ticker": "FSLR",
+    "images": [
+      "output/ma/2026-02-11_FSLR_SMA_1y.png",
+      "output/ma/2026-02-11_FSLR_EMA_1y.png"
+    ],
+    "tweet_id": "2021722240086163820",
+    "tweet_text": "1y - FSLR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $FSLR #FSLR $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2021722240086163820"
+  },
+  {
+    "type": "ma",
+    "ticker": "ES",
+    "images": [
+      "output/ma/2026-02-11_ES_SMA_1y.png",
+      "output/ma/2026-02-11_ES_EMA_1y.png"
+    ],
+    "tweet_id": "2021729373385085076",
+    "tweet_text": "1y - ES SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ES #ES $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2021729373385085076"
+  },
+  {
+    "type": "ma",
+    "ticker": "LDOS",
+    "images": [
+      "output/ma/2026-02-11_LDOS_SMA_1y.png",
+      "output/ma/2026-02-11_LDOS_EMA_1y.png"
+    ]
+  }
+]
