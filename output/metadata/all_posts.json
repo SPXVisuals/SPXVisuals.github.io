@@ -2,6 +2,59 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-02-12_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2022066664817238157",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022066664817238157"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-12_1mo_0.png",
+      "output/normalized/2026-02-12_1mo_1.png",
+      "output/normalized/2026-02-12_1mo_2.png",
+      "output/normalized/2026-02-12_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2022074173703492048",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022074173703492048"
+  },
+  {
+    "type": "ma",
+    "ticker": "TGT",
+    "images": [
+      "output/ma/2026-02-12_TGT_SMA_1y.png",
+      "output/ma/2026-02-12_TGT_EMA_1y.png"
+    ],
+    "tweet_id": "2022084484238114966",
+    "tweet_text": "1y - TGT SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $TGT #TGT $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022084484238114966"
+  },
+  {
+    "type": "ma",
+    "ticker": "UNP",
+    "images": [
+      "output/ma/2026-02-12_UNP_SMA_1y.png",
+      "output/ma/2026-02-12_UNP_EMA_1y.png"
+    ],
+    "tweet_id": "2022093845333245999",
+    "tweet_text": "1y - UNP SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $UNP #UNP $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022093845333245999"
+  },
+  {
+    "type": "ma",
+    "ticker": "DD",
+    "images": [
+      "output/ma/2026-02-12_DD_SMA_1y.png",
+      "output/ma/2026-02-12_DD_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-02-12_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
