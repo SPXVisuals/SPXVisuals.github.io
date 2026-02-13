@@ -31,6 +31,6 @@ SPXVisuals.github.io is the static front-end that displays equity market visuali
 - Fully automated update when Generator pushes new charts and metadata
 
 **Usage**
-- Navigate to SPXVisuals.github.io
+- Navigate to spxvisuals.github.io
 - The site automatically displays the latest analytics and charts from the Generator pipeline
 - No manual intervention required; all updates are automated
