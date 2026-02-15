@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-14_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD",
+    "tweet_id": "2022789269610238391",
+    "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022789269610238391"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-14_YTD_0.png",
+      "output/normalized/2026-02-14_YTD_1.png",
+      "output/normalized/2026-02-14_YTD_2.png",
+      "output/normalized/2026-02-14_YTD_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2022799689414812009",
+    "tweet_text": "YTD - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022799689414812009"
+  },
+  {
+    "type": "ma",
+    "ticker": "HII",
+    "images": [
+      "output/ma/2026-02-14_HII_SMA_1y.png",
+      "output/ma/2026-02-14_HII_EMA_1y.png"
+    ],
+    "tweet_id": "2022811008020934662",
+    "tweet_text": "1y - HII SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $HII #HII $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022811008020934662"
+  },
+  {
+    "type": "ma",
+    "ticker": "AJG",
+    "images": [
+      "output/ma/2026-02-14_AJG_SMA_1y.png",
+      "output/ma/2026-02-14_AJG_EMA_1y.png"
+    ],
+    "tweet_id": "2022818498171240515",
+    "tweet_text": "1y - AJG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $AJG #AJG $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022818498171240515"
+  },
+  {
+    "type": "ma",
+    "ticker": "CPAY",
+    "images": [
+      "output/ma/2026-02-14_CPAY_SMA_1y.png",
+      "output/ma/2026-02-14_CPAY_EMA_1y.png"
+    ],
+    "tweet_id": "2022826139060691290",
+    "tweet_text": "1y - CPAY SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CPAY #CPAY $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2022826139060691290"
+  }
+]
