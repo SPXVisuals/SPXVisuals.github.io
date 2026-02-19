@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-18_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2024241117315911788",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024241117315911788"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-18_3mo_0.png",
+      "output/normalized/2026-02-18_3mo_1.png",
+      "output/normalized/2026-02-18_3mo_2.png",
+      "output/normalized/2026-02-18_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2024251652157603932",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024251652157603932"
+  },
+  {
+    "type": "ma",
+    "ticker": "SO",
+    "images": [
+      "output/ma/2026-02-18_SO_SMA_1y.png",
+      "output/ma/2026-02-18_SO_EMA_1y.png"
+    ],
+    "tweet_id": "2024259548639613153",
+    "tweet_text": "1y - SO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $SO #SO $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024259548639613153"
+  },
+  {
+    "type": "ma",
+    "ticker": "ROST",
+    "images": [
+      "output/ma/2026-02-18_ROST_SMA_1y.png",
+      "output/ma/2026-02-18_ROST_EMA_1y.png"
+    ],
+    "tweet_id": "2024266267730071670",
+    "tweet_text": "1y - ROST SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ROST #ROST $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024266267730071670"
+  },
+  {
+    "type": "ma",
+    "ticker": "FAST",
+    "images": [
+      "output/ma/2026-02-18_FAST_SMA_1y.png",
+      "output/ma/2026-02-18_FAST_EMA_1y.png"
+    ],
+    "tweet_id": "2024275389435265090",
+    "tweet_text": "1y - FAST SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $FAST #FAST $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024275389435265090"
+  }
+]
