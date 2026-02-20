@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-19_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2024603966080692225",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024603966080692225"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-19_1mo_0.png",
+      "output/normalized/2026-02-19_1mo_1.png",
+      "output/normalized/2026-02-19_1mo_2.png",
+      "output/normalized/2026-02-19_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2024611362182246792",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024611362182246792"
+  },
+  {
+    "type": "ma",
+    "ticker": "CTVA",
+    "images": [
+      "output/ma/2026-02-19_CTVA_SMA_1y.png",
+      "output/ma/2026-02-19_CTVA_EMA_1y.png"
+    ],
+    "tweet_id": "2024622093317373977",
+    "tweet_text": "1y - CTVA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CTVA #CTVA $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024622093317373977"
+  },
+  {
+    "type": "ma",
+    "ticker": "CHRW",
+    "images": [
+      "output/ma/2026-02-19_CHRW_SMA_1y.png",
+      "output/ma/2026-02-19_CHRW_EMA_1y.png"
+    ],
+    "tweet_id": "2024630462124007573",
+    "tweet_text": "1y - CHRW SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CHRW #CHRW $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024630462124007573"
+  },
+  {
+    "type": "ma",
+    "ticker": "ECL",
+    "images": [
+      "output/ma/2026-02-19_ECL_SMA_1y.png",
+      "output/ma/2026-02-19_ECL_EMA_1y.png"
+    ],
+    "tweet_id": "2024640051213197517",
+    "tweet_text": "1y - ECL SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ECL #ECL $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024640051213197517"
+  }
+]
