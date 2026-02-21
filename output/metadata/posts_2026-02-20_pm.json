@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-20_gainers_losers_1w.png"
+    ],
+    "timeframe": "1w",
+    "tweet_id": "2024964441750863928",
+    "tweet_text": "1w - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024964441750863928"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-20_1w_0.png",
+      "output/normalized/2026-02-20_1w_1.png",
+      "output/normalized/2026-02-20_1w_2.png",
+      "output/normalized/2026-02-20_1w_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2024974282582053310",
+    "tweet_text": "1w - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024974282582053310"
+  },
+  {
+    "type": "ma",
+    "ticker": "CRWD",
+    "images": [
+      "output/ma/2026-02-20_CRWD_SMA_1y.png",
+      "output/ma/2026-02-20_CRWD_EMA_1y.png"
+    ],
+    "tweet_id": "2024984810306044412",
+    "tweet_text": "1y - CRWD SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CRWD #CRWD $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024984810306044412"
+  },
+  {
+    "type": "ma",
+    "ticker": "AIG",
+    "images": [
+      "output/ma/2026-02-20_AIG_SMA_1y.png",
+      "output/ma/2026-02-20_AIG_EMA_1y.png"
+    ],
+    "tweet_id": "2024993983374786804",
+    "tweet_text": "1y - AIG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $AIG #AIG $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2024993983374786804"
+  },
+  {
+    "type": "ma",
+    "ticker": "PKG",
+    "images": [
+      "output/ma/2026-02-20_PKG_SMA_1y.png",
+      "output/ma/2026-02-20_PKG_EMA_1y.png"
+    ],
+    "tweet_id": "2025000912994111834",
+    "tweet_text": "1y - PKG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $PKG #PKG $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2025000912994111834"
+  }
+]
