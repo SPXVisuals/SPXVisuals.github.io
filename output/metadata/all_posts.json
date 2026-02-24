@@ -2,6 +2,16 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-02-24_daily_gainers_losers.png"
+    ],
+    "timeframe": "Daily",
+    "tweet_id": "2026321746639659048",
+    "tweet_text": "Daily - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2026321746639659048"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-02-23_gainers_losers_3y.png"
     ],
     "timeframe": "3y",
