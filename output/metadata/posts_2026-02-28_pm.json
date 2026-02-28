@@ -1,0 +1,43 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-02-28_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-02-28_YTD_0.png",
+      "output/normalized/2026-02-28_YTD_1.png",
+      "output/normalized/2026-02-28_YTD_2.png",
+      "output/normalized/2026-02-28_YTD_3.png"
+    ],
+    "label": "1_40"
+  },
+  {
+    "type": "ma",
+    "ticker": "WY",
+    "images": [
+      "output/ma/2026-02-28_WY_SMA_1y.png",
+      "output/ma/2026-02-28_WY_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "ma",
+    "ticker": "SCHW",
+    "images": [
+      "output/ma/2026-02-28_SCHW_SMA_1y.png",
+      "output/ma/2026-02-28_SCHW_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "ma",
+    "ticker": "CNC",
+    "images": [
+      "output/ma/2026-02-28_CNC_SMA_1y.png",
+      "output/ma/2026-02-28_CNC_EMA_1y.png"
+    ]
+  }
+]
