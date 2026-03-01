@@ -6,14 +6,20 @@
       "output/marketcap/2026-03-01_marketcap_11_25.png",
       "output/marketcap/2026-03-01_marketcap_26_50.png"
     ],
-    "label": "1_50"
+    "label": "1_50",
+    "tweet_id": "2028133597979258938",
+    "tweet_text": "Market Capitalization Distribution Charts For The 50 Largest S&P 500 Index Components \ud83c\udf69 \ud83d\udcca #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketCapitalization #MarketCap \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2028133597979258938"
   },
   {
     "type": "pe",
     "images": [
       "output/pe/2026-03-01_pe_trailing.png",
       "output/pe/2026-03-01_pe_forward.png"
-    ]
+    ],
+    "tweet_id": "2028145872215650525",
+    "tweet_text": "Trailing And Forward P/E Ratio Charts For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PE #PERatio #PriceToEarnings \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2028145872215650525"
   },
   {
     "type": "volume",
@@ -22,6 +28,9 @@
       "output/volume/2026-03-01_top_volume_1mo.png",
       "output/volume/2026-03-01_top_volume_YTD.png",
       "output/volume/2026-03-01_top_volume_1y.png"
-    ]
+    ],
+    "tweet_id": "2028158241687912728",
+    "tweet_text": "Volume Distribution Charts For The 50 Largest S&P 500 Index Components \ud83d\udcca #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #Volume #TradingVolume \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2028158241687912728"
   }
 ]
