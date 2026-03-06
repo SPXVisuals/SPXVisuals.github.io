@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-03-05_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2029677157778161961",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2029677157778161961"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-05_1mo_0.png",
+      "output/normalized/2026-03-05_1mo_1.png",
+      "output/normalized/2026-03-05_1mo_2.png",
+      "output/normalized/2026-03-05_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2029687494086660565",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2029687494086660565"
+  },
+  {
+    "type": "ma",
+    "ticker": "GEV",
+    "images": [
+      "output/ma/2026-03-05_GEV_SMA_1y.png",
+      "output/ma/2026-03-05_GEV_EMA_1y.png"
+    ],
+    "tweet_id": "2029698656333410545",
+    "tweet_text": "1y - GEV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $GEV #GEV $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2029698656333410545"
+  },
+  {
+    "type": "ma",
+    "ticker": "NXPI",
+    "images": [
+      "output/ma/2026-03-05_NXPI_SMA_1y.png",
+      "output/ma/2026-03-05_NXPI_EMA_1y.png"
+    ],
+    "tweet_id": "2029706992034423271",
+    "tweet_text": "1y - NXPI SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $NXPI #NXPI $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2029706992034423271"
+  },
+  {
+    "type": "ma",
+    "ticker": "IVZ",
+    "images": [
+      "output/ma/2026-03-05_IVZ_SMA_1y.png",
+      "output/ma/2026-03-05_IVZ_EMA_1y.png"
+    ],
+    "tweet_id": "2029720356714356968",
+    "tweet_text": "1y - IVZ SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $IVZ #IVZ $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2029720356714356968"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-03-05_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
