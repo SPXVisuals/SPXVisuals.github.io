@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-03-10_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_id": "2031487158377177554",
+    "tweet_text": "1y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2031487158377177554"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-10_1y_0.png",
+      "output/normalized/2026-03-10_1y_1.png",
+      "output/normalized/2026-03-10_1y_2.png",
+      "output/normalized/2026-03-10_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2031499928510304321",
+    "tweet_text": "1y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2031499928510304321"
+  },
+  {
+    "type": "ma",
+    "ticker": "NDAQ",
+    "images": [
+      "output/ma/2026-03-10_NDAQ_SMA_1y.png",
+      "output/ma/2026-03-10_NDAQ_EMA_1y.png"
+    ],
+    "tweet_id": "2031510939988632029",
+    "tweet_text": "1y - NDAQ SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $NDAQ #NDAQ $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2031510939988632029"
+  },
+  {
+    "type": "ma",
+    "ticker": "KEY",
+    "images": [
+      "output/ma/2026-03-10_KEY_SMA_1y.png",
+      "output/ma/2026-03-10_KEY_EMA_1y.png"
+    ],
+    "tweet_id": "2031519346304991449",
+    "tweet_text": "1y - KEY SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $KEY #KEY $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2031519346304991449"
+  },
+  {
+    "type": "ma",
+    "ticker": "CTAS",
+    "images": [
+      "output/ma/2026-03-10_CTAS_SMA_1y.png",
+      "output/ma/2026-03-10_CTAS_EMA_1y.png"
+    ],
+    "tweet_id": "2031526216545513599",
+    "tweet_text": "1y - CTAS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CTAS #CTAS $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2031526216545513599"
+  }
+]
