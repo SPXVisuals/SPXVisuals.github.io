@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-03-12_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2032213434981367869",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032213434981367869"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-12_1mo_0.png",
+      "output/normalized/2026-03-12_1mo_1.png",
+      "output/normalized/2026-03-12_1mo_2.png",
+      "output/normalized/2026-03-12_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2032226395242271014",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032226395242271014"
+  },
+  {
+    "type": "ma",
+    "ticker": "ICE",
+    "images": [
+      "output/ma/2026-03-12_ICE_SMA_1y.png",
+      "output/ma/2026-03-12_ICE_EMA_1y.png"
+    ],
+    "tweet_id": "2032233894250995942",
+    "tweet_text": "1y - ICE SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ICE #ICE $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032233894250995942"
+  },
+  {
+    "type": "ma",
+    "ticker": "AOS",
+    "images": [
+      "output/ma/2026-03-12_AOS_SMA_1y.png",
+      "output/ma/2026-03-12_AOS_EMA_1y.png"
+    ],
+    "tweet_id": "2032243641188561012",
+    "tweet_text": "1y - AOS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $AOS #AOS $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032243641188561012"
+  },
+  {
+    "type": "ma",
+    "ticker": "FFIV",
+    "images": [
+      "output/ma/2026-03-12_FFIV_SMA_1y.png",
+      "output/ma/2026-03-12_FFIV_EMA_1y.png"
+    ],
+    "tweet_id": "2032251679714762955",
+    "tweet_text": "1y - FFIV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $FFIV #FFIV $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032251679714762955"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-03-12_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
