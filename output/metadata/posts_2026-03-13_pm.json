@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-03-13_gainers_losers_1w.png"
+    ],
+    "timeframe": "1w",
+    "tweet_id": "2032575520110506105",
+    "tweet_text": "1w - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032575520110506105"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-13_1w_0.png",
+      "output/normalized/2026-03-13_1w_1.png",
+      "output/normalized/2026-03-13_1w_2.png",
+      "output/normalized/2026-03-13_1w_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2032586725399113825",
+    "tweet_text": "1w - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032586725399113825"
+  },
+  {
+    "type": "ma",
+    "ticker": "CTRA",
+    "images": [
+      "output/ma/2026-03-13_CTRA_SMA_1y.png",
+      "output/ma/2026-03-13_CTRA_EMA_1y.png"
+    ],
+    "tweet_id": "2032595684071768214",
+    "tweet_text": "1y - CTRA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CTRA #CTRA $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032595684071768214"
+  },
+  {
+    "type": "ma",
+    "ticker": "VMC",
+    "images": [
+      "output/ma/2026-03-13_VMC_SMA_1y.png",
+      "output/ma/2026-03-13_VMC_EMA_1y.png"
+    ],
+    "tweet_id": "2032606909199524126",
+    "tweet_text": "1y - VMC SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $VMC #VMC $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032606909199524126"
+  },
+  {
+    "type": "ma",
+    "ticker": "PAYC",
+    "images": [
+      "output/ma/2026-03-13_PAYC_SMA_1y.png",
+      "output/ma/2026-03-13_PAYC_EMA_1y.png"
+    ],
+    "tweet_id": "2032617506632822838",
+    "tweet_text": "1y - PAYC SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $PAYC #PAYC $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032617506632822838"
+  }
+]
