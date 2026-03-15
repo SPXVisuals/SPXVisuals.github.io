@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-03-14_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD",
+    "tweet_id": "2032936605212655752",
+    "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032936605212655752"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-14_YTD_0.png",
+      "output/normalized/2026-03-14_YTD_1.png",
+      "output/normalized/2026-03-14_YTD_2.png",
+      "output/normalized/2026-03-14_YTD_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2032947669954347321",
+    "tweet_text": "YTD - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032947669954347321"
+  },
+  {
+    "type": "ma",
+    "ticker": "DPZ",
+    "images": [
+      "output/ma/2026-03-14_DPZ_SMA_1y.png",
+      "output/ma/2026-03-14_DPZ_EMA_1y.png"
+    ],
+    "tweet_id": "2032959151953805430",
+    "tweet_text": "1y - DPZ SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $DPZ #DPZ $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032959151953805430"
+  },
+  {
+    "type": "ma",
+    "ticker": "DHR",
+    "images": [
+      "output/ma/2026-03-14_DHR_SMA_1y.png",
+      "output/ma/2026-03-14_DHR_EMA_1y.png"
+    ],
+    "tweet_id": "2032966034391543992",
+    "tweet_text": "1y - DHR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $DHR #DHR $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032966034391543992"
+  },
+  {
+    "type": "ma",
+    "ticker": "AJG",
+    "images": [
+      "output/ma/2026-03-14_AJG_SMA_1y.png",
+      "output/ma/2026-03-14_AJG_EMA_1y.png"
+    ],
+    "tweet_id": "2032973248485277743",
+    "tweet_text": "1y - AJG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $AJG #AJG $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2032973248485277743"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-03-13_gainers_losers_1w.png"
     ],
     "timeframe": "1w",
