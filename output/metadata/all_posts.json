@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-03-18_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2034387994715775296",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034387994715775296"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-18_3mo_0.png",
+      "output/normalized/2026-03-18_3mo_1.png",
+      "output/normalized/2026-03-18_3mo_2.png",
+      "output/normalized/2026-03-18_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2034400060042301767",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034400060042301767"
+  },
+  {
+    "type": "ma",
+    "ticker": "AFL",
+    "images": [
+      "output/ma/2026-03-18_AFL_SMA_1y.png",
+      "output/ma/2026-03-18_AFL_EMA_1y.png"
+    ],
+    "tweet_id": "2034410969246605712",
+    "tweet_text": "1y - AFL SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $AFL #AFL $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034410969246605712"
+  },
+  {
+    "type": "ma",
+    "ticker": "GDDY",
+    "images": [
+      "output/ma/2026-03-18_GDDY_SMA_1y.png",
+      "output/ma/2026-03-18_GDDY_EMA_1y.png"
+    ],
+    "tweet_id": "2034423012423037257",
+    "tweet_text": "1y - GDDY SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $GDDY #GDDY $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034423012423037257"
+  },
+  {
+    "type": "ma",
+    "ticker": "ELV",
+    "images": [
+      "output/ma/2026-03-18_ELV_SMA_1y.png",
+      "output/ma/2026-03-18_ELV_EMA_1y.png"
+    ],
+    "tweet_id": "2034431902728458648",
+    "tweet_text": "1y - ELV SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ELV #ELV $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034431902728458648"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-03-18_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
