@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-03-19_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2034750157577666750",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034750157577666750"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-19_1mo_0.png",
+      "output/normalized/2026-03-19_1mo_1.png",
+      "output/normalized/2026-03-19_1mo_2.png",
+      "output/normalized/2026-03-19_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2034758694336897259",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034758694336897259"
+  },
+  {
+    "type": "ma",
+    "ticker": "KEYS",
+    "images": [
+      "output/ma/2026-03-19_KEYS_SMA_1y.png",
+      "output/ma/2026-03-19_KEYS_EMA_1y.png"
+    ],
+    "tweet_id": "2034765878395376066",
+    "tweet_text": "1y - KEYS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $KEYS #KEYS $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034765878395376066"
+  },
+  {
+    "type": "ma",
+    "ticker": "EG",
+    "images": [
+      "output/ma/2026-03-19_EG_SMA_1y.png",
+      "output/ma/2026-03-19_EG_EMA_1y.png"
+    ],
+    "tweet_id": "2034775462740668772",
+    "tweet_text": "1y - EG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $EG #EG $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034775462740668772"
+  },
+  {
+    "type": "ma",
+    "ticker": "ADBE",
+    "images": [
+      "output/ma/2026-03-19_ADBE_SMA_1y.png",
+      "output/ma/2026-03-19_ADBE_EMA_1y.png"
+    ],
+    "tweet_id": "2034783368659800143",
+    "tweet_text": "1y - ADBE SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ADBE #ADBE $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2034783368659800143"
+  }
+]
