@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-03-27_gainers_losers_1w.png"
+    ],
+    "timeframe": "1w",
+    "tweet_id": "2037650201888887224",
+    "tweet_text": "1w - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2037650201888887224"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-27_1w_0.png",
+      "output/normalized/2026-03-27_1w_1.png",
+      "output/normalized/2026-03-27_1w_2.png",
+      "output/normalized/2026-03-27_1w_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2037662091134267619",
+    "tweet_text": "1w - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2037662091134267619"
+  },
+  {
+    "type": "ma",
+    "ticker": "DPZ",
+    "images": [
+      "output/ma/2026-03-27_DPZ_SMA_1y.png",
+      "output/ma/2026-03-27_DPZ_EMA_1y.png"
+    ],
+    "tweet_id": "2037671581372010588",
+    "tweet_text": "1y - DPZ SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $DPZ #DPZ $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2037671581372010588"
+  },
+  {
+    "type": "ma",
+    "ticker": "NOW",
+    "images": [
+      "output/ma/2026-03-27_NOW_SMA_1y.png",
+      "output/ma/2026-03-27_NOW_EMA_1y.png"
+    ],
+    "tweet_id": "2037681789599150389",
+    "tweet_text": "1y - NOW SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $NOW #NOW $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2037681789599150389"
+  },
+  {
+    "type": "ma",
+    "ticker": "DUK",
+    "images": [
+      "output/ma/2026-03-27_DUK_SMA_1y.png",
+      "output/ma/2026-03-27_DUK_EMA_1y.png"
+    ],
+    "tweet_id": "2037691156872528232",
+    "tweet_text": "1y - DUK SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $DUK #DUK $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2037691156872528232"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-03-27_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
