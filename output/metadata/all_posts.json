@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-03-30_gainers_losers_3y.png"
+    ],
+    "timeframe": "3y",
+    "tweet_id": "2038738592546038053",
+    "tweet_text": "3y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2038738592546038053"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-30_3y_0.png",
+      "output/normalized/2026-03-30_3y_1.png",
+      "output/normalized/2026-03-30_3y_2.png",
+      "output/normalized/2026-03-30_3y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2038748725569302757",
+    "tweet_text": "3y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2038748725569302757"
+  },
+  {
+    "type": "ma",
+    "ticker": "SYY",
+    "images": [
+      "output/ma/2026-03-30_SYY_SMA_1y.png",
+      "output/ma/2026-03-30_SYY_EMA_1y.png"
+    ],
+    "tweet_id": "2038755610502574519",
+    "tweet_text": "1y - SYY SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $SYY #SYY $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2038755610502574519"
+  },
+  {
+    "type": "ma",
+    "ticker": "RJF",
+    "images": [
+      "output/ma/2026-03-30_RJF_SMA_1y.png",
+      "output/ma/2026-03-30_RJF_EMA_1y.png"
+    ],
+    "tweet_id": "2038765763675205927",
+    "tweet_text": "1y - RJF SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $RJF #RJF $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2038765763675205927"
+  },
+  {
+    "type": "ma",
+    "ticker": "EME",
+    "images": [
+      "output/ma/2026-03-30_EME_SMA_1y.png",
+      "output/ma/2026-03-30_EME_EMA_1y.png"
+    ],
+    "tweet_id": "2038774237662462088",
+    "tweet_text": "1y - EME SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $EME #EME $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2038774237662462088"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-03-30_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
