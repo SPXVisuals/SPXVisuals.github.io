@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-03-31_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_id": "2039100523186401683",
+    "tweet_text": "1y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039100523186401683"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-03-31_1y_0.png",
+      "output/normalized/2026-03-31_1y_1.png",
+      "output/normalized/2026-03-31_1y_2.png",
+      "output/normalized/2026-03-31_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2039111710468927974",
+    "tweet_text": "1y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039111710468927974"
+  },
+  {
+    "type": "ma",
+    "ticker": "PLTR",
+    "images": [
+      "output/ma/2026-03-31_PLTR_SMA_1y.png",
+      "output/ma/2026-03-31_PLTR_EMA_1y.png"
+    ],
+    "tweet_id": "2039120267696292066",
+    "tweet_text": "1y - PLTR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $PLTR #PLTR $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039120267696292066"
+  },
+  {
+    "type": "ma",
+    "ticker": "UHS",
+    "images": [
+      "output/ma/2026-03-31_UHS_SMA_1y.png",
+      "output/ma/2026-03-31_UHS_EMA_1y.png"
+    ],
+    "tweet_id": "2039127890357317793",
+    "tweet_text": "1y - UHS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $UHS #UHS $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039127890357317793"
+  },
+  {
+    "type": "ma",
+    "ticker": "CVS",
+    "images": [
+      "output/ma/2026-03-31_CVS_SMA_1y.png",
+      "output/ma/2026-03-31_CVS_EMA_1y.png"
+    ],
+    "tweet_id": "2039134665542410520",
+    "tweet_text": "1y - CVS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CVS #CVS $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039134665542410520"
+  }
+]
