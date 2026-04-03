@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-04-02_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2039824761271001167",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039824761271001167"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-04-02_1mo_0.png",
+      "output/normalized/2026-04-02_1mo_1.png",
+      "output/normalized/2026-04-02_1mo_2.png",
+      "output/normalized/2026-04-02_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2039833138046886339",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039833138046886339"
+  },
+  {
+    "type": "ma",
+    "ticker": "LW",
+    "images": [
+      "output/ma/2026-04-02_LW_SMA_1y.png",
+      "output/ma/2026-04-02_LW_EMA_1y.png"
+    ],
+    "tweet_id": "2039840297090498951",
+    "tweet_text": "1y - LW SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $LW #LW $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039840297090498951"
+  },
+  {
+    "type": "ma",
+    "ticker": "KVUE",
+    "images": [
+      "output/ma/2026-04-02_KVUE_SMA_1y.png",
+      "output/ma/2026-04-02_KVUE_EMA_1y.png"
+    ],
+    "tweet_id": "2039849326445486282",
+    "tweet_text": "1y - KVUE SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $KVUE #KVUE $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039849326445486282"
+  },
+  {
+    "type": "ma",
+    "ticker": "VLO",
+    "images": [
+      "output/ma/2026-04-02_VLO_SMA_1y.png",
+      "output/ma/2026-04-02_VLO_EMA_1y.png"
+    ],
+    "tweet_id": "2039856200645591438",
+    "tweet_text": "1y - VLO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $VLO #VLO $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2039856200645591438"
+  }
+]
