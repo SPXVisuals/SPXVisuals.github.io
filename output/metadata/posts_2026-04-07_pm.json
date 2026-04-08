@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-04-07_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_id": "2041637842091192679",
+    "tweet_text": "1y - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2041637842091192679"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-04-07_1y_0.png",
+      "output/normalized/2026-04-07_1y_1.png",
+      "output/normalized/2026-04-07_1y_2.png",
+      "output/normalized/2026-04-07_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2041645063055315333",
+    "tweet_text": "1y - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2041645063055315333"
+  },
+  {
+    "type": "ma",
+    "ticker": "LDOS",
+    "images": [
+      "output/ma/2026-04-07_LDOS_SMA_1y.png",
+      "output/ma/2026-04-07_LDOS_EMA_1y.png"
+    ],
+    "tweet_id": "2041658358323695749",
+    "tweet_text": "1y - LDOS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $LDOS #LDOS $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2041658358323695749"
+  },
+  {
+    "type": "ma",
+    "ticker": "MET",
+    "images": [
+      "output/ma/2026-04-07_MET_SMA_1y.png",
+      "output/ma/2026-04-07_MET_EMA_1y.png"
+    ],
+    "tweet_id": "2041665511109370020",
+    "tweet_text": "1y - MET SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $MET #MET $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2041665511109370020"
+  },
+  {
+    "type": "ma",
+    "ticker": "PRU",
+    "images": [
+      "output/ma/2026-04-07_PRU_SMA_1y.png",
+      "output/ma/2026-04-07_PRU_EMA_1y.png"
+    ],
+    "tweet_id": "2041679644353585401",
+    "tweet_text": "1y - PRU SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $PRU #PRU $SPY $SPX #SPX #SPY #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2041679644353585401"
+  }
+]
