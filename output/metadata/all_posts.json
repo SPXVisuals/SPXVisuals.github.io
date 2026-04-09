@@ -2,6 +2,47 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-04-09_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-04-09_1mo_0.png",
+      "output/normalized/2026-04-09_1mo_1.png",
+      "output/normalized/2026-04-09_1mo_2.png",
+      "output/normalized/2026-04-09_1mo_3.png"
+    ],
+    "label": "1_40"
+  },
+  {
+    "type": "ma",
+    "ticker": "DAL",
+    "images": [
+      "output/ma/2026-04-09_DAL_SMA_1y.png",
+      "output/ma/2026-04-09_DAL_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "ma",
+    "ticker": "CL",
+    "images": [
+      "output/ma/2026-04-09_CL_SMA_1y.png",
+      "output/ma/2026-04-09_CL_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "ma",
+    "ticker": "ARES",
+    "images": [
+      "output/ma/2026-04-09_ARES_SMA_1y.png",
+      "output/ma/2026-04-09_ARES_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-04-09_daily_gainers_losers.png"
     ],
     "timeframe": "Daily"
