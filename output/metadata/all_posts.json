@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-04-11_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD",
+    "tweet_id": "2043085228940628346",
+    "tweet_text": "YTD - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2043085228940628346"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-04-11_YTD_0.png",
+      "output/normalized/2026-04-11_YTD_1.png",
+      "output/normalized/2026-04-11_YTD_2.png",
+      "output/normalized/2026-04-11_YTD_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2043095840194183290",
+    "tweet_text": "YTD - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2043095840194183290"
+  },
+  {
+    "type": "ma",
+    "ticker": "CBRE",
+    "images": [
+      "output/ma/2026-04-11_CBRE_SMA_1y.png",
+      "output/ma/2026-04-11_CBRE_EMA_1y.png"
+    ],
+    "tweet_id": "2043103520992432175",
+    "tweet_text": "1y - CBRE SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CBRE #CBRE #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2043103520992432175"
+  },
+  {
+    "type": "ma",
+    "ticker": "NTRS",
+    "images": [
+      "output/ma/2026-04-11_NTRS_SMA_1y.png",
+      "output/ma/2026-04-11_NTRS_EMA_1y.png"
+    ],
+    "tweet_id": "2043114293789634994",
+    "tweet_text": "1y - NTRS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $NTRS #NTRS #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2043114293789634994"
+  },
+  {
+    "type": "ma",
+    "ticker": "APA",
+    "images": [
+      "output/ma/2026-04-11_APA_SMA_1y.png",
+      "output/ma/2026-04-11_APA_EMA_1y.png"
+    ],
+    "tweet_id": "2043126079121187302",
+    "tweet_text": "1y - APA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $APA #APA #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2043126079121187302"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-04-10_gainers_losers_1w.png"
     ],
     "timeframe": "1w"
