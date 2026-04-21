@@ -2,6 +2,13 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-04-21_daily_gainers_losers.png"
+    ],
+    "timeframe": "Daily"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-04-20_gainers_losers_3y.png"
     ],
     "timeframe": "3y",
