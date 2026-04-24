@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-04-23_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_id": "2047437342449795367",
+    "tweet_text": "1mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047437342449795367"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-04-23_1mo_0.png",
+      "output/normalized/2026-04-23_1mo_1.png",
+      "output/normalized/2026-04-23_1mo_2.png",
+      "output/normalized/2026-04-23_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2047445607359406518",
+    "tweet_text": "1mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047445607359406518"
+  },
+  {
+    "type": "ma",
+    "ticker": "FICO",
+    "images": [
+      "output/ma/2026-04-23_FICO_SMA_1y.png",
+      "output/ma/2026-04-23_FICO_EMA_1y.png"
+    ],
+    "tweet_id": "2047452255532577210",
+    "tweet_text": "1y - FICO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $FICO #FICO #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047452255532577210"
+  },
+  {
+    "type": "ma",
+    "ticker": "GLW",
+    "images": [
+      "output/ma/2026-04-23_GLW_SMA_1y.png",
+      "output/ma/2026-04-23_GLW_EMA_1y.png"
+    ],
+    "tweet_id": "2047459691123360123",
+    "tweet_text": "1y - GLW SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $GLW #GLW #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047459691123360123"
+  },
+  {
+    "type": "ma",
+    "ticker": "TTWO",
+    "images": [
+      "output/ma/2026-04-23_TTWO_SMA_1y.png",
+      "output/ma/2026-04-23_TTWO_EMA_1y.png"
+    ],
+    "tweet_id": "2047466741081440291",
+    "tweet_text": "1y - TTWO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $TTWO #TTWO #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047466741081440291"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-04-23_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
