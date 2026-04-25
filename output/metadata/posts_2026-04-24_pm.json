@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-04-24_gainers_losers_1w.png"
+    ],
+    "timeframe": "1w",
+    "tweet_id": "2047799663038738610",
+    "tweet_text": "1w - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047799663038738610"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-04-24_1w_0.png",
+      "output/normalized/2026-04-24_1w_1.png",
+      "output/normalized/2026-04-24_1w_2.png",
+      "output/normalized/2026-04-24_1w_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2047812820306174233",
+    "tweet_text": "1w - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047812820306174233"
+  },
+  {
+    "type": "ma",
+    "ticker": "CFG",
+    "images": [
+      "output/ma/2026-04-24_CFG_SMA_1y.png",
+      "output/ma/2026-04-24_CFG_EMA_1y.png"
+    ],
+    "tweet_id": "2047820429717328309",
+    "tweet_text": "1y - CFG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CFG #CFG #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047820429717328309"
+  },
+  {
+    "type": "ma",
+    "ticker": "DECK",
+    "images": [
+      "output/ma/2026-04-24_DECK_SMA_1y.png",
+      "output/ma/2026-04-24_DECK_EMA_1y.png"
+    ],
+    "tweet_id": "2047835360311288133",
+    "tweet_text": "1y - DECK SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $DECK #DECK #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047835360311288133"
+  },
+  {
+    "type": "ma",
+    "ticker": "WAB",
+    "images": [
+      "output/ma/2026-04-24_WAB_SMA_1y.png",
+      "output/ma/2026-04-24_WAB_EMA_1y.png"
+    ],
+    "tweet_id": "2047844031346950534",
+    "tweet_text": "1y - WAB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $WAB #WAB #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2047844031346950534"
+  }
+]
