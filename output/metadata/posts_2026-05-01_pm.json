@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-05-01_gainers_losers_1w.png"
+    ],
+    "timeframe": "1w",
+    "tweet_id": "2050337133475381559",
+    "tweet_text": "1w - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2050337133475381559"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-05-01_1w_0.png",
+      "output/normalized/2026-05-01_1w_1.png",
+      "output/normalized/2026-05-01_1w_2.png",
+      "output/normalized/2026-05-01_1w_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2050352216741937255",
+    "tweet_text": "1w - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2050352216741937255"
+  },
+  {
+    "type": "ma",
+    "ticker": "WTW",
+    "images": [
+      "output/ma/2026-05-01_WTW_SMA_1y.png",
+      "output/ma/2026-05-01_WTW_EMA_1y.png"
+    ],
+    "tweet_id": "2050361414921932956",
+    "tweet_text": "1y - WTW SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $WTW #WTW #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2050361414921932956"
+  },
+  {
+    "type": "ma",
+    "ticker": "WAB",
+    "images": [
+      "output/ma/2026-05-01_WAB_SMA_1y.png",
+      "output/ma/2026-05-01_WAB_EMA_1y.png"
+    ],
+    "tweet_id": "2050370235128074668",
+    "tweet_text": "1y - WAB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $WAB #WAB #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2050370235128074668"
+  },
+  {
+    "type": "ma",
+    "ticker": "HSIC",
+    "images": [
+      "output/ma/2026-05-01_HSIC_SMA_1y.png",
+      "output/ma/2026-05-01_HSIC_EMA_1y.png"
+    ],
+    "tweet_id": "2050377423707930686",
+    "tweet_text": "1y - HSIC SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $HSIC #HSIC #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2050377423707930686"
+  }
+]
