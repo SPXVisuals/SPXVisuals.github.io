@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-05-08_gainers_losers_1w.png"
+    ],
+    "timeframe": "1w",
+    "tweet_id": "2052875201696714955",
+    "tweet_text": "1w - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2052875201696714955"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-05-08_1w_0.png",
+      "output/normalized/2026-05-08_1w_1.png",
+      "output/normalized/2026-05-08_1w_2.png",
+      "output/normalized/2026-05-08_1w_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2052884238844703014",
+    "tweet_text": "1w - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2052884238844703014"
+  },
+  {
+    "type": "ma",
+    "ticker": "WRB",
+    "images": [
+      "output/ma/2026-05-08_WRB_SMA_1y.png",
+      "output/ma/2026-05-08_WRB_EMA_1y.png"
+    ],
+    "tweet_id": "2052895189719548390",
+    "tweet_text": "1y - WRB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $WRB #WRB #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2052895189719548390"
+  },
+  {
+    "type": "ma",
+    "ticker": "CPRT",
+    "images": [
+      "output/ma/2026-05-08_CPRT_SMA_1y.png",
+      "output/ma/2026-05-08_CPRT_EMA_1y.png"
+    ],
+    "tweet_id": "2052905876285988933",
+    "tweet_text": "1y - CPRT SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CPRT #CPRT #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2052905876285988933"
+  },
+  {
+    "type": "ma",
+    "ticker": "LVS",
+    "images": [
+      "output/ma/2026-05-08_LVS_SMA_1y.png",
+      "output/ma/2026-05-08_LVS_EMA_1y.png"
+    ],
+    "tweet_id": "2052915741498749099",
+    "tweet_text": "1y - LVS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $LVS #LVS #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2052915741498749099"
+  }
+]
