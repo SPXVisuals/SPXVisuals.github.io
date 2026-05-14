@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-05-13_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2054694444813680966",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2054694444813680966"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-05-13_3mo_0.png",
+      "output/normalized/2026-05-13_3mo_1.png",
+      "output/normalized/2026-05-13_3mo_2.png",
+      "output/normalized/2026-05-13_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2054701711701180799",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2054701711701180799"
+  },
+  {
+    "type": "ma",
+    "ticker": "CME",
+    "images": [
+      "output/ma/2026-05-13_CME_SMA_1y.png",
+      "output/ma/2026-05-13_CME_EMA_1y.png"
+    ],
+    "tweet_id": "2054708065534959656",
+    "tweet_text": "1y - CME SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $CME #CME #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2054708065534959656"
+  },
+  {
+    "type": "ma",
+    "ticker": "KEYS",
+    "images": [
+      "output/ma/2026-05-13_KEYS_SMA_1y.png",
+      "output/ma/2026-05-13_KEYS_EMA_1y.png"
+    ],
+    "tweet_id": "2054716860172579231",
+    "tweet_text": "1y - KEYS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $KEYS #KEYS #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2054716860172579231"
+  },
+  {
+    "type": "ma",
+    "ticker": "LDOS",
+    "images": [
+      "output/ma/2026-05-13_LDOS_SMA_1y.png",
+      "output/ma/2026-05-13_LDOS_EMA_1y.png"
+    ],
+    "tweet_id": "2054728192489918960",
+    "tweet_text": "1y - LDOS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $LDOS #LDOS #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2054728192489918960"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-05-13_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
