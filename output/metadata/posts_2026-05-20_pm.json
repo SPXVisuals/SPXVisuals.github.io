@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-05-20_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo",
+    "tweet_id": "2057232495142146489",
+    "tweet_text": "3mo - S&P 500 Index Components' Performance Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #MarketLeaders #MarketLaggards \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2057232495142146489"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-05-20_3mo_0.png",
+      "output/normalized/2026-05-20_3mo_1.png",
+      "output/normalized/2026-05-20_3mo_2.png",
+      "output/normalized/2026-05-20_3mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_id": "2057239099669385552",
+    "tweet_text": "3mo - Normalized Price Charts For The 40 Largest S&P 500 Index Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #PriceChart \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2057239099669385552"
+  },
+  {
+    "type": "ma",
+    "ticker": "HPE",
+    "images": [
+      "output/ma/2026-05-20_HPE_SMA_1y.png",
+      "output/ma/2026-05-20_HPE_EMA_1y.png"
+    ],
+    "tweet_id": "2057250189476294719",
+    "tweet_text": "1y - HPE SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $HPE #HPE #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2057250189476294719"
+  },
+  {
+    "type": "ma",
+    "ticker": "TECH",
+    "images": [
+      "output/ma/2026-05-20_TECH_SMA_1y.png",
+      "output/ma/2026-05-20_TECH_EMA_1y.png"
+    ],
+    "tweet_id": "2057256572657537190",
+    "tweet_text": "1y - TECH SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $TECH #TECH #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2057256572657537190"
+  },
+  {
+    "type": "ma",
+    "ticker": "PPG",
+    "images": [
+      "output/ma/2026-05-20_PPG_SMA_1y.png",
+      "output/ma/2026-05-20_PPG_EMA_1y.png"
+    ],
+    "tweet_id": "2057266793379442893",
+    "tweet_text": "1y - PPG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $PPG #PPG #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing #SMA #EMA \ud83c\udf10 spxvisuals.github.io",
+    "tweet_url": "https://x.com/YOUR_HANDLE/status/2057266793379442893"
+  }
+]
