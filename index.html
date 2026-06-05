@@ -227,15 +227,12 @@ main{column-count:1;}
 
 <body>
 <header>
-<div class="header-watermark">SPXVisuals • x.com/SPXVisuals</div>
+<div class="header-watermark">SPXVisuals</div>
 <div class="header-copyright">© 2026 SPXVisuals • All Rights Reserved</div>
 
 <h1>
 📊 <a>SPXVisuals</a> 📈
 </h1>
-
-<a href="https://x.com/SPXVisuals" class="x-link">𝕏</a>
-
 <div class="controls">
 <input type="text" id="search" placeholder="Search by hashtag or YYYY-MM-DD" />
 <div class="filter-buttons">
@@ -377,7 +374,6 @@ function renderPosts(posts) {
     div.className = 'post';
 
     div.innerHTML = `
-      ${post.url ? `<div class="tweet-link-container"><a href="${post.url}" target="_blank">See Post On 𝕏</a></div>` : ''}
       <div class="post-date">${post.date}</div>
       <div class="post-text">${stripHashtags(post.text)}</div>
       <div class="hashtags">
