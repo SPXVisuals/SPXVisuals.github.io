@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-06-11_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_text": "S&P 500 Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-06-11_1mo_0.png",
+      "output/normalized/2026-06-11_1mo_1.png",
+      "output/normalized/2026-06-11_1mo_2.png",
+      "output/normalized/2026-06-11_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "MTB",
+    "images": [
+      "output/ma/2026-06-11_MTB_SMA_1y.png",
+      "output/ma/2026-06-11_MTB_EMA_1y.png"
+    ],
+    "tweet_text": "MTB SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $MTB #MTB #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "EOG",
+    "images": [
+      "output/ma/2026-06-11_EOG_SMA_1y.png",
+      "output/ma/2026-06-11_EOG_EMA_1y.png"
+    ],
+    "tweet_text": "EOG SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $EOG #EOG #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "SNA",
+    "images": [
+      "output/ma/2026-06-11_SNA_SMA_1y.png",
+      "output/ma/2026-06-11_SNA_EMA_1y.png"
+    ],
+    "tweet_text": "SNA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $SNA #SNA #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  }
+]
