@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-06-18_gainers_losers_1mo.png"
+    ],
+    "timeframe": "1mo",
+    "tweet_text": "S&P 500 Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-06-18_1mo_0.png",
+      "output/normalized/2026-06-18_1mo_1.png",
+      "output/normalized/2026-06-18_1mo_2.png",
+      "output/normalized/2026-06-18_1mo_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "BR",
+    "images": [
+      "output/ma/2026-06-18_BR_SMA_1y.png",
+      "output/ma/2026-06-18_BR_EMA_1y.png"
+    ],
+    "tweet_text": "BR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $BR #BR #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "MSI",
+    "images": [
+      "output/ma/2026-06-18_MSI_SMA_1y.png",
+      "output/ma/2026-06-18_MSI_EMA_1y.png"
+    ],
+    "tweet_text": "MSI SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $MSI #MSI #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "MA",
+    "images": [
+      "output/ma/2026-06-18_MA_SMA_1y.png",
+      "output/ma/2026-06-18_MA_EMA_1y.png"
+    ],
+    "tweet_text": "MA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $MA #MA #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-06-18_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
