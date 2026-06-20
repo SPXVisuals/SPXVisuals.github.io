@@ -2,6 +2,62 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-06-20_gainers_losers_YTD.png"
+    ],
+    "timeframe": "YTD",
+    "tweet_text": "S&P 500 Leaders vs Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-06-20_YTD_0.png",
+      "output/normalized/2026-06-20_YTD_1.png",
+      "output/normalized/2026-06-20_YTD_2.png",
+      "output/normalized/2026-06-20_YTD_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "BAC",
+    "images": [
+      "output/ma/2026-06-20_BAC_SMA_1y.png",
+      "output/ma/2026-06-20_BAC_EMA_1y.png"
+    ],
+    "tweet_text": "BAC SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $BAC #BAC #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "BLDR",
+    "images": [
+      "output/ma/2026-06-20_BLDR_SMA_1y.png",
+      "output/ma/2026-06-20_BLDR_EMA_1y.png"
+    ],
+    "tweet_text": "BLDR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $BLDR #BLDR #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "PCAR",
+    "images": [
+      "output/ma/2026-06-20_PCAR_SMA_1y.png",
+      "output/ma/2026-06-20_PCAR_EMA_1y.png"
+    ],
+    "tweet_text": "PCAR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $PCAR #PCAR #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-06-19_gainers_losers_1w.png"
     ],
     "timeframe": "1w",
