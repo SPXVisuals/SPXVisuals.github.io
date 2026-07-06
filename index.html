@@ -226,7 +226,7 @@ main{column-count:1;}
 <div class="header-copyright">© 2026 SPXVisuals • All Rights Reserved</div>
 <img src="logo.png" alt="SPXVisuals Logo" style="width: 15rem; height: 15rem;">
 <div class="controls">
-<input type="text" id="search" placeholder="Search by hashtag or YYYY-MM-DD" />
+<input type="text" id="search" placeholder="Search By Hashtag Or YYYY-MM-DD" />
 <div class="filter-buttons">
 <button id="todayFilter">Today's Charts</button>
 <button id="weekFilter">This Week</button>
@@ -356,7 +356,7 @@ function renderPosts(posts) {
   if (!posts.length) {
     const empty = document.createElement('div');
     empty.className = 'empty-state';
-    empty.textContent = 'No charts match your filters 📉';
+    empty.textContent = 'No Charts Match Your Filters 📉';
     container.appendChild(empty);
     return;
   }
