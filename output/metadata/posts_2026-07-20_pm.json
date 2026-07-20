@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-07-20_gainers_losers_3y.png"
+    ],
+    "timeframe": "3y",
+    "tweet_text": "S&P 500 Leaders & Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-07-20_3y_0.png",
+      "output/normalized/2026-07-20_3y_1.png",
+      "output/normalized/2026-07-20_3y_2.png",
+      "output/normalized/2026-07-20_3y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "FICO",
+    "images": [
+      "output/ma/2026-07-20_FICO_SMA_1y.png",
+      "output/ma/2026-07-20_FICO_EMA_1y.png"
+    ],
+    "tweet_text": "FICO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $FICO #FICO #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "DXCM",
+    "images": [
+      "output/ma/2026-07-20_DXCM_SMA_1y.png",
+      "output/ma/2026-07-20_DXCM_EMA_1y.png"
+    ],
+    "tweet_text": "DXCM SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $DXCM #DXCM #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "META",
+    "images": [
+      "output/ma/2026-07-20_META_SMA_1y.png",
+      "output/ma/2026-07-20_META_EMA_1y.png"
+    ],
+    "tweet_text": "META SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $META #META #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  }
+]
