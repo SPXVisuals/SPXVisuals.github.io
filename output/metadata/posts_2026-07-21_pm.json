@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-07-21_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_text": "S&P 500 Leaders & Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-07-21_1y_0.png",
+      "output/normalized/2026-07-21_1y_1.png",
+      "output/normalized/2026-07-21_1y_2.png",
+      "output/normalized/2026-07-21_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "HOOD",
+    "images": [
+      "output/ma/2026-07-21_HOOD_SMA_1y.png",
+      "output/ma/2026-07-21_HOOD_EMA_1y.png"
+    ],
+    "tweet_text": "HOOD SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $HOOD #HOOD #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "ZBRA",
+    "images": [
+      "output/ma/2026-07-21_ZBRA_SMA_1y.png",
+      "output/ma/2026-07-21_ZBRA_EMA_1y.png"
+    ],
+    "tweet_text": "ZBRA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $ZBRA #ZBRA #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "NVR",
+    "images": [
+      "output/ma/2026-07-21_NVR_SMA_1y.png",
+      "output/ma/2026-07-21_NVR_EMA_1y.png"
+    ],
+    "tweet_text": "NVR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $NVR #NVR #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  }
+]
