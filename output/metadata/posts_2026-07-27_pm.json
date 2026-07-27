@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-07-27_gainers_losers_3y.png"
+    ],
+    "timeframe": "3y",
+    "tweet_text": "S&P 500 Leaders & Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-07-27_3y_0.png",
+      "output/normalized/2026-07-27_3y_1.png",
+      "output/normalized/2026-07-27_3y_2.png",
+      "output/normalized/2026-07-27_3y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "SWK",
+    "images": [
+      "output/ma/2026-07-27_SWK_SMA_1y.png",
+      "output/ma/2026-07-27_SWK_EMA_1y.png"
+    ],
+    "tweet_text": "SWK SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $SWK #SWK #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "SNPS",
+    "images": [
+      "output/ma/2026-07-27_SNPS_SMA_1y.png",
+      "output/ma/2026-07-27_SNPS_EMA_1y.png"
+    ],
+    "tweet_text": "SNPS SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $SNPS #SNPS #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "IEX",
+    "images": [
+      "output/ma/2026-07-27_IEX_SMA_1y.png",
+      "output/ma/2026-07-27_IEX_EMA_1y.png"
+    ],
+    "tweet_text": "IEX SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $IEX #IEX #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  }
+]
