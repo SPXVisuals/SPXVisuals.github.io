@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-08-04_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_text": "S&P 500 Leaders & Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-08-04_1y_0.png",
+      "output/normalized/2026-08-04_1y_1.png",
+      "output/normalized/2026-08-04_1y_2.png",
+      "output/normalized/2026-08-04_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "COR",
+    "images": [
+      "output/ma/2026-08-04_COR_SMA_1y.png",
+      "output/ma/2026-08-04_COR_EMA_1y.png"
+    ],
+    "tweet_text": "COR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $COR #COR #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "VICI",
+    "images": [
+      "output/ma/2026-08-04_VICI_SMA_1y.png",
+      "output/ma/2026-08-04_VICI_EMA_1y.png"
+    ],
+    "tweet_text": "VICI SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $VICI #VICI #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "LMT",
+    "images": [
+      "output/ma/2026-08-04_LMT_SMA_1y.png",
+      "output/ma/2026-08-04_LMT_EMA_1y.png"
+    ],
+    "tweet_text": "LMT SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $LMT #LMT #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  }
+]
