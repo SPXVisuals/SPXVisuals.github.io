@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-08-28_gainers_losers_1w.png"
+    ],
+    "timeframe": "1w",
+    "tweet_text": "S&P 500 Leaders & Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-08-28_1w_0.png",
+      "output/normalized/2026-08-28_1w_1.png",
+      "output/normalized/2026-08-28_1w_2.png",
+      "output/normalized/2026-08-28_1w_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "IBKR",
+    "images": [
+      "output/ma/2026-08-28_IBKR_SMA_1y.png",
+      "output/ma/2026-08-28_IBKR_EMA_1y.png"
+    ],
+    "tweet_text": "IBKR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $IBKR #IBKR #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "HON",
+    "images": [
+      "output/ma/2026-08-28_HON_SMA_1y.png",
+      "output/ma/2026-08-28_HON_EMA_1y.png"
+    ],
+    "tweet_text": "HON SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $HON #HON #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "MA",
+    "images": [
+      "output/ma/2026-08-28_MA_SMA_1y.png",
+      "output/ma/2026-08-28_MA_EMA_1y.png"
+    ],
+    "tweet_text": "MA SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $MA #MA #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  }
+]
