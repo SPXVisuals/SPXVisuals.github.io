@@ -1,0 +1,58 @@
+[
+  {
+    "type": "gainers_losers",
+    "images": [
+      "output/leaders_laggards/2026-09-22_gainers_losers_1y.png"
+    ],
+    "timeframe": "1y",
+    "tweet_text": "S&P 500 Leaders & Laggards \ud83d\udccb #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-09-22_1y_0.png",
+      "output/normalized/2026-09-22_1y_1.png",
+      "output/normalized/2026-09-22_1y_2.png",
+      "output/normalized/2026-09-22_1y_3.png"
+    ],
+    "label": "1_40",
+    "tweet_text": "Normalized Price Charts For The 40 Largest S&P 500 Components \ud83d\udcc8 #SPXVisuals $SPY #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "EQR",
+    "images": [
+      "output/ma/2026-09-22_EQR_SMA_1y.png",
+      "output/ma/2026-09-22_EQR_EMA_1y.png"
+    ],
+    "tweet_text": "EQR SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $EQR #EQR #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "FICO",
+    "images": [
+      "output/ma/2026-09-22_FICO_SMA_1y.png",
+      "output/ma/2026-09-22_FICO_EMA_1y.png"
+    ],
+    "tweet_text": "FICO SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $FICO #FICO #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  },
+  {
+    "type": "ma",
+    "ticker": "COST",
+    "images": [
+      "output/ma/2026-09-22_COST_SMA_1y.png",
+      "output/ma/2026-09-22_COST_EMA_1y.png"
+    ],
+    "tweet_text": "COST SMA & EMA Charts \ud83d\udcc8 #SPXVisuals $COST #COST #SPY #SPX #SP500 #SAndP500 #Equities #Stocks #Market #StockMarket #Investing",
+    "tweet_url": "",
+    "tweet_id": "website-only"
+  }
+]
