@@ -2,6 +2,47 @@
   {
     "type": "gainers_losers",
     "images": [
+      "output/leaders_laggards/2026-10-14_gainers_losers_3mo.png"
+    ],
+    "timeframe": "3mo"
+  },
+  {
+    "type": "normalized",
+    "images": [
+      "output/normalized/2026-10-14_3mo_0.png",
+      "output/normalized/2026-10-14_3mo_1.png",
+      "output/normalized/2026-10-14_3mo_2.png",
+      "output/normalized/2026-10-14_3mo_3.png"
+    ],
+    "label": "1_40"
+  },
+  {
+    "type": "ma",
+    "ticker": "EQIX",
+    "images": [
+      "output/ma/2026-10-14_EQIX_SMA_1y.png",
+      "output/ma/2026-10-14_EQIX_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "ma",
+    "ticker": "TTD",
+    "images": [
+      "output/ma/2026-10-14_TTD_SMA_1y.png",
+      "output/ma/2026-10-14_TTD_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "ma",
+    "ticker": "TXT",
+    "images": [
+      "output/ma/2026-10-14_TXT_SMA_1y.png",
+      "output/ma/2026-10-14_TXT_EMA_1y.png"
+    ]
+  },
+  {
+    "type": "gainers_losers",
+    "images": [
       "output/leaders_laggards/2026-10-14_daily_gainers_losers.png"
     ],
     "timeframe": "Daily",
